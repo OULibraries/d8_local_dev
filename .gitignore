@@ -43,3 +43,5 @@ sites/simpletest
 /vendor/
 /modules/contrib/
 /core/
+/themes/contrib/
+/themes/custom/
