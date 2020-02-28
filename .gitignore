@@ -1,3 +1,4 @@
+
 # This file contains default .gitignore rules. To use it, copy it to .gitignore,
 # and it will cause files like your settings.php and user-uploaded files to be
 # excluded from Git version control. This is a common strategy to avoid
@@ -15,7 +16,6 @@
 # Generally you should only ignore the root vendor directory. It's important
 # that core/assets/vendor and any other vendor directories within contrib or
 # custom module, theme, etc., are not ignored unless you purposely do so.
-/vendor/
 
 # Ignore configuration files that may contain sensitive information.
 sites/*/settings*.php
@@ -40,3 +40,6 @@ sites/simpletest
 
 # Ignore SimpleTest multi-site environment.
 # simpletest
+/vendor/
+/modules/contrib/
+/core/
