@@ -1,0 +1,20 @@
+uuid: 2d136d62-6553-409e-8c84-afa42bf8a2ca
+langcode: en
+status: true
+dependencies:
+  theme:
+    - oulib_bootstrap
+_core:
+  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
+id: oulib_bootstrap_local_actions
+theme: oulib_bootstrap
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

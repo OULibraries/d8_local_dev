@@ -1,0 +1,14 @@
+uuid: 61f33a1d-c1cd-4f19-9965-0c81b6bda068
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: 8MCmsz_csdJkVItxI8g_s4zp2PM285YqCy_gWTzOLPw
+id: employment_status
+label: 'Employment status'
+category: Demographic
+likert: false
+options: "'Full Time': 'Full Time'\n'Part Time': 'Part Time'\n'Military': 'Military'\nUnemployed: Unemployed\nRetired: Retired\n"

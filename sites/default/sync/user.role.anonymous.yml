@@ -1,0 +1,15 @@
+uuid: d4d4213c-4a03-4779-9d6c-291bb9495c7c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'display eu cookie compliance popup'
+  - 'use exclude node title'
+  - 'view media'

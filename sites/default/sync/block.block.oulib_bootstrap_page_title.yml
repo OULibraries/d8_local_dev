@@ -1,0 +1,20 @@
+uuid: 1bbac285-01bc-4c0b-a3cd-85e7a325f82c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - oulib_bootstrap
+_core:
+  default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
+id: oulib_bootstrap_page_title
+theme: oulib_bootstrap
+region: content
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

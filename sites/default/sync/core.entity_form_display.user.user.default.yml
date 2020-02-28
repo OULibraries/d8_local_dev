@@ -1,0 +1,40 @@
+uuid: be652133-7462-40ee-b934-684190157bee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.mass_contact_opt_out
+  module:
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: -10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  contact:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  language:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  mass_contact_opt_out:
+    type: options_buttons
+    settings: {  }
+    weight: 7
+    third_party_settings: {  }
+    region: content
+  timezone:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

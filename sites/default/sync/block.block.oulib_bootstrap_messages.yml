@@ -1,0 +1,22 @@
+uuid: f2f8a345-c921-4401-bd7b-f64b7e90ecf4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - oulib_bootstrap
+_core:
+  default_config_hash: 5MNdk3fpMKx_xxBTcz2T11DL4XEU1H5SgHl8BsYdFsA
+id: oulib_bootstrap_messages
+theme: oulib_bootstrap
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
