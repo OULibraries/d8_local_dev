@@ -45,3 +45,5 @@ sites/simpletest
 /core/
 /themes/contrib/
 /themes/custom/
+example.gitignore
+/modules/custom/

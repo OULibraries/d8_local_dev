@@ -24,6 +24,18 @@
                     "reference": "master"
                 }
             }
+        }, {
+            "type": "package",
+            "package": {
+                "name": "oulibraries/studyroom",
+                "version": "1.0.0",
+                "type": "drupal-custom-module",
+                "source": {
+                    "url": "https://github.com/OULibraries/studyroom.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
         }
     ],
     "require": {
@@ -89,7 +101,8 @@
         "drupal/webform": "^5.8",
         "drupal/webform_views": "^5.0",
         "drush/drush": "9.*",
-        "oulibraries/oulib_bootstrap": "^1.0"
+        "oulibraries/oulib_bootstrap": "^1.0",
+        "oulibraries/studyroom": "^1.0"
     },
     "require-dev": {
         "drupal/devel": "^2.1"
@@ -137,7 +150,11 @@
                 "      composer remove drupal/core-project-message"
             ]
         },
-        "enable-patching": false,
-        "patches": {}
+        "enable-patching": true,
+        "patches": {
+            "drupal/core": {
+                "Fix to layout builder": "https://www.drupal.org/files/issues/2020-01-20/2985882-53.patch"
+            }
+        }
     }
 }
