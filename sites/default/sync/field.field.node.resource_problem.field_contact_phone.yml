@@ -1,0 +1,21 @@
+uuid: d69e5fa3-a724-4c9f-ab5e-a46853cf1be5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_phone
+    - node.type.resource_problem
+id: node.resource_problem.field_contact_phone
+field_name: field_contact_phone
+entity_type: node
+bundle: resource_problem
+label: Phone
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '[current-user:field_phone]'
+default_value_callback: field_default_token_default_value_callback
+settings: {  }
+field_type: string

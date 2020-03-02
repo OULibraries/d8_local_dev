@@ -1,0 +1,21 @@
+uuid: 72387841-2ac8-4bec-ae26-49ab00f71460
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_email
+    - node.type.resource_problem
+id: node.resource_problem.field_contact_email
+field_name: field_contact_email
+entity_type: node
+bundle: resource_problem
+label: Email
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '[current-user:mail]'
+default_value_callback: field_default_token_default_value_callback
+settings: {  }
+field_type: email

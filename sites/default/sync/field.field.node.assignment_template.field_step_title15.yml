@@ -1,0 +1,19 @@
+uuid: e9b07483-348d-4656-be36-484bdddda345
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_step_title15
+    - node.type.assignment_template
+id: node.assignment_template.field_step_title15
+field_name: field_step_title15
+entity_type: node
+bundle: assignment_template
+label: 'Step Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

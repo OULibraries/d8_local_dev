@@ -1,0 +1,14 @@
+uuid: da1f5b3b-a72b-43a0-a230-477a943a4195
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mass_contact
+  module:
+    - user
+id: user_add_role_action.mass_contact
+label: 'Add the mass_contact role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: mass_contact

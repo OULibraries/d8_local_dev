@@ -1,0 +1,23 @@
+uuid: 8629fe83-730d-4657-9720-80680aa56241
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_available
+    - node.type.lending_technology
+id: node.lending_technology.field_number_available
+field_name: field_number_available
+entity_type: node
+bundle: lending_technology
+label: 'Number Available'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

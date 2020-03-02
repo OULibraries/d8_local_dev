@@ -1,0 +1,8 @@
+uuid: 9d457719-e714-488e-859a-aaa5632288f4
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_resource_problem
+label: 'Resource Problem Report comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,30 @@
+uuid: 6e24188c-d539-45ea-90c1-0c318b0eec05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_units
+    - node.type.guides
+    - node.type.units
+id: node.guides.field_units
+field_name: field_units
+entity_type: node
+bundle: guides
+label: Units
+description: 'Add this guide to a unit page.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      views-select-list:
+        status: 0
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      units: units
+field_type: entity_reference

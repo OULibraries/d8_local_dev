@@ -1,0 +1,14 @@
+uuid: 64b5423f-bc58-4908-9fb0-a8bdf0bc91aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.faculty_room_exception
+  module:
+    - user
+id: user_add_role_action.faculty_room_exception
+label: 'Add the faculty room exception role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: faculty_room_exception

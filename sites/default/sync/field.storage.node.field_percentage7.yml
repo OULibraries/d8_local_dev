@@ -1,0 +1,20 @@
+uuid: 71ef2346-dd69-455e-b6c8-9df93fc1aed9
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_percentage7
+field_name: field_percentage7
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

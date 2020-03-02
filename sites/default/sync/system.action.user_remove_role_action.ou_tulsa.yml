@@ -1,0 +1,14 @@
+uuid: 7732a61d-b11a-416c-a27f-92937bb565e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ou_tulsa
+  module:
+    - user
+id: user_remove_role_action.ou_tulsa
+label: 'Remove the ou_tulsa role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: ou_tulsa

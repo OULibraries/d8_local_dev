@@ -1,0 +1,33 @@
+uuid: 97f2b780-f7a8-4a32-8aad-6659711b05f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.jobs.body
+    - field.field.node.jobs.field_job_link
+    - field.field.node.jobs.field_job_status
+    - node.type.jobs
+  module:
+    - text
+    - user
+id: node.jobs.default
+targetEntityType: node
+bundle: jobs
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_job_link: true
+  field_job_status: true

@@ -1,0 +1,30 @@
+uuid: 5cc71dbe-be9d-4366-8a1b-f774151b096a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_locationreference
+    - node.type.locations
+    - node.type.units
+id: node.units.field_locationreference
+field_name: field_locationreference
+entity_type: node
+bundle: units
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      locations: locations
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 0
+field_type: entity_reference

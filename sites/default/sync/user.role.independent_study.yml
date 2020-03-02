@@ -1,0 +1,10 @@
+uuid: 028ac742-5eaa-4d26-a716-e596e480ef82
+langcode: en
+status: true
+dependencies: {  }
+id: independent_study
+label: independent_study
+weight: 26
+is_admin: null
+permissions:
+  - 'display EU Cookie Compliance popup'

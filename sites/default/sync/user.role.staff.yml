@@ -1,0 +1,13 @@
+uuid: 452aebee-dfe5-4fc9-abd6-97171e9b6dfe
+langcode: en
+status: true
+dependencies: {  }
+id: staff
+label: staff
+weight: 11
+is_admin: null
+permissions:
+  - 'create faculty_graduate studyroom_reservation'
+  - 'delete own faculty_graduate studyroom_reservation'
+  - 'display EU Cookie Compliance popup'
+  - 'edit own faculty_graduate studyroom_reservation'

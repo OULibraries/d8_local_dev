@@ -1,0 +1,18 @@
+uuid: 5754a299-fb7c-4055-bc97-f492624f6692
+langcode: und
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_searchable
+field_name: field_searchable
+entity_type: user
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,10 @@
+uuid: 357af875-152f-411e-a4da-68dcc78810e6
+langcode: en
+status: true
+dependencies: {  }
+id: ou_tulsa
+label: ou_tulsa
+weight: 22
+is_admin: null
+permissions:
+  - 'display EU Cookie Compliance popup'

@@ -1,0 +1,23 @@
+uuid: b622f821-54ce-47df-959b-2a7896eb22ed
+langcode: en
+status: true
+dependencies: {  }
+id: employee
+label: employee
+weight: 2
+is_admin: null
+permissions:
+  - 'access spaces'
+  - 'create announcement content'
+  - 'create event content'
+  - 'create faculty studyroom_reservation'
+  - 'create faculty_graduate studyroom_reservation'
+  - 'create test content'
+  - 'delete own announcement content'
+  - 'delete own event content'
+  - 'delete own test content'
+  - 'display EU Cookie Compliance popup'
+  - 'edit node expire'
+  - 'edit own announcement content'
+  - 'edit own event content'
+  - 'edit own test content'

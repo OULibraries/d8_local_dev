@@ -1,0 +1,8 @@
+uuid: 4548c84a-3a22-4dd6-9519-f7ab4cf0d8ef
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_guides
+label: 'Research Guides comment'
+target_entity_type_id: node
+description: null

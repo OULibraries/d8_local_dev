@@ -1,0 +1,8 @@
+uuid: 7e24a5ae-5a28-42fb-9743-509fcb621f8b
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_library_stories
+label: 'Library Stories comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,32 @@
+uuid: c83a0c10-752d-436f-9a11-adf4ebc2a159
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.guides
+    - node.type.locations
+id: node.guides.field_location
+field_name: field_location
+entity_type: node
+bundle: guides
+label: Locations
+description: 'Add this guide to a location page.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      field_default_token:
+        status: true
+      views-select-list:
+        status: 1
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      locations: locations
+field_type: entity_reference

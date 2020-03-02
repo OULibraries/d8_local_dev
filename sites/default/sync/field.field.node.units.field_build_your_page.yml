@@ -1,0 +1,75 @@
+uuid: ef3daedf-1d51-4a3d-b056-570ce594fce7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_build_your_page
+    - node.type.units
+    - paragraphs.paragraphs_type.featured_areas
+    - paragraphs.paragraphs_type.featured_areas_alt
+    - paragraphs.paragraphs_type.full_width_text
+    - paragraphs.paragraphs_type.image_left_text_right
+    - paragraphs.paragraphs_type.image_right_text_left
+    - paragraphs.paragraphs_type.section_header
+    - paragraphs.paragraphs_type.two_column_list
+    - paragraphs.paragraphs_type.two_column_text
+  module:
+    - entity_reference_revisions
+id: node.units.field_build_your_page
+field_name: field_build_your_page
+entity_type: node
+bundle: units
+label: 'Build Your Page'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    negate: 0
+    target_bundles:
+      section_header: section_header
+      full_width_text: full_width_text
+      featured_areas: featured_areas
+      featured_areas_alt: featured_areas_alt
+      image_left_text_right: image_left_text_right
+      image_right_text_left: image_right_text_left
+      two_column_list: two_column_list
+      two_column_text: two_column_text
+    target_bundles_drag_drop:
+      section_header:
+        enabled: true
+        weight: -16
+      full_width_text:
+        enabled: true
+        weight: -15
+      featured_areas:
+        enabled: true
+        weight: -14
+      featured_areas_alt:
+        enabled: true
+        weight: -13
+      image_left_text_right:
+        enabled: true
+        weight: -12
+      image_right_text_left:
+        enabled: true
+        weight: -11
+      two_column_list:
+        enabled: true
+        weight: -10
+      two_column_text:
+        enabled: true
+        weight: -9
+      full_width_image:
+        enabled: false
+        weight: -8
+      image_large_left_text_right:
+        enabled: false
+        weight: -7
+      restricted_download:
+        enabled: false
+        weight: -6
+  handler: 'default:paragraph'
+field_type: entity_reference_revisions

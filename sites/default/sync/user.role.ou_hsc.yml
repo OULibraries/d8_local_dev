@@ -1,0 +1,10 @@
+uuid: 63dafda7-4c21-4a06-92c4-2b428cfbc563
+langcode: en
+status: true
+dependencies: {  }
+id: ou_hsc
+label: ou_hsc
+weight: 20
+is_admin: null
+permissions:
+  - 'display EU Cookie Compliance popup'

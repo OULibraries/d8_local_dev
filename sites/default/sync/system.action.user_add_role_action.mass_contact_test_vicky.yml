@@ -1,0 +1,14 @@
+uuid: 914c337e-5ae8-4006-a0d1-e33fc015d216
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mass_contact_test_vicky
+  module:
+    - user
+id: user_add_role_action.mass_contact_test_vicky
+label: 'Add the mass contact test vicky role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: mass_contact_test_vicky

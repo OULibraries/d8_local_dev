@@ -1,0 +1,14 @@
+uuid: cf8123d9-f476-4780-9016-100574251639
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mass_contact_test_dean_s_office
+  module:
+    - user
+id: user_remove_role_action.mass_contact_test_dean_s_office
+label: 'Remove the mass contact test dean&#039;s office role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: mass_contact_test_dean_s_office

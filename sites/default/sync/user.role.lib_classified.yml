@@ -1,0 +1,10 @@
+uuid: d5624b88-2d09-480d-b7bc-cb25a4afaa5b
+langcode: en
+status: true
+dependencies: {  }
+id: lib_classified
+label: Lib-classified
+weight: 13
+is_admin: null
+permissions:
+  - 'display EU Cookie Compliance popup'

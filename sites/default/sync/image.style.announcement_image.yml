@@ -1,0 +1,15 @@
+uuid: ead9f7ca-241b-4ae6-92de-4b86c292f45e
+langcode: en
+status: true
+dependencies: {  }
+name: announcement_image
+label: 'Announcement Image'
+effects:
+  29674f8b-09da-4dae-938e-521b50902928:
+    uuid: 29674f8b-09da-4dae-938e-521b50902928
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 500
+      height: 200
+      anchor: center-center

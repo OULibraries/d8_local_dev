@@ -1,0 +1,26 @@
+uuid: c46366c1-e597-4e03-b8bf-be86bbfb2cab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_service_categories
+    - node.type.policy
+    - taxonomy.vocabulary.service_categories
+id: node.policy.field_service_categories
+field_name: field_service_categories
+entity_type: node
+bundle: policy
+label: 'Service Categories'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      service_categories: service_categories
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

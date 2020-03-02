@@ -1,0 +1,8 @@
+uuid: cfedb77f-fe23-4e94-a9b7-997947a20246
+langcode: en
+status: true
+dependencies: {  }
+name: Subjects
+vid: architecture
+description: 'Resources by Subject'
+weight: 0

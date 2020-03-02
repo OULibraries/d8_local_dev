@@ -1,0 +1,14 @@
+uuid: ac5a455a-e350-41c3-9b7f-15eb13497624
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.lib_ga
+  module:
+    - user
+id: user_remove_role_action.lib_ga
+label: 'Remove the Lib-ga role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: lib_ga

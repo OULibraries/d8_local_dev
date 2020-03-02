@@ -1,0 +1,14 @@
+uuid: dcc738bf-961f-4e57-bdd5-0f1ebed4b486
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.lib_ga
+  module:
+    - user
+id: user_add_role_action.lib_ga
+label: 'Add the Lib-ga role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: lib_ga

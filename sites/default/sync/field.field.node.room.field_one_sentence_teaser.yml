@@ -1,0 +1,19 @@
+uuid: be79bdb9-70ad-4d6b-ae01-66388b588a0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_one_sentence_teaser
+    - node.type.room
+id: node.room.field_one_sentence_teaser
+field_name: field_one_sentence_teaser
+entity_type: node
+bundle: room
+label: 'One Sentence Teaser'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

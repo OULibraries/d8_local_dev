@@ -1,0 +1,23 @@
+uuid: e09ca89f-e47c-4851-b0e0-3bd6fc853aae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_general_information_2
+    - node.type.units
+  module:
+    - link
+id: node.units.field_general_information_2
+field_name: field_general_information_2
+entity_type: node
+bundle: units
+label: 'General Information Column Two'
+description: 'Add menu items to the second column of the General Information Section of a Unit page'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

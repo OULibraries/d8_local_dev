@@ -1,0 +1,8 @@
+uuid: 9e51c029-8da7-4e86-bb45-050942b37dad
+langcode: en
+status: true
+dependencies: {  }
+name: 'E-Resource Types'
+vid: e_resources
+description: ''
+weight: -8

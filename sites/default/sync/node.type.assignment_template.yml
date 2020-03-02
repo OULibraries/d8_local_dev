@@ -1,0 +1,11 @@
+uuid: 52879205-bcf4-4041-8d04-1d453dd73429
+langcode: en
+status: true
+dependencies: {  }
+name: 'Assignment Template'
+type: assignment_template
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

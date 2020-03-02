@@ -1,0 +1,23 @@
+uuid: 5c464e04-96ec-4c78-8ef6-633ce2545770
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_this_content_needs_review
+    - node.type.service
+id: node.service.field_this_content_needs_review
+field_name: field_this_content_needs_review
+entity_type: node
+bundle: service
+label: 'Admin has flagged this content for immediate review'
+description: 'Uncheck this box once you have reviewed the content and made edits as necessary.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Admin has flagged this content for immediate review'
+  off_label: ''
+field_type: boolean

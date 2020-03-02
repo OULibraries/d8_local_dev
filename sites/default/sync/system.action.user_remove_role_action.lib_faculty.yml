@@ -1,0 +1,14 @@
+uuid: ad0cea41-a5ee-4d64-8bfe-5fcd80686ad9
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.lib_faculty
+  module:
+    - user
+id: user_remove_role_action.lib_faculty
+label: 'Remove the Lib-faculty role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: lib_faculty

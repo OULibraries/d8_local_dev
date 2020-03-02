@@ -1,0 +1,23 @@
+uuid: 977c2c41-8d44-4d4a-80f5-7a4042908d6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_general_information_1
+    - node.type.units
+  module:
+    - link
+id: node.units.field_general_information_1
+field_name: field_general_information_1
+entity_type: node
+bundle: units
+label: 'General Information Column One'
+description: 'Add menu links to the first column of General Information on a unit page'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

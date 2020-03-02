@@ -1,0 +1,28 @@
+uuid: 163e5449-fb53-4a0d-996d-bf0e80d61c83
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_add_this_item_to_another_s
+    - node.type.videos
+    - taxonomy.vocabulary.marketing_projects
+id: node.videos.field_add_this_item_to_another_s
+field_name: field_add_this_item_to_another_s
+entity_type: node
+bundle: videos
+label: 'Add this item to another site:'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    tid: '428'
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      marketing_projects: marketing_projects
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

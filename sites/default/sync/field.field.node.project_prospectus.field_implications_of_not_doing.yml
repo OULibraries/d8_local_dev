@@ -1,0 +1,21 @@
+uuid: 0345c24a-72b5-49ac-87bb-3fe6ba31210c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_implications_of_not_doing
+    - node.type.project_prospectus
+  module:
+    - text
+id: node.project_prospectus.field_implications_of_not_doing
+field_name: field_implications_of_not_doing
+entity_type: node
+bundle: project_prospectus
+label: 'Implications of not doing'
+description: 'What would the implications be if this project were not done? Are there alternative resources?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

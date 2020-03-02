@@ -1,0 +1,28 @@
+uuid: 655105ba-e96f-4fe5-9e2a-0f43fd21dcec
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_lending_technology
+    - field.field.comment.comment_node_lending_technology.comment_body
+  module:
+    - text
+id: comment.comment_node_lending_technology.default
+targetEntityType: comment
+bundle: comment_node_lending_technology
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true

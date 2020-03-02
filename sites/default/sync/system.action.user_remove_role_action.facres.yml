@@ -1,0 +1,14 @@
+uuid: 7d59c8e3-d94f-4e88-a8c0-f1a2bdf643fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.facres
+  module:
+    - user
+id: user_remove_role_action.facres
+label: 'Remove the facres role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: facres

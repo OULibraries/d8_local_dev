@@ -1,0 +1,32 @@
+uuid: d52e47aa-2f94-44ea-8364-be42d4202607
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user_type
+    - node.type.room
+    - taxonomy.vocabulary.user_type
+id: node.room.field_user_type
+field_name: field_user_type
+entity_type: node
+bundle: room
+label: 'Who can reserve this room type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      user_type: user_type
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      views-select-list:
+        status: 1
+      field_default_token:
+        status: true
+field_type: entity_reference

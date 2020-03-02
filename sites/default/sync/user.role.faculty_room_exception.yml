@@ -1,0 +1,16 @@
+uuid: 8d18b9b6-3121-459c-8441-20a3fb2ef8f8
+langcode: en
+status: true
+dependencies: {  }
+id: faculty_room_exception
+label: 'faculty room exception'
+weight: 8
+is_admin: null
+permissions:
+  - 'create faculty studyroom_reservation'
+  - 'create faculty_graduate studyroom_reservation'
+  - 'delete own faculty studyroom_reservation'
+  - 'delete own faculty_graduate studyroom_reservation'
+  - 'display EU Cookie Compliance popup'
+  - 'edit own faculty studyroom_reservation'
+  - 'edit own faculty_graduate studyroom_reservation'

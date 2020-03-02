@@ -1,0 +1,10 @@
+uuid: 1f337713-11df-465f-b41b-2947250a8448
+langcode: en
+status: true
+dependencies: {  }
+id: image_large_left_text_right
+label: 'Image Large Left + Text Right'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from paragraph bundle Image Large Left + Text Right'
+behavior_plugins: {  }

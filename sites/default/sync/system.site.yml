@@ -1,11 +1,11 @@
 uuid: 890fb306-12bd-4bbb-af44-d96fd2cf11c4
-name: 'D8 dev 2'
-mail: kdaviswx@ou.edu
+name: 'University of Oklahoma Libraries'
+mail: lib-noreply@ou.edu
 slogan: ''
 page:
-  403: ''
-  404: ''
-  front: /user/login
+  403: /
+  404: /
+  front: /frontpage
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

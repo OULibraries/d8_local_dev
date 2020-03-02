@@ -1,0 +1,27 @@
+uuid: 0645c1b9-d79b-4d24-8611-915d25212594
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mass_contact_attachments
+    - node.type.mass_contact
+  module:
+    - file
+id: node.mass_contact.field_mass_contact_attachments
+field_name: field_mass_contact_attachments
+entity_type: node
+bundle: mass_contact
+label: Attachments
+description: 'Any attachments that were included in the message.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: txt
+  file_directory: ''
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

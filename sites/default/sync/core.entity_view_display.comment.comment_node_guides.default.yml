@@ -1,0 +1,28 @@
+uuid: 613dd2b1-abe2-40d6-998d-a3cad2fc2e04
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_guides
+    - field.field.comment.comment_node_guides.comment_body
+  module:
+    - text
+id: comment.comment_node_guides.default
+targetEntityType: comment
+bundle: comment_node_guides
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true

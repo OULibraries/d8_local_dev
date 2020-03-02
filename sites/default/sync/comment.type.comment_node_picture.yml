@@ -1,0 +1,8 @@
+uuid: aec1ab0a-4b63-441c-9f79-4f41d7e42da6
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_picture
+label: 'Picture comment'
+target_entity_type_id: node
+description: null

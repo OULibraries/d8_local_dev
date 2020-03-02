@@ -1,0 +1,32 @@
+uuid: be29df21-4726-4231-871c-1bd7ea92f2c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.locations
+    - node.type.special_collections
+id: node.special_collections.field_location
+field_name: field_location
+entity_type: node
+bundle: special_collections
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    behaviors:
+      field_default_token:
+        status: true
+      views-select-list:
+        status: 1
+    sort:
+      field: _none
+      direction: ASC
+    target_bundles:
+      locations: locations
+field_type: entity_reference

@@ -1,0 +1,26 @@
+uuid: 2a79500a-181d-486d-a926-1e6ede3ac554
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_occupancy
+    - node.type.room
+    - taxonomy.vocabulary.occupancy
+id: node.room.field_occupancy
+field_name: field_occupancy
+entity_type: node
+bundle: room
+label: Occupancy
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      occupancy: occupancy
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

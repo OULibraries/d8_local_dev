@@ -1,0 +1,21 @@
+uuid: 65fc8b3a-7d2b-4f47-b1cf-c89ec1f5080d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sustainability
+    - node.type.project_prospectus
+  module:
+    - text
+id: node.project_prospectus.field_sustainability
+field_name: field_sustainability
+entity_type: node
+bundle: project_prospectus
+label: Sustainability
+description: 'Describe the considerations for project sustainability planning. What are the goals for sustainability? What are the risks to sustainability?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

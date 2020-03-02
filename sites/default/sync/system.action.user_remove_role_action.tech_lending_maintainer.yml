@@ -1,0 +1,14 @@
+uuid: 5f7db4ef-4d81-4528-8410-a25b38969334
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.tech_lending_maintainer
+  module:
+    - user
+id: user_remove_role_action.tech_lending_maintainer
+label: 'Remove the Tech Lending Maintainer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: tech_lending_maintainer

@@ -1,0 +1,12 @@
+uuid: 3d57d20b-4f73-4502-910e-fa1ab307dba6
+langcode: en
+status: true
+dependencies: {  }
+id: mass_contact_test_vicky
+label: 'mass contact test vicky'
+weight: 32
+is_admin: null
+permissions:
+  - 'display EU Cookie Compliance popup'
+  - 'mass contact send to users in the Test - Vicky category'
+  - 'mass contact send to users in the Test category'

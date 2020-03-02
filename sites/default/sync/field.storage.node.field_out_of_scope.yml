@@ -1,0 +1,19 @@
+uuid: a7ef1a2f-9ca6-4e05-845b-3ac3ee1cf645
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_out_of_scope
+field_name: field_out_of_scope
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

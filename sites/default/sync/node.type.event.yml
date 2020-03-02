@@ -1,0 +1,16 @@
+uuid: a82cdcc4-4c36-456e-998e-615a7ce69a39
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main-menu:0:'
+name: Event
+type: event
+description: 'Use <i>event</i> to add events to the site.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

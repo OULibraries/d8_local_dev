@@ -1,0 +1,14 @@
+uuid: 6829d7c2-f36c-4561-ad09-88642c6afaac
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.lib_guide_maintainer
+  module:
+    - user
+id: user_add_role_action.lib_guide_maintainer
+label: 'Add the Lib Guide Maintainer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: lib_guide_maintainer

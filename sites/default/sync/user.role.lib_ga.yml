@@ -1,0 +1,10 @@
+uuid: 320da481-2c7f-4b08-85bd-2cc43bdcaf77
+langcode: en
+status: true
+dependencies: {  }
+id: lib_ga
+label: Lib-ga
+weight: 16
+is_admin: null
+permissions:
+  - 'display EU Cookie Compliance popup'

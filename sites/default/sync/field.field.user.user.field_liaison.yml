@@ -1,0 +1,27 @@
+uuid: da5d4755-0204-4979-b1ab-6f0a49804dd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_liaison
+    - taxonomy.vocabulary.liaisons
+  module:
+    - user
+id: user.user.field_liaison
+field_name: field_liaison
+entity_type: user
+bundle: user
+label: Liaison
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      liaisons: liaisons
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: 43d18305-734a-4700-adf1-abb871f6ea79
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mass_contact
+  module:
+    - user
+id: user_remove_role_action.mass_contact
+label: 'Remove the mass_contact role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: mass_contact

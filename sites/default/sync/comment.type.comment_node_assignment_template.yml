@@ -1,0 +1,8 @@
+uuid: ae92defe-095b-4bc7-afa0-6ea4076dd5c4
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_assignment_template
+label: 'Assignment Template comment'
+target_entity_type_id: node
+description: null

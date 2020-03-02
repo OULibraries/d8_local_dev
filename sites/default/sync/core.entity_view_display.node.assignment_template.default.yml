@@ -1,0 +1,177 @@
+uuid: 1aa35c6b-b837-47be-a950-2d1c17f0b59a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.assignment_template.body
+    - field.field.node.assignment_template.field_add_step1
+    - field.field.node.assignment_template.field_add_step10
+    - field.field.node.assignment_template.field_add_step11
+    - field.field.node.assignment_template.field_add_step12
+    - field.field.node.assignment_template.field_add_step13
+    - field.field.node.assignment_template.field_add_step14
+    - field.field.node.assignment_template.field_add_step2
+    - field.field.node.assignment_template.field_add_step3
+    - field.field.node.assignment_template.field_add_step4
+    - field.field.node.assignment_template.field_add_step5
+    - field.field.node.assignment_template.field_add_step6
+    - field.field.node.assignment_template.field_add_step7
+    - field.field.node.assignment_template.field_add_step8
+    - field.field.node.assignment_template.field_add_step9
+    - field.field.node.assignment_template.field_date_complete1
+    - field.field.node.assignment_template.field_date_complete10
+    - field.field.node.assignment_template.field_date_complete11
+    - field.field.node.assignment_template.field_date_complete12
+    - field.field.node.assignment_template.field_date_complete13
+    - field.field.node.assignment_template.field_date_complete14
+    - field.field.node.assignment_template.field_date_complete15
+    - field.field.node.assignment_template.field_date_complete2
+    - field.field.node.assignment_template.field_date_complete3
+    - field.field.node.assignment_template.field_date_complete4
+    - field.field.node.assignment_template.field_date_complete5
+    - field.field.node.assignment_template.field_date_complete6
+    - field.field.node.assignment_template.field_date_complete7
+    - field.field.node.assignment_template.field_date_complete8
+    - field.field.node.assignment_template.field_date_complete9
+    - field.field.node.assignment_template.field_percentage1
+    - field.field.node.assignment_template.field_percentage10
+    - field.field.node.assignment_template.field_percentage11
+    - field.field.node.assignment_template.field_percentage12
+    - field.field.node.assignment_template.field_percentage13
+    - field.field.node.assignment_template.field_percentage14
+    - field.field.node.assignment_template.field_percentage15
+    - field.field.node.assignment_template.field_percentage2
+    - field.field.node.assignment_template.field_percentage3
+    - field.field.node.assignment_template.field_percentage4
+    - field.field.node.assignment_template.field_percentage5
+    - field.field.node.assignment_template.field_percentage6
+    - field.field.node.assignment_template.field_percentage7
+    - field.field.node.assignment_template.field_percentage8
+    - field.field.node.assignment_template.field_percentage9
+    - field.field.node.assignment_template.field_resources1
+    - field.field.node.assignment_template.field_resources10
+    - field.field.node.assignment_template.field_resources11
+    - field.field.node.assignment_template.field_resources12
+    - field.field.node.assignment_template.field_resources13
+    - field.field.node.assignment_template.field_resources14
+    - field.field.node.assignment_template.field_resources15
+    - field.field.node.assignment_template.field_resources2
+    - field.field.node.assignment_template.field_resources3
+    - field.field.node.assignment_template.field_resources4
+    - field.field.node.assignment_template.field_resources5
+    - field.field.node.assignment_template.field_resources6
+    - field.field.node.assignment_template.field_resources7
+    - field.field.node.assignment_template.field_resources8
+    - field.field.node.assignment_template.field_resources9
+    - field.field.node.assignment_template.field_step_title1
+    - field.field.node.assignment_template.field_step_title10
+    - field.field.node.assignment_template.field_step_title11
+    - field.field.node.assignment_template.field_step_title12
+    - field.field.node.assignment_template.field_step_title13
+    - field.field.node.assignment_template.field_step_title14
+    - field.field.node.assignment_template.field_step_title15
+    - field.field.node.assignment_template.field_step_title2
+    - field.field.node.assignment_template.field_step_title3
+    - field.field.node.assignment_template.field_step_title4
+    - field.field.node.assignment_template.field_step_title5
+    - field.field.node.assignment_template.field_step_title6
+    - field.field.node.assignment_template.field_step_title7
+    - field.field.node.assignment_template.field_step_title8
+    - field.field.node.assignment_template.field_step_title9
+    - node.type.assignment_template
+  module:
+    - text
+    - user
+id: node.assignment_template.default
+targetEntityType: node
+bundle: assignment_template
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_add_step1: true
+  field_add_step10: true
+  field_add_step11: true
+  field_add_step12: true
+  field_add_step13: true
+  field_add_step14: true
+  field_add_step2: true
+  field_add_step3: true
+  field_add_step4: true
+  field_add_step5: true
+  field_add_step6: true
+  field_add_step7: true
+  field_add_step8: true
+  field_add_step9: true
+  field_date_complete1: true
+  field_date_complete10: true
+  field_date_complete11: true
+  field_date_complete12: true
+  field_date_complete13: true
+  field_date_complete14: true
+  field_date_complete15: true
+  field_date_complete2: true
+  field_date_complete3: true
+  field_date_complete4: true
+  field_date_complete5: true
+  field_date_complete6: true
+  field_date_complete7: true
+  field_date_complete8: true
+  field_date_complete9: true
+  field_percentage1: true
+  field_percentage10: true
+  field_percentage11: true
+  field_percentage12: true
+  field_percentage13: true
+  field_percentage14: true
+  field_percentage15: true
+  field_percentage2: true
+  field_percentage3: true
+  field_percentage4: true
+  field_percentage5: true
+  field_percentage6: true
+  field_percentage7: true
+  field_percentage8: true
+  field_percentage9: true
+  field_resources1: true
+  field_resources10: true
+  field_resources11: true
+  field_resources12: true
+  field_resources13: true
+  field_resources14: true
+  field_resources15: true
+  field_resources2: true
+  field_resources3: true
+  field_resources4: true
+  field_resources5: true
+  field_resources6: true
+  field_resources7: true
+  field_resources8: true
+  field_resources9: true
+  field_step_title1: true
+  field_step_title10: true
+  field_step_title11: true
+  field_step_title12: true
+  field_step_title13: true
+  field_step_title14: true
+  field_step_title15: true
+  field_step_title2: true
+  field_step_title3: true
+  field_step_title4: true
+  field_step_title5: true
+  field_step_title6: true
+  field_step_title7: true
+  field_step_title8: true
+  field_step_title9: true

@@ -1,0 +1,8 @@
+uuid: 311e4ffc-6d43-4b66-ae3f-32377a71036a
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_project_prospectus
+label: 'Project Prospectus comment'
+target_entity_type_id: node
+description: null

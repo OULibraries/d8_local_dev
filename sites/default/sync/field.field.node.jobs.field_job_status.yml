@@ -1,0 +1,26 @@
+uuid: 2c52d7e3-4fa4-4fd7-9999-aacd1b4df97b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_status
+    - node.type.jobs
+    - taxonomy.vocabulary.job_type
+id: node.jobs.field_job_status
+field_name: field_job_status
+entity_type: node
+bundle: jobs
+label: 'Job Status'
+description: 'Either Student of Staff'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      job_type: job_type
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

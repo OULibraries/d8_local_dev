@@ -1,0 +1,19 @@
+uuid: 84f57e52-5f49-42e9-b6e1-ea61ac3c7b93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mass_contact_result
+    - node.type.mass_contact
+id: node.mass_contact.field_mass_contact_result
+field_name: field_mass_contact_result
+entity_type: node
+bundle: mass_contact
+label: Result
+description: 'The result of sending this message.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

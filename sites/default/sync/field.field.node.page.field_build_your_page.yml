@@ -1,0 +1,81 @@
+uuid: f07e200f-2c15-47ea-9785-8138a89e8073
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_build_your_page
+    - node.type.page
+    - paragraphs.paragraphs_type.featured_areas
+    - paragraphs.paragraphs_type.featured_areas_alt
+    - paragraphs.paragraphs_type.full_width_image
+    - paragraphs.paragraphs_type.full_width_text
+    - paragraphs.paragraphs_type.image_large_left_text_right
+    - paragraphs.paragraphs_type.image_left_text_right
+    - paragraphs.paragraphs_type.image_right_text_left
+    - paragraphs.paragraphs_type.restricted_download
+    - paragraphs.paragraphs_type.section_header
+    - paragraphs.paragraphs_type.two_column_list
+    - paragraphs.paragraphs_type.two_column_text
+  module:
+    - entity_reference_revisions
+id: node.page.field_build_your_page
+field_name: field_build_your_page
+entity_type: node
+bundle: page
+label: 'Build Your Page'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    negate: 0
+    target_bundles:
+      section_header: section_header
+      full_width_text: full_width_text
+      featured_areas: featured_areas
+      featured_areas_alt: featured_areas_alt
+      image_left_text_right: image_left_text_right
+      image_right_text_left: image_right_text_left
+      two_column_list: two_column_list
+      two_column_text: two_column_text
+      full_width_image: full_width_image
+      restricted_download: restricted_download
+      image_large_left_text_right: image_large_left_text_right
+    target_bundles_drag_drop:
+      section_header:
+        enabled: true
+        weight: -16
+      full_width_text:
+        enabled: true
+        weight: -15
+      featured_areas:
+        enabled: true
+        weight: -14
+      featured_areas_alt:
+        enabled: true
+        weight: -13
+      image_left_text_right:
+        enabled: true
+        weight: -12
+      image_right_text_left:
+        enabled: true
+        weight: -11
+      two_column_list:
+        enabled: true
+        weight: -10
+      two_column_text:
+        enabled: true
+        weight: -9
+      full_width_image:
+        enabled: true
+        weight: 4
+      restricted_download:
+        enabled: true
+        weight: 12
+      image_large_left_text_right:
+        enabled: true
+        weight: 18
+  handler: 'default:paragraph'
+field_type: entity_reference_revisions

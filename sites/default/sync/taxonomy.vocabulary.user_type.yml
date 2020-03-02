@@ -1,0 +1,8 @@
+uuid: fb62d935-f734-4ce7-91a6-300177333e50
+langcode: en
+status: true
+dependencies: {  }
+name: 'User Type'
+vid: user_type
+description: ''
+weight: 0

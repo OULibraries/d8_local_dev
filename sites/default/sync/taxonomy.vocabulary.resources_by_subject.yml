@@ -1,0 +1,8 @@
+uuid: b709f269-c3a9-457b-ae1b-62ac753b07b3
+langcode: en
+status: true
+dependencies: {  }
+name: 'Resources by Subject'
+vid: resources_by_subject
+description: ''
+weight: -3

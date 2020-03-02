@@ -1,0 +1,23 @@
+uuid: dd809e27-84f5-4c53-a72a-b9fc4249535b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lockable
+    - node.type.room
+id: node.room.field_lockable
+field_name: field_lockable
+entity_type: node
+bundle: room
+label: lockable
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Lockable
+  off_label: 'Not Lockable'
+field_type: boolean

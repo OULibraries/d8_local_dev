@@ -1,0 +1,26 @@
+uuid: 180e2ba1-0993-456f-bce0-54118b2ed3db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_available_tech
+    - node.type.room
+    - taxonomy.vocabulary.available_technology
+id: node.room.field_available_tech
+field_name: field_available_tech
+entity_type: node
+bundle: room
+label: 'Available Technology'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      available_technology: available_technology
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

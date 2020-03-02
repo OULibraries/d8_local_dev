@@ -1,0 +1,59 @@
+uuid: 16026f5f-b72a-42bc-b42a-8cf37de645e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_custom_area
+    - node.type.library_stories
+  module:
+    - entity_reference_revisions
+id: node.library_stories.field_custom_area
+field_name: field_custom_area
+entity_type: node
+bundle: library_stories
+label: 'Custom Area'
+description: 'Content in this area will not import to the vision site. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop:
+      featured_areas:
+        enabled: false
+        weight: 2
+      featured_areas_alt:
+        enabled: false
+        weight: 3
+      full_width_image:
+        enabled: false
+        weight: 4
+      full_width_text:
+        enabled: false
+        weight: 5
+      image_left_text_right:
+        enabled: false
+        weight: 6
+      image_right_text_left:
+        enabled: false
+        weight: 7
+      section_header:
+        enabled: false
+        weight: 8
+      two_column_list:
+        enabled: false
+        weight: 9
+      two_column_text:
+        enabled: false
+        weight: 10
+      restricted_download:
+        enabled: false
+        weight: 18
+      image_large_left_text_right:
+        enabled: false
+        weight: 19
+  handler: 'default:paragraph'
+field_type: entity_reference_revisions

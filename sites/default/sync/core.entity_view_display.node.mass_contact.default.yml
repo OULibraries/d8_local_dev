@@ -1,0 +1,43 @@
+uuid: ffac77d1-4cd7-4375-8a94-c520ea4668f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.mass_contact.body
+    - field.field.node.mass_contact.field_mass_contact_attachments
+    - field.field.node.mass_contact.field_mass_contact_bcc
+    - field.field.node.mass_contact.field_mass_contact_category
+    - field.field.node.mass_contact.field_mass_contact_from
+    - field.field.node.mass_contact.field_mass_contact_headers
+    - field.field.node.mass_contact.field_mass_contact_result
+    - field.field.node.mass_contact.field_mass_contact_to
+    - node.type.mass_contact
+  module:
+    - text
+    - user
+id: node.mass_contact.default
+targetEntityType: node
+bundle: mass_contact
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_mass_contact_attachments: true
+  field_mass_contact_bcc: true
+  field_mass_contact_category: true
+  field_mass_contact_from: true
+  field_mass_contact_headers: true
+  field_mass_contact_result: true
+  field_mass_contact_to: true

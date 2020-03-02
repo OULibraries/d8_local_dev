@@ -1,0 +1,8 @@
+uuid: 3025afd4-a192-4193-9238-1ffc698bb4d0
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_jobs
+label: 'Jobs comment'
+target_entity_type_id: node
+description: null

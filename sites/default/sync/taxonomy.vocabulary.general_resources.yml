@@ -1,0 +1,8 @@
+uuid: 9745b961-4541-4859-9453-55ba0fe4751c
+langcode: en
+status: true
+dependencies: {  }
+name: 'General Resources'
+vid: general_resources
+description: 'Describe type of resource'
+weight: -7

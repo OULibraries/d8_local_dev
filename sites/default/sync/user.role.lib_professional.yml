@@ -1,0 +1,10 @@
+uuid: 1ce3902c-1971-489c-ad52-eef58f7a1c42
+langcode: en
+status: true
+dependencies: {  }
+id: lib_professional
+label: Lib-professional
+weight: 15
+is_admin: null
+permissions:
+  - 'display EU Cookie Compliance popup'

@@ -1,0 +1,15 @@
+uuid: 3af244dd-dfad-475c-bd40-bb3deb994e17
+langcode: en
+status: true
+dependencies: {  }
+name: slick_700x360
+label: slick_700x360
+effects:
+  dceae4db-777f-4934-abd9-0d752753ef7c:
+    uuid: dceae4db-777f-4934-abd9-0d752753ef7c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 700
+      height: 435
+      anchor: center-center

@@ -1,0 +1,218 @@
+uuid: 7195d021-a724-4888-be89-1518b444d25d
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_comment
+class: Drupal\comment\Plugin\migrate\D7Comment
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: Comments
+source:
+  plugin: d7_comment
+  constants:
+    entity_type: node
+process:
+  cid:
+    -
+      plugin: get
+      source: cid
+  pid:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: pid
+    -
+      plugin: migration_lookup
+      migration: upgrade_d7_comment
+  entity_id:
+    -
+      plugin: migration_lookup
+      migration:
+        - upgrade_d7_node_announcement
+        - upgrade_d7_node_assignment_template
+        - upgrade_d7_node_banner_images
+        - upgrade_d7_node_blog
+        - upgrade_d7_node_eresources
+        - upgrade_d7_node_event
+        - upgrade_d7_node_guides
+        - upgrade_d7_node_impact_challenge_chapter
+        - upgrade_d7_node_jobs
+        - upgrade_d7_node_lending_technology
+        - upgrade_d7_node_library_stories
+        - upgrade_d7_node_locations
+        - upgrade_d7_node_location_carousel
+        - upgrade_d7_node_mass_contact
+        - upgrade_d7_node_page
+        - upgrade_d7_node_panel
+        - upgrade_d7_node_picture
+        - upgrade_d7_node_policy
+        - upgrade_d7_node_project_prospectus
+        - upgrade_d7_node_resource_problem
+        - upgrade_d7_node_room
+        - upgrade_d7_node_service
+        - upgrade_d7_node_special_collections
+        - upgrade_d7_node_test
+        - upgrade_d7_node_units
+        - upgrade_d7_node_videos
+        - upgrade_d7_node_webform
+      source: nid
+    -
+      plugin: skip_on_empty
+      method: row
+  entity_type:
+    -
+      plugin: get
+      source: constants/entity_type
+  comment_type:
+    -
+      plugin: migration_lookup
+      source: node_type
+      migration: upgrade_d7_comment_type
+    -
+      plugin: skip_on_empty
+      method: row
+  langcode:
+    -
+      plugin: get
+      source: language
+  field_name:
+    -
+      plugin: get
+      source: '@comment_type'
+  subject:
+    -
+      plugin: get
+      source: subject
+  uid:
+    -
+      plugin: get
+      source: uid
+  name:
+    -
+      plugin: get
+      source: name
+  mail:
+    -
+      plugin: get
+      source: mail
+  homepage:
+    -
+      plugin: get
+      source: homepage
+  hostname:
+    -
+      plugin: get
+      source: hostname
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  status:
+    -
+      plugin: get
+      source: status
+  thread:
+    -
+      plugin: get
+      source: thread
+  comment_body:
+    -
+      plugin: get
+      source: comment_body
+destination:
+  plugin: 'entity:comment'
+migration_dependencies:
+  required:
+    - upgrade_d7_node_announcement
+    - upgrade_d7_node_assignment_template
+    - upgrade_d7_node_banner_images
+    - upgrade_d7_node_blog
+    - upgrade_d7_node_eresources
+    - upgrade_d7_node_event
+    - upgrade_d7_node_guides
+    - upgrade_d7_node_impact_challenge_chapter
+    - upgrade_d7_node_jobs
+    - upgrade_d7_node_lending_technology
+    - upgrade_d7_node_library_stories
+    - upgrade_d7_node_locations
+    - upgrade_d7_node_location_carousel
+    - upgrade_d7_node_mass_contact
+    - upgrade_d7_node_page
+    - upgrade_d7_node_panel
+    - upgrade_d7_node_picture
+    - upgrade_d7_node_policy
+    - upgrade_d7_node_project_prospectus
+    - upgrade_d7_node_resource_problem
+    - upgrade_d7_node_room
+    - upgrade_d7_node_service
+    - upgrade_d7_node_special_collections
+    - upgrade_d7_node_test
+    - upgrade_d7_node_units
+    - upgrade_d7_node_videos
+    - upgrade_d7_node_webform
+    - upgrade_d7_comment_type
+  optional:
+    - upgrade_d7_comment
+    - upgrade_d7_node_announcement
+    - upgrade_d7_node_assignment_template
+    - upgrade_d7_node_banner_images
+    - upgrade_d7_node_blog
+    - upgrade_d7_node_eresources
+    - upgrade_d7_node_event
+    - upgrade_d7_node_guides
+    - upgrade_d7_node_impact_challenge_chapter
+    - upgrade_d7_node_jobs
+    - upgrade_d7_node_lending_technology
+    - upgrade_d7_node_library_stories
+    - upgrade_d7_node_locations
+    - upgrade_d7_node_location_carousel
+    - upgrade_d7_node_mass_contact
+    - upgrade_d7_node_page
+    - upgrade_d7_node_panel
+    - upgrade_d7_node_picture
+    - upgrade_d7_node_policy
+    - upgrade_d7_node_project_prospectus
+    - upgrade_d7_node_resource_problem
+    - upgrade_d7_node_room
+    - upgrade_d7_node_service
+    - upgrade_d7_node_special_collections
+    - upgrade_d7_node_test
+    - upgrade_d7_node_units
+    - upgrade_d7_node_videos
+    - upgrade_d7_node_webform
+    - upgrade_d7_comment_type
+    - upgrade_d7_node_announcement
+    - upgrade_d7_node_assignment_template
+    - upgrade_d7_node_banner_images
+    - upgrade_d7_node_blog
+    - upgrade_d7_node_eresources
+    - upgrade_d7_node_event
+    - upgrade_d7_node_guides
+    - upgrade_d7_node_impact_challenge_chapter
+    - upgrade_d7_node_jobs
+    - upgrade_d7_node_lending_technology
+    - upgrade_d7_node_library_stories
+    - upgrade_d7_node_locations
+    - upgrade_d7_node_location_carousel
+    - upgrade_d7_node_mass_contact
+    - upgrade_d7_node_page
+    - upgrade_d7_node_panel
+    - upgrade_d7_node_picture
+    - upgrade_d7_node_policy
+    - upgrade_d7_node_project_prospectus
+    - upgrade_d7_node_resource_problem
+    - upgrade_d7_node_room
+    - upgrade_d7_node_service
+    - upgrade_d7_node_special_collections
+    - upgrade_d7_node_test
+    - upgrade_d7_node_units
+    - upgrade_d7_node_videos
+    - upgrade_d7_node_webform

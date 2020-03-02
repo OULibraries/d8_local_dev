@@ -1,0 +1,14 @@
+uuid: 1e98a227-160c-44af-8139-6ca210e394eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.liberal_studies
+  module:
+    - user
+id: user_add_role_action.liberal_studies
+label: 'Add the liberal_studies role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: liberal_studies

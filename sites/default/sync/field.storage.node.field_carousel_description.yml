@@ -1,0 +1,20 @@
+uuid: ff35b65f-8e84-4b4b-9af3-fcfbe589906f
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_carousel_description
+field_name: field_carousel_description
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

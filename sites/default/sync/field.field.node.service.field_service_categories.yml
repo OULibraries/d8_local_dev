@@ -1,0 +1,26 @@
+uuid: af36abcd-676d-4018-9161-7a52d8f8986b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_service_categories
+    - node.type.service
+    - taxonomy.vocabulary.service_categories
+id: node.service.field_service_categories
+field_name: field_service_categories
+entity_type: node
+bundle: service
+label: 'Service Categories'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      service_categories: service_categories
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

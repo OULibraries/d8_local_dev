@@ -1,0 +1,14 @@
+uuid: 0da15767-ca9b-4b27-947f-75d7a46930f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.gradstudent
+  module:
+    - user
+id: user_add_role_action.gradstudent
+label: 'Add the gradstudent role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: gradstudent

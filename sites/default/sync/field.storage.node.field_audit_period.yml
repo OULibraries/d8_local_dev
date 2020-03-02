@@ -1,0 +1,33 @@
+uuid: b5da73b5-97dc-4134-9134-57937110529b
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_audit_period
+field_name: field_audit_period
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 3
+      label: '3 Months'
+    -
+      value: 6
+      label: '6 Months'
+    -
+      value: 9
+      label: '9 Months'
+    -
+      value: 12
+      label: '12 Months'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

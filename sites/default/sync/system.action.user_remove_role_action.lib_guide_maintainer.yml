@@ -1,0 +1,14 @@
+uuid: cdefe632-960a-4856-be26-89f0c14a5c4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.lib_guide_maintainer
+  module:
+    - user
+id: user_remove_role_action.lib_guide_maintainer
+label: 'Remove the Lib Guide Maintainer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: lib_guide_maintainer

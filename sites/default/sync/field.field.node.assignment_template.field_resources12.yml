@@ -1,0 +1,21 @@
+uuid: a5650502-79ae-4b2e-afac-c9bf1273bc4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resources12
+    - node.type.assignment_template
+  module:
+    - text
+id: node.assignment_template.field_resources12
+field_name: field_resources12
+entity_type: node
+bundle: assignment_template
+label: Resources
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

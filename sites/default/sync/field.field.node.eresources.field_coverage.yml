@@ -1,0 +1,19 @@
+uuid: 42934f8a-ce4b-4258-b922-2b174425c7a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_coverage
+    - node.type.eresources
+id: node.eresources.field_coverage
+field_name: field_coverage
+entity_type: node
+bundle: eresources
+label: Coverage
+description: 'Coverage is the date range that is represented by this resource, i.e. Historical documents from 1800 - 1910.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

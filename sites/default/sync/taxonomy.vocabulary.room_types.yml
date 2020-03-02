@@ -1,0 +1,8 @@
+uuid: e11512db-02f2-4b36-825b-a27d3f19755c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Room Types'
+vid: room_types
+description: 'Types of rooms available.'
+weight: -2

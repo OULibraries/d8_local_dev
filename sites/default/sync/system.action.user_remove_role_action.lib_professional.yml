@@ -1,0 +1,14 @@
+uuid: b9ec8de5-5de7-483a-a2d1-f2812f02ccf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.lib_professional
+  module:
+    - user
+id: user_remove_role_action.lib_professional
+label: 'Remove the Lib-professional role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: lib_professional

@@ -1,0 +1,34 @@
+uuid: eabe833e-583c-47c8-921b-9ac61ab28c30
+langcode: en
+status: true
+dependencies: {  }
+id: content_maintainer
+label: 'Content Maintainer'
+weight: 29
+is_admin: null
+permissions:
+  - 'clone own nodes'
+  - 'create guides content'
+  - 'create page content'
+  - 'create policy content'
+  - 'create room content'
+  - 'create service content'
+  - 'delete own guides content'
+  - 'delete own page content'
+  - 'delete own policy content'
+  - 'delete own room content'
+  - 'delete own service content'
+  - 'display EU Cookie Compliance popup'
+  - 'edit field_restricted_file'
+  - 'edit own field_restricted_file'
+  - 'edit own guides content'
+  - 'edit own locations content'
+  - 'edit own page content'
+  - 'edit own policy content'
+  - 'edit own room content'
+  - 'edit own service content'
+  - 'edit own units content'
+  - 'use text format full_html'
+  - 'view own field_restricted_file'
+  - 'view own unpublished content'
+  - 'view the administration theme'

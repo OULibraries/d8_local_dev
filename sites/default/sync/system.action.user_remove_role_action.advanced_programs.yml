@@ -1,0 +1,14 @@
+uuid: 1d74dd6a-f198-425e-8be2-5c426a41297c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.advanced_programs
+  module:
+    - user
+id: user_remove_role_action.advanced_programs
+label: 'Remove the advanced_programs role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: advanced_programs

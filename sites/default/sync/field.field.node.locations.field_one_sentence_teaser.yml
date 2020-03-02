@@ -1,0 +1,19 @@
+uuid: 5d300dd2-89a3-4662-8dc6-212ca216e409
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_one_sentence_teaser
+    - node.type.locations
+id: node.locations.field_one_sentence_teaser
+field_name: field_one_sentence_teaser
+entity_type: node
+bundle: locations
+label: 'One Sentence Teaser'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

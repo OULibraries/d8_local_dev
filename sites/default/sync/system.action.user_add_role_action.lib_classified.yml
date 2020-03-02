@@ -1,0 +1,14 @@
+uuid: 7f97c8eb-1c1f-4773-a230-935b855f1dda
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.lib_classified
+  module:
+    - user
+id: user_add_role_action.lib_classified
+label: 'Add the Lib-classified role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: lib_classified

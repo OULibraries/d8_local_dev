@@ -1,0 +1,27 @@
+uuid: 0cca18e9-d097-42d4-88b3-b308cd849a03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_restricted_file
+    - paragraphs.paragraphs_type.restricted_download
+  module:
+    - file
+id: paragraph.restricted_download.field_restricted_file
+field_name: field_restricted_file
+entity_type: paragraph
+bundle: restricted_download
+label: 'Restricted File'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'txt pdf'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

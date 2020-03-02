@@ -1,0 +1,26 @@
+uuid: dc7c1ca4-356c-41b7-891f-7d2bff6b064d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resource_by_subject
+    - node.type.guides
+    - taxonomy.vocabulary.resources_by_subject
+id: node.guides.field_resource_by_subject
+field_name: field_resource_by_subject
+entity_type: node
+bundle: guides
+label: 'Add to Resource by Subject page'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      resources_by_subject: resources_by_subject
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

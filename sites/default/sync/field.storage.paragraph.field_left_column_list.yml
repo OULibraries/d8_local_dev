@@ -1,0 +1,19 @@
+uuid: 9996490d-0e55-42ac-a4e5-1942e0d09ccf
+langcode: und
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_left_column_list
+field_name: field_left_column_list
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,14 @@
+uuid: 9e8c554e-968e-41f4-8163-88f21ca2ae8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.grad_room_exception
+  module:
+    - user
+id: user_add_role_action.grad_room_exception
+label: 'Add the grad room exception role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: grad_room_exception

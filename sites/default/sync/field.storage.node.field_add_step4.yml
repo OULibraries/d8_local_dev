@@ -1,0 +1,18 @@
+uuid: 9204e7f5-02d5-4f53-917d-d5de93845167
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_add_step4
+field_name: field_add_step4
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

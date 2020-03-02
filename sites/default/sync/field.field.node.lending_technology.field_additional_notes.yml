@@ -1,0 +1,21 @@
+uuid: 8204d47f-7423-45d3-8b28-5011978a6c52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_additional_notes
+    - node.type.lending_technology
+  module:
+    - text
+id: node.lending_technology.field_additional_notes
+field_name: field_additional_notes
+entity_type: node
+bundle: lending_technology
+label: 'Additional Notes'
+description: 'Accessories available, booking information, links to help or guides, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

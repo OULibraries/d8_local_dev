@@ -1,0 +1,21 @@
+uuid: 7a9b1a4b-8e07-4670-b3c2-a27c95b5bb0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_scheduling
+    - node.type.project_prospectus
+  module:
+    - text
+id: node.project_prospectus.field_scheduling
+field_name: field_scheduling
+entity_type: node
+bundle: project_prospectus
+label: 'Scheduling Considerations'
+description: 'Describe any factors that may impact or define the project timeline. If the project has funding, what are the guidelines imposed for completion of the project/grant?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

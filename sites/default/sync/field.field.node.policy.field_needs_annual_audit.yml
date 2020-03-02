@@ -1,0 +1,23 @@
+uuid: 323f55f9-2140-40e2-996a-78159a17b012
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_needs_annual_audit
+    - node.type.policy
+id: node.policy.field_needs_annual_audit
+field_name: field_needs_annual_audit
+entity_type: node
+bundle: policy
+label: 'Needs Annual Audit'
+description: 'Uncheck this box once your review of content is complete.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'The system has flagged this for annual review'
+  off_label: ''
+field_type: boolean

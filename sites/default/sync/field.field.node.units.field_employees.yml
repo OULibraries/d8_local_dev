@@ -1,0 +1,30 @@
+uuid: 3a485f31-5fb4-4cb4-8206-6459a413f3a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_employees
+    - node.type.units
+id: node.units.field_employees
+field_name: field_employees
+entity_type: node
+bundle: units
+label: Employees
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    behaviors:
+      field_default_token:
+        status: true
+      views-select-list:
+        status: 0
+field_type: entity_reference

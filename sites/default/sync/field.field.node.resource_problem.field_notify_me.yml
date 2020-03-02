@@ -1,0 +1,21 @@
+uuid: 023f41d4-4590-4355-b6c1-6c83965d34af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_notify_me
+    - node.type.resource_problem
+id: node.resource_problem.field_notify_me
+field_name: field_notify_me
+entity_type: node
+bundle: resource_problem
+label: 'Notify me when the status is changed'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Notify me when the status is changed'
+  off_label: ''
+field_type: boolean

@@ -1,0 +1,25 @@
+uuid: 5d0ae97d-8ab6-46ac-8191-982dd13a9c4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.locations
+  module:
+    - address
+id: node.locations.field_address
+field_name: field_address
+entity_type: node
+bundle: locations
+label: Address
+description: 'Enter in the postal address of this location.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides: {  }
+  fields: {  }
+field_type: address

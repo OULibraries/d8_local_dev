@@ -1,0 +1,19 @@
+uuid: aee799c8-93f2-4940-911e-2c6ae33f15bb
+langcode: und
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_endnote
+field_name: field_endnote
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

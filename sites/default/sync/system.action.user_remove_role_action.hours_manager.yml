@@ -1,0 +1,14 @@
+uuid: 2e66dc14-002e-4d2e-a0fa-bda519207a72
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.hours_manager
+  module:
+    - user
+id: user_remove_role_action.hours_manager
+label: 'Remove the hours manager role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: hours_manager

@@ -1,0 +1,8 @@
+uuid: 43cfdfec-d35b-40fe-830d-f1ef816f5790
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_eresources
+label: 'E-Resources comment'
+target_entity_type_id: node
+description: null

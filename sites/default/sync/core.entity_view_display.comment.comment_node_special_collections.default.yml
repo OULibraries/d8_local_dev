@@ -1,0 +1,28 @@
+uuid: 70aa8dec-ebca-432a-9716-795315ce099e
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_special_collections
+    - field.field.comment.comment_node_special_collections.comment_body
+  module:
+    - text
+id: comment.comment_node_special_collections.default
+targetEntityType: comment
+bundle: comment_node_special_collections
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true

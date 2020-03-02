@@ -1,0 +1,16 @@
+uuid: 20b43259-180a-47d9-b274-402d3198a8ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main-menu:0:'
+name: Locations
+type: locations
+description: 'Use <i>locations</i> to add a new high-level location to the site.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

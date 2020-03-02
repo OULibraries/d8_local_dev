@@ -1,0 +1,21 @@
+uuid: 152da92d-0444-449a-b5d5-65bf4f64f03d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_out_of_scope
+    - node.type.project_prospectus
+  module:
+    - text
+id: node.project_prospectus.field_out_of_scope
+field_name: field_out_of_scope
+entity_type: node
+bundle: project_prospectus
+label: 'Out of Scope'
+description: 'Define the limits/boundaries of the project.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

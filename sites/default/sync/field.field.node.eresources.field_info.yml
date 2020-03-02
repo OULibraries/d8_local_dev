@@ -1,0 +1,21 @@
+uuid: 469ea105-3a12-4e15-b73a-bb70f7bad396
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_info
+    - node.type.eresources
+  module:
+    - text
+id: node.eresources.field_info
+field_name: field_info
+entity_type: node
+bundle: eresources
+label: 'More Info'
+description: 'Enter more information about licensing, online help guides, and simultaneous users.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

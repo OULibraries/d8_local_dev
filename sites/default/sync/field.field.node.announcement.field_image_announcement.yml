@@ -1,0 +1,38 @@
+uuid: c88d90fa-b6a1-4890-8f4d-57f24d1d396f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_announcement
+    - node.type.announcement
+  module:
+    - image
+id: node.announcement.field_image_announcement
+field_name: field_image_announcement
+entity_type: node
+bundle: announcement
+label: 'Upload Image'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  title_field: false
+  default_image:
+    alt: ''
+    title: ''
+    width: null
+    height: null
+    uuid: ''
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

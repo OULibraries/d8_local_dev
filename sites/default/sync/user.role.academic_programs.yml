@@ -1,0 +1,10 @@
+uuid: 41926000-584d-4991-a429-e5cfb0077040
+langcode: en
+status: true
+dependencies: {  }
+id: academic_programs
+label: academic_programs
+weight: 27
+is_admin: null
+permissions:
+  - 'display EU Cookie Compliance popup'

@@ -1,0 +1,21 @@
+uuid: 73cec3bc-f7d1-429d-bb30-7cf1f643ff4c
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_step_title14
+field_name: field_step_title14
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

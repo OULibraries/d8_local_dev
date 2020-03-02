@@ -1,0 +1,21 @@
+uuid: 8fdebaad-65f6-4e7f-8f9b-c8abf5378789
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_last_updated
+    - node.type.page
+  module:
+    - datetime
+id: node.page.field_last_updated
+field_name: field_last_updated
+entity_type: node
+bundle: page
+label: 'Last Audit Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

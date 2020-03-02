@@ -1,0 +1,26 @@
+uuid: 61ec2c60-aa55-4569-9669-379098cee4b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_room_type
+    - node.type.room
+    - taxonomy.vocabulary.room_types
+id: node.room.field_room_type
+field_name: field_room_type
+entity_type: node
+bundle: room
+label: 'Room Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      room_types: room_types
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

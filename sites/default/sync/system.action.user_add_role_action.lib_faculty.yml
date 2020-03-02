@@ -1,0 +1,14 @@
+uuid: e40efcae-b648-4fac-b946-dee70221d335
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.lib_faculty
+  module:
+    - user
+id: user_add_role_action.lib_faculty
+label: 'Add the Lib-faculty role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: lib_faculty

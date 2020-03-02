@@ -1,0 +1,19 @@
+uuid: 4d783987-fd0c-4866-822e-188fc4910886
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_overdue_fee
+    - node.type.lending_technology
+id: node.lending_technology.field_overdue_fee
+field_name: field_overdue_fee
+entity_type: node
+bundle: lending_technology
+label: 'Overdue Fee'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

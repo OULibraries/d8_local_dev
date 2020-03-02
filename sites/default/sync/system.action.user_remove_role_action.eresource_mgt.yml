@@ -1,0 +1,14 @@
+uuid: c89dbeaa-a2f6-4184-9b95-1c17b4016186
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.eresource_mgt
+  module:
+    - user
+id: user_remove_role_action.eresource_mgt
+label: 'Remove the Eresource-mgt role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: eresource_mgt

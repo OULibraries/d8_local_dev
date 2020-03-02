@@ -5,11 +5,21 @@ dependencies: {  }
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
-label: 'Anonymous user'
+label: 'anonymous user'
 weight: 0
 is_admin: false
 permissions:
+  - 'access comments'
   - 'access content'
-  - 'display eu cookie compliance popup'
-  - 'use exclude node title'
-  - 'view media'
+  - 'access gmap getdirections'
+  - 'access print'
+  - 'access send by email'
+  - 'access site-wide contact form'
+  - 'access user contact forms'
+  - 'access user profiles'
+  - 'create field_title'
+  - 'display EU Cookie Compliance popup'
+  - 'search content'
+  - 'use text format filtered_html'
+  - 'view field_title'
+  - 'view own field_title'

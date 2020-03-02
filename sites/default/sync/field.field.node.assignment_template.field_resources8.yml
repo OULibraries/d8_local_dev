@@ -1,0 +1,21 @@
+uuid: 3f6326c5-c4c3-4865-9993-638e4008d4dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resources8
+    - node.type.assignment_template
+  module:
+    - text
+id: node.assignment_template.field_resources8
+field_name: field_resources8
+entity_type: node
+bundle: assignment_template
+label: Resources
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

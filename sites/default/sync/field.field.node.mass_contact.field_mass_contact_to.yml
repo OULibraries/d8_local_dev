@@ -1,0 +1,19 @@
+uuid: a3077318-ec02-44f3-907d-0cde408445c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mass_contact_to
+    - node.type.mass_contact
+id: node.mass_contact.field_mass_contact_to
+field_name: field_mass_contact_to
+entity_type: node
+bundle: mass_contact
+label: To
+description: 'The person or people the message was sent to.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

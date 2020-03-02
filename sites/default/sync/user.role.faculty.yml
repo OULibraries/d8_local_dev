@@ -1,0 +1,18 @@
+uuid: 2afc84e8-094f-48c5-805f-2c6a3cc19716
+langcode: en
+status: true
+dependencies: {  }
+id: faculty
+label: faculty
+weight: 6
+is_admin: null
+permissions:
+  - 'access spaces'
+  - 'create faculty studyroom_reservation'
+  - 'create faculty_graduate studyroom_reservation'
+  - 'delete own faculty studyroom_reservation'
+  - 'delete own faculty_graduate studyroom_reservation'
+  - 'display EU Cookie Compliance popup'
+  - 'edit own faculty studyroom_reservation'
+  - 'edit own faculty_graduate studyroom_reservation'
+  - 'view the administration theme'

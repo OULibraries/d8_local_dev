@@ -1,0 +1,10 @@
+uuid: 6c64d01a-a595-49e7-96a6-48482791fecc
+langcode: en
+status: true
+dependencies: {  }
+id: restricted_download
+label: 'Restricted Download'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from paragraph bundle Restricted Download'
+behavior_plugins: {  }

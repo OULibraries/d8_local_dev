@@ -1,0 +1,17 @@
+uuid: 567c51b8-9c69-476f-9b08-f43af0f10c12
+langcode: en
+status: true
+dependencies: {  }
+id: grad_room_exception
+label: 'grad room exception'
+weight: 9
+is_admin: null
+permissions:
+  - 'access spaces'
+  - 'create faculty_graduate studyroom_reservation'
+  - 'create graduate_student studyroom_reservation'
+  - 'delete own faculty_graduate studyroom_reservation'
+  - 'delete own graduate_student studyroom_reservation'
+  - 'display EU Cookie Compliance popup'
+  - 'edit own faculty_graduate studyroom_reservation'
+  - 'edit own graduate_student studyroom_reservation'

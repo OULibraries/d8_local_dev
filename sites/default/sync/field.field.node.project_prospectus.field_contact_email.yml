@@ -1,0 +1,19 @@
+uuid: 0e4f83cc-4edd-4b75-9740-5807ef22d0d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_email
+    - node.type.project_prospectus
+id: node.project_prospectus.field_contact_email
+field_name: field_contact_email
+entity_type: node
+bundle: project_prospectus
+label: 'Contact Email'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

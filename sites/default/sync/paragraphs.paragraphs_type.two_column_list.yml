@@ -1,0 +1,10 @@
+uuid: 9358d3c0-5c5d-4abd-813b-d73a6844c4ea
+langcode: en
+status: true
+dependencies: {  }
+id: two_column_list
+label: 'Two Column List'
+icon_uuid: null
+icon_default: null
+description: 'Migrated from paragraph bundle Two Column List'
+behavior_plugins: {  }

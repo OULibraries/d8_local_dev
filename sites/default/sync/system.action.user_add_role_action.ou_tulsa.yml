@@ -1,0 +1,14 @@
+uuid: f42c888c-b1ba-4e62-b0fb-4f1f6fc92eac
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ou_tulsa
+  module:
+    - user
+id: user_add_role_action.ou_tulsa
+label: 'Add the ou_tulsa role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: ou_tulsa

@@ -1,0 +1,26 @@
+uuid: 7684a413-e109-49ea-aa0b-1d742b95f3f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resource_by_subject
+    - node.type.eresources
+    - taxonomy.vocabulary.resources_by_subject
+id: node.eresources.field_resource_by_subject
+field_name: field_resource_by_subject
+entity_type: node
+bundle: eresources
+label: 'Resources by Subject'
+description: 'Add to the Getting Started section of any subject listed below. You may add to more than on resource page by using a comma to separate each selection.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      resources_by_subject: resources_by_subject
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

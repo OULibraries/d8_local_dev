@@ -1,0 +1,21 @@
+uuid: c091326d-fe70-4d72-8c6f-d7ec60e77da6
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_step_title6
+field_name: field_step_title6
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

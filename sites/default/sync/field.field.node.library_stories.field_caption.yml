@@ -1,0 +1,19 @@
+uuid: bbb008e9-c962-4bc0-87a7-fe66b5d5a6ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_caption
+    - node.type.library_stories
+id: node.library_stories.field_caption
+field_name: field_caption
+entity_type: node
+bundle: library_stories
+label: Caption
+description: 'This caption will show up on index pages and search results.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

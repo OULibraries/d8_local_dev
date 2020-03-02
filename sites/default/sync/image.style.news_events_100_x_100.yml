@@ -1,0 +1,15 @@
+uuid: 835aadb8-1141-4cdd-ab2f-4d5d1d574941
+langcode: en
+status: true
+dependencies: {  }
+name: news_events_100_x_100
+label: 'News Events 100 x 100'
+effects:
+  545b58ec-979c-4d52-82ec-068259f1fd6f:
+    uuid: 545b58ec-979c-4d52-82ec-068259f1fd6f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 80
+      height: 80
+      anchor: center-center

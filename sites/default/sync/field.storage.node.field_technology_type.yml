@@ -1,0 +1,51 @@
+uuid: b3c26c87-b4a7-4582-8ddc-f9134b441c87
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_technology_type
+field_name: field_technology_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: laptop
+      label: 'Laptop and Laptop Accessories'
+    -
+      value: camera
+      label: 'Digital Cameras, Camcorders, and Accessories'
+    -
+      value: audio
+      label: 'Audio Recording and Accessories'
+    -
+      value: presentation
+      label: 'Presentation Technology'
+    -
+      value: phone
+      label: 'Phone Chargers and Accessories'
+    -
+      value: calculator
+      label: Calculators
+    -
+      value: othertech
+      label: 'Other Technology'
+    -
+      value: otheradapters
+      label: 'Other Adapters'
+    -
+      value: telescope
+      label: 'Telescopes, Binoculars, and Accessories'
+    -
+      value: power
+      label: 'Power Cords and Chargers'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,10 @@
+uuid: 774618a4-98f7-4a61-95c6-0a8679e45676
+langcode: en
+status: true
+dependencies: {  }
+id: advanced_programs
+label: advanced_programs
+weight: 24
+is_admin: null
+permissions:
+  - 'display EU Cookie Compliance popup'

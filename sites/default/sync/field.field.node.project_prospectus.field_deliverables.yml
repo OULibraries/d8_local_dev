@@ -1,0 +1,21 @@
+uuid: 481eed9c-3af7-417c-9892-9dc1a54f1fe1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_deliverables
+    - node.type.project_prospectus
+  module:
+    - text
+id: node.project_prospectus.field_deliverables
+field_name: field_deliverables
+entity_type: node
+bundle: project_prospectus
+label: Deliverables
+description: 'Describe the end product(s) of the project. Do you have a model in mind for part or all of your project?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

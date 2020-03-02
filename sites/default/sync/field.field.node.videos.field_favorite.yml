@@ -1,0 +1,23 @@
+uuid: 539cfb95-194a-43ae-9c60-8a14274b1c20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_favorite
+    - node.type.videos
+id: node.videos.field_favorite
+field_name: field_favorite
+entity_type: node
+bundle: videos
+label: 'Add to News & Events Carousel'
+description: 'Check this box if you want this video to be displayed on the carousel on the News & Events page.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: ''
+  off_label: ''
+field_type: boolean

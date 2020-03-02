@@ -1,0 +1,136 @@
+uuid: d47d972f-ccb3-44a2-8b7b-1d544cc1cd4a
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_taxonomy_term_room_features
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Taxonomy terms (Room Features)'
+source:
+  plugin: d7_taxonomy_term
+  bundle: room_features
+process:
+  tid:
+    -
+      plugin: get
+      source: tid
+  vid:
+    -
+      plugin: migration_lookup
+      migration: upgrade_d7_taxonomy_vocabulary
+      source: vid
+  name:
+    -
+      plugin: get
+      source: name
+  description/value:
+    -
+      plugin: get
+      source: description
+  description/format:
+    -
+      plugin: get
+      source: format
+  weight:
+    -
+      plugin: get
+      source: weight
+  parent_id:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: parent
+    -
+      plugin: migration_lookup
+      migration:
+        - upgrade_d7_taxonomy_term_pillars
+        - upgrade_d7_taxonomy_term_employee_status
+        - upgrade_d7_taxonomy_term_initiatives
+        - upgrade_d7_taxonomy_term_marketing_projects
+        - upgrade_d7_taxonomy_term_space_category
+        - upgrade_d7_taxonomy_term_room_features
+        - upgrade_d7_taxonomy_term_user_type
+        - upgrade_d7_taxonomy_term_professional_keywords
+        - upgrade_d7_taxonomy_term_job_type
+        - upgrade_d7_taxonomy_term_occupancy
+        - upgrade_d7_taxonomy_term_room_types
+        - upgrade_d7_taxonomy_term_available_technology
+        - upgrade_d7_taxonomy_term_service_categories
+        - upgrade_d7_taxonomy_term_liaisons
+        - upgrade_d7_taxonomy_term_departments
+        - upgrade_d7_taxonomy_term_resources_by_subject
+        - upgrade_d7_taxonomy_term_e_resources
+        - upgrade_d7_taxonomy_term_location_type
+        - upgrade_d7_taxonomy_term_general_resources
+        - upgrade_d7_taxonomy_term_architecture
+  parent:
+    -
+      plugin: default_value
+      default_value: 0
+      source: '@parent_id'
+  forum_container:
+    -
+      plugin: get
+      source: is_container
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  langcode:
+    -
+      plugin: get
+      source: language
+destination:
+  plugin: 'entity:taxonomy_term'
+  default_bundle: room_features
+migration_dependencies:
+  required:
+    - upgrade_d7_taxonomy_vocabulary
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_taxonomy_vocabulary
+    - upgrade_d7_taxonomy_term_architecture
+    - upgrade_d7_taxonomy_term_general_resources
+    - upgrade_d7_taxonomy_term_location_type
+    - upgrade_d7_taxonomy_term_e_resources
+    - upgrade_d7_taxonomy_term_resources_by_subject
+    - upgrade_d7_taxonomy_term_departments
+    - upgrade_d7_taxonomy_term_liaisons
+    - upgrade_d7_taxonomy_term_service_categories
+    - upgrade_d7_taxonomy_term_available_technology
+    - upgrade_d7_taxonomy_term_room_types
+    - upgrade_d7_taxonomy_term_occupancy
+    - upgrade_d7_taxonomy_term_job_type
+    - upgrade_d7_taxonomy_term_professional_keywords
+    - upgrade_d7_taxonomy_term_user_type
+    - upgrade_d7_taxonomy_term_room_features
+    - upgrade_d7_taxonomy_term_space_category
+    - upgrade_d7_taxonomy_term_marketing_projects
+    - upgrade_d7_taxonomy_term_initiatives
+    - upgrade_d7_taxonomy_term_employee_status
+    - upgrade_d7_taxonomy_term_pillars
+    - upgrade_d7_taxonomy_term_pillars
+    - upgrade_d7_taxonomy_term_employee_status
+    - upgrade_d7_taxonomy_term_initiatives
+    - upgrade_d7_taxonomy_term_marketing_projects
+    - upgrade_d7_taxonomy_term_space_category
+    - upgrade_d7_taxonomy_term_room_features
+    - upgrade_d7_taxonomy_term_user_type
+    - upgrade_d7_taxonomy_term_professional_keywords
+    - upgrade_d7_taxonomy_term_job_type
+    - upgrade_d7_taxonomy_term_occupancy
+    - upgrade_d7_taxonomy_term_room_types
+    - upgrade_d7_taxonomy_term_available_technology
+    - upgrade_d7_taxonomy_term_service_categories
+    - upgrade_d7_taxonomy_term_liaisons
+    - upgrade_d7_taxonomy_term_departments
+    - upgrade_d7_taxonomy_term_resources_by_subject
+    - upgrade_d7_taxonomy_term_e_resources
+    - upgrade_d7_taxonomy_term_location_type
+    - upgrade_d7_taxonomy_term_general_resources
+    - upgrade_d7_taxonomy_term_architecture

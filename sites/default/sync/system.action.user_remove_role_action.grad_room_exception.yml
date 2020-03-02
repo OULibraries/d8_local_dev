@@ -1,0 +1,14 @@
+uuid: 157bc65a-e72d-4d36-8760-ec12b9ed0c37
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.grad_room_exception
+  module:
+    - user
+id: user_remove_role_action.grad_room_exception
+label: 'Remove the grad room exception role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: grad_room_exception

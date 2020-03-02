@@ -1,0 +1,23 @@
+uuid: deb00130-b47d-473d-af2c-5f1513001dd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_add_step12
+    - node.type.assignment_template
+id: node.assignment_template.field_add_step12
+field_name: field_add_step12
+entity_type: node
+bundle: assignment_template
+label: 'Add Step'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: ''
+  off_label: ''
+field_type: boolean

@@ -1,0 +1,14 @@
+uuid: 8a6d58da-47c7-4af6-a159-b8ece1179500
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.pr_team
+  module:
+    - user
+id: user_add_role_action.pr_team
+label: 'Add the PR Team role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: pr_team

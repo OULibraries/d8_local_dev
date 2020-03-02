@@ -3,8 +3,28 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_appointment
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_departments
+    - field.field.user.user.field_employee_status
+    - field.field.user.user.field_firstname
+    - field.field.user.user.field_lastname
+    - field.field.user.user.field_liaison
+    - field.field.user.user.field_resource_by_subject
+    - field.field.user.user.field_searchable
+    - field.field.user.user.field_sooner_id
+    - field.field.user.user.field_specialties
+    - field.field.user.user.field_title
+    - field.field.user.user.ldap_user_current_dn
+    - field.field.user.user.ldap_user_last_checked
+    - field.field.user.user.ldap_user_ldap_exclude
+    - field.field.user.user.ldap_user_prov_entries
+    - field.field.user.user.ldap_user_puid
+    - field.field.user.user.ldap_user_puid_property
+    - field.field.user.user.ldap_user_puid_sid
     - field.field.user.user.mass_contact_opt_out
   module:
+    - path
     - user
 id: user.user.default
 targetEntityType: user
@@ -32,9 +52,34 @@ content:
     weight: 7
     third_party_settings: {  }
     region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   timezone:
     weight: 6
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_appointment: true
+  field_bio: true
+  field_departments: true
+  field_employee_status: true
+  field_firstname: true
+  field_lastname: true
+  field_liaison: true
+  field_resource_by_subject: true
+  field_searchable: true
+  field_sooner_id: true
+  field_specialties: true
+  field_title: true
+  ldap_user_current_dn: true
+  ldap_user_last_checked: true
+  ldap_user_ldap_exclude: true
+  ldap_user_prov_entries: true
+  ldap_user_puid: true
+  ldap_user_puid_property: true
+  ldap_user_puid_sid: true

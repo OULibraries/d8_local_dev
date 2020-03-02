@@ -1,0 +1,14 @@
+uuid: ab20d005-d9be-46c7-8aa0-9c5dcfee92ec
+langcode: en
+status: true
+dependencies: {  }
+name: locations_carousel
+label: 'Locations Carousel'
+effects:
+  bb906b24-48a5-4004-b9fd-1b48ef737d91:
+    uuid: bb906b24-48a5-4004-b9fd-1b48ef737d91
+    id: image_resize
+    weight: 1
+    data:
+      width: 350
+      height: 400

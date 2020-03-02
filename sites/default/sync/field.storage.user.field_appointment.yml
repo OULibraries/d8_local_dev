@@ -1,0 +1,19 @@
+uuid: 4874c8d8-7979-471e-8eb0-3b1d3affc927
+langcode: und
+status: true
+dependencies:
+  module:
+    - link
+    - user
+id: user.field_appointment
+field_name: field_appointment
+entity_type: user
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,19 @@
+uuid: 8428abae-b508-421e-9b6a-7f2096d1b049
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_please_address_the_followi
+    - node.type.page
+id: node.page.field_please_address_the_followi
+field_name: field_please_address_the_followi
+entity_type: node
+bundle: page
+label: 'Please address the following admin comments in your review:'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

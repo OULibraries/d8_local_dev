@@ -9,7 +9,34 @@ node_search:
       or: or
       phrase: phrase
       negative: negative
-    types: {  }
+    types:
+      announcement: announcement
+      assignment_template: assignment_template
+      banner_images: banner_images
+      blog: blog
+      eresources: eresources
+      event: event
+      guides: guides
+      impact_challenge_chapter: impact_challenge_chapter
+      jobs: jobs
+      lending_technology: lending_technology
+      library_stories: library_stories
+      locations: locations
+      location_carousel: location_carousel
+      mass_contact: mass_contact
+      page: page
+      panel: panel
+      picture: picture
+      policy: policy
+      project_prospectus: project_prospectus
+      resource_problem: resource_problem
+      room: room
+      service: service
+      special_collections: special_collections
+      test: test
+      units: units
+      videos: videos
+      webform: webform
     languages:
       en: en
       und: und
@@ -23,3 +50,33 @@ node_search:
     position: disabled
     label: 'Filter the results'
     any: '- Any -'
+user_search:
+  advanced:
+    types:
+      announcement: announcement
+      assignment_template: assignment_template
+      banner_images: banner_images
+      blog: blog
+      eresources: eresources
+      event: event
+      guides: guides
+      impact_challenge_chapter: impact_challenge_chapter
+      jobs: jobs
+      lending_technology: lending_technology
+      library_stories: library_stories
+      locations: locations
+      location_carousel: location_carousel
+      mass_contact: mass_contact
+      page: page
+      panel: panel
+      picture: picture
+      policy: policy
+      project_prospectus: project_prospectus
+      resource_problem: resource_problem
+      room: room
+      service: service
+      special_collections: special_collections
+      test: test
+      units: units
+      videos: videos
+      webform: webform

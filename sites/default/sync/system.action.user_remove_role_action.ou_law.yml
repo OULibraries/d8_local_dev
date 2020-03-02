@@ -1,0 +1,14 @@
+uuid: 4a509336-2e65-4c32-a0a6-9d9c5b30a2f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ou_law
+  module:
+    - user
+id: user_remove_role_action.ou_law
+label: 'Remove the ou_law role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: ou_law

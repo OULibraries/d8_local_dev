@@ -1,0 +1,21 @@
+uuid: 29334747-cc1a-47af-a4f9-fb6a44a848af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_team_members
+    - node.type.project_prospectus
+  module:
+    - text
+id: node.project_prospectus.field_team_members
+field_name: field_team_members
+entity_type: node
+bundle: project_prospectus
+label: 'Team Members and Stakeholders'
+description: 'List your project team members and other stakeholders, and their roles/contributions.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,19 @@
+uuid: 0e1bb19c-3bea-48c0-93c5-79747bc9b7fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rm
+    - node.type.units
+id: node.units.field_rm
+field_name: field_rm
+entity_type: node
+bundle: units
+label: Room
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

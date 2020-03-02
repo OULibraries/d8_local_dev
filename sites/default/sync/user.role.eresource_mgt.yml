@@ -1,0 +1,33 @@
+uuid: 2d558ac0-efe6-447b-9e2c-d1af4d99dc69
+langcode: en
+status: true
+dependencies: {  }
+id: eresource_mgt
+label: Eresource-mgt
+weight: 28
+is_admin: null
+permissions:
+  - 'create field_admin_notes'
+  - 'create field_status'
+  - 'create field_status_notes'
+  - 'create resource_problem content'
+  - 'delete any resource_problem content'
+  - 'delete own resource_problem content'
+  - 'delete revisions'
+  - 'display EU Cookie Compliance popup'
+  - 'edit any resource_problem content'
+  - 'edit field_admin_notes'
+  - 'edit field_status'
+  - 'edit field_status_notes'
+  - 'edit own field_admin_notes'
+  - 'edit own field_status'
+  - 'edit own field_status_notes'
+  - 'edit own resource_problem content'
+  - 'revert revisions'
+  - 'view field_admin_notes'
+  - 'view field_status'
+  - 'view field_status_notes'
+  - 'view own field_admin_notes'
+  - 'view own field_status'
+  - 'view own field_status_notes'
+  - 'view revisions'

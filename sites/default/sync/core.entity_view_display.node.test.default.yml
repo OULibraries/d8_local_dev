@@ -1,0 +1,35 @@
+uuid: 1c1dea3c-cb72-4a32-b17a-c556eceaa872
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.test.body
+    - field.field.node.test.field_audit_period
+    - field.field.node.test.field_last_updated
+    - field.field.node.test.field_publishing_status
+    - node.type.test
+  module:
+    - text
+    - user
+id: node.test.default
+targetEntityType: node
+bundle: test
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_audit_period: true
+  field_last_updated: true
+  field_publishing_status: true

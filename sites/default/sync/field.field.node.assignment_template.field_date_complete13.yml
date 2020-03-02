@@ -1,0 +1,21 @@
+uuid: 26ac13ff-f53b-46aa-9316-85bd7ad8b57c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_complete13
+    - node.type.assignment_template
+id: node.assignment_template.field_date_complete13
+field_name: field_date_complete13
+entity_type: node
+bundle: assignment_template
+label: 'Due Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '-'
+default_value_callback: ''
+settings: {  }
+field_type: string

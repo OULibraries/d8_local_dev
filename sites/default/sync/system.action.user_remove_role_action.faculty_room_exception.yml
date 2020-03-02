@@ -1,0 +1,14 @@
+uuid: fd3e450d-4206-4b8d-894e-2ce2c971b613
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.faculty_room_exception
+  module:
+    - user
+id: user_remove_role_action.faculty_room_exception
+label: 'Remove the faculty room exception role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: faculty_room_exception

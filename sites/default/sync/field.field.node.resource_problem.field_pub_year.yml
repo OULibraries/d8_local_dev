@@ -1,0 +1,19 @@
+uuid: 5fc2ae09-6b10-4475-8630-8eccd9d70474
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pub_year
+    - node.type.resource_problem
+id: node.resource_problem.field_pub_year
+field_name: field_pub_year
+entity_type: node
+bundle: resource_problem
+label: 'Publication Year or Edition '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,10 @@
+uuid: 7b061969-48df-42b6-806b-4c53fa509a53
+langcode: en
+status: true
+dependencies: {  }
+id: ou_law
+label: ou_law
+weight: 19
+is_admin: null
+permissions:
+  - 'display EU Cookie Compliance popup'

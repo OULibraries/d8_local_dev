@@ -1,0 +1,23 @@
+uuid: 5f6ef30f-94a5-4358-8080-36c5533e9eb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hsc
+    - node.type.eresources
+id: node.eresources.field_hsc
+field_name: field_hsc
+entity_type: node
+bundle: eresources
+label: HSC
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'HSC Access On'
+  off_label: 'HSC Access Off'
+field_type: boolean

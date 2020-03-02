@@ -1,0 +1,14 @@
+uuid: f545fcc7-0eee-4be6-8ef6-6ea87be7194b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.advanced_programs
+  module:
+    - user
+id: user_add_role_action.advanced_programs
+label: 'Add the advanced_programs role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: advanced_programs

@@ -1,0 +1,14 @@
+uuid: 21b6f170-a28f-41d7-8b94-05af5b519dda
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.room
+  module:
+    - user
+id: user_add_role_action.room
+label: 'Add the Room role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: room

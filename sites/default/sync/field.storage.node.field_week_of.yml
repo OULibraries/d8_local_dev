@@ -1,0 +1,20 @@
+uuid: 82e9dfa8-17f9-4676-a9b9-00feac1ea03c
+langcode: und
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+id: node.field_week_of
+field_name: field_week_of
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

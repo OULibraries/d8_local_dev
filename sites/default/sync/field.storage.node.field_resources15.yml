@@ -1,0 +1,19 @@
+uuid: 04c17dd3-e304-428f-be7a-58aca6329e29
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_resources15
+field_name: field_resources15
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

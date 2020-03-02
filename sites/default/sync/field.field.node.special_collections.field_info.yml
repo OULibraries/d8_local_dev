@@ -1,0 +1,21 @@
+uuid: c5ab6706-0216-492a-a13f-eb506fd594cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_info
+    - node.type.special_collections
+  module:
+    - text
+id: node.special_collections.field_info
+field_name: field_info
+entity_type: node
+bundle: special_collections
+label: 'More Info'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

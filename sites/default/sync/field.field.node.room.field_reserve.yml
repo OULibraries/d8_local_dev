@@ -1,0 +1,21 @@
+uuid: 66425105-5182-4362-b577-332c4a34bdce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reserve
+    - node.type.room
+id: node.room.field_reserve
+field_name: field_reserve
+entity_type: node
+bundle: room
+label: 'Reserve Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Reserve Room'
+  off_label: 'Walk-In Only'
+field_type: boolean

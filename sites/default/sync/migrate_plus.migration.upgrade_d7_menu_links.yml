@@ -1,0 +1,134 @@
+uuid: 96ea7361-6fc4-4761-831b-667e3c33c968
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_menu_links
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Menu links'
+source:
+  plugin: menu_link
+  constants:
+    bundle: menu_link_content
+process:
+  id:
+    -
+      plugin: get
+      source: mlid
+  bundle:
+    -
+      plugin: get
+      source: constants/bundle
+  title:
+    -
+      plugin: get
+      source: link_title
+  description:
+    -
+      plugin: get
+      source: description
+  menu_name:
+    -
+      plugin: migration_lookup
+      migration: upgrade_d7_menu
+      source: menu_name
+    -
+      plugin: skip_on_empty
+      method: row
+  link/uri:
+    -
+      plugin: link_uri
+      source: link_path
+  link/options:
+    -
+      plugin: get
+      source: options
+  route:
+    -
+      plugin: route
+      source:
+        - link_path
+        - options
+  route_name:
+    -
+      plugin: get
+      source: '@route/route_name'
+  route_parameters:
+    -
+      plugin: get
+      source: '@route/route_parameters'
+  url:
+    -
+      plugin: get
+      source: '@route/url'
+  options:
+    -
+      plugin: get
+      source: '@route/options'
+  external:
+    -
+      plugin: get
+      source: external
+  weight:
+    -
+      plugin: get
+      source: weight
+  expanded:
+    -
+      plugin: get
+      source: expanded
+  enabled:
+    -
+      plugin: get
+      source: enabled
+  parent:
+    -
+      plugin: menu_link_parent
+      source:
+        - plid
+        - '@menu_name'
+        - parent_link_path
+  changed:
+    -
+      plugin: get
+      source: updated
+destination:
+  plugin: 'entity:menu_link_content'
+  no_stub: true
+migration_dependencies:
+  required:
+    - upgrade_d7_menu
+  optional:
+    - upgrade_d7_node_announcement
+    - upgrade_d7_node_assignment_template
+    - upgrade_d7_node_banner_images
+    - upgrade_d7_node_blog
+    - upgrade_d7_node_eresources
+    - upgrade_d7_node_event
+    - upgrade_d7_node_guides
+    - upgrade_d7_node_impact_challenge_chapter
+    - upgrade_d7_node_jobs
+    - upgrade_d7_node_lending_technology
+    - upgrade_d7_node_library_stories
+    - upgrade_d7_node_locations
+    - upgrade_d7_node_location_carousel
+    - upgrade_d7_node_mass_contact
+    - upgrade_d7_node_page
+    - upgrade_d7_node_panel
+    - upgrade_d7_node_picture
+    - upgrade_d7_node_policy
+    - upgrade_d7_node_project_prospectus
+    - upgrade_d7_node_resource_problem
+    - upgrade_d7_node_room
+    - upgrade_d7_node_service
+    - upgrade_d7_node_special_collections
+    - upgrade_d7_node_test
+    - upgrade_d7_node_units
+    - upgrade_d7_node_videos
+    - upgrade_d7_node_webform
+    - upgrade_d7_menu

@@ -1,0 +1,8 @@
+uuid: f2050ca0-204c-4ba3-bfbd-c3efa04f671b
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_special_collections
+label: 'Special Collections comment'
+target_entity_type_id: node
+description: null

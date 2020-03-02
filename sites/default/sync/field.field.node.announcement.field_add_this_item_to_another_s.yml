@@ -1,0 +1,28 @@
+uuid: 3cf7ae76-c7f1-4faf-8e23-fbb5a32c66b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_add_this_item_to_another_s
+    - node.type.announcement
+    - taxonomy.vocabulary.marketing_projects
+id: node.announcement.field_add_this_item_to_another_s
+field_name: field_add_this_item_to_another_s
+entity_type: node
+bundle: announcement
+label: 'Add this item to another site:'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    tid: '428'
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      marketing_projects: marketing_projects
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

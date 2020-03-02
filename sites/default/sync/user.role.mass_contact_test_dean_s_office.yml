@@ -1,0 +1,11 @@
+uuid: ec4eaf62-c9c6-487a-9d57-9034d8393da2
+langcode: en
+status: true
+dependencies: {  }
+id: mass_contact_test_dean_s_office
+label: 'mass contact test dean''s office'
+weight: 39
+is_admin: null
+permissions:
+  - 'display EU Cookie Compliance popup'
+  - 'mass contact send to users in the Test - Dean''s Office category'

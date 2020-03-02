@@ -1,0 +1,28 @@
+uuid: bc48c176-a409-42a8-b7cb-7baf23a3d49e
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_assignment_template
+    - field.field.comment.comment_node_assignment_template.comment_body
+  module:
+    - text
+id: comment.comment_node_assignment_template.default
+targetEntityType: comment
+bundle: comment_node_assignment_template
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true

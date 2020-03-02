@@ -1,0 +1,21 @@
+uuid: cf6003dc-a524-4d34-9415-806754ac092d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_carousel_description
+    - node.type.location_carousel
+  module:
+    - text
+id: node.location_carousel.field_carousel_description
+field_name: field_carousel_description
+entity_type: node
+bundle: location_carousel
+label: 'What text should be under the image?'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

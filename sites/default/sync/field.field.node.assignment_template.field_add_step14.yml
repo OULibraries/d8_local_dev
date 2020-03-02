@@ -1,0 +1,23 @@
+uuid: 0d9a515e-abad-490a-84bc-3b3500b541a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_add_step14
+    - node.type.assignment_template
+id: node.assignment_template.field_add_step14
+field_name: field_add_step14
+entity_type: node
+bundle: assignment_template
+label: 'Add Step'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: ''
+  off_label: ''
+field_type: boolean

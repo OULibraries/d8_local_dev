@@ -1,0 +1,16 @@
+uuid: ce016671-e280-42fd-81e3-e3f4bbaab995
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main-menu:0:'
+name: Units
+type: units
+description: 'Use <i>units</i> to add a new library unit to the website, usually associated with a location in which it is housed.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

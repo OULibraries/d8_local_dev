@@ -1,0 +1,19 @@
+uuid: f8696b0c-a15c-4523-aeb3-555c1135f614
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_loan_period
+    - node.type.lending_technology
+id: node.lending_technology.field_loan_period
+field_name: field_loan_period
+entity_type: node
+bundle: lending_technology
+label: 'Loan Period'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

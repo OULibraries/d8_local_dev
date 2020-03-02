@@ -1,0 +1,19 @@
+uuid: ff80859d-3487-4768-85f3-c96b23be564c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - node.type.event
+id: node.event.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: event
+label: 'Event Caption'
+description: 'Add a 60 character caption for this event. It will display as the description in an event carousel. Put longer text in description field.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

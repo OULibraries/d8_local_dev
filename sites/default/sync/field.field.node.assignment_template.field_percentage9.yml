@@ -1,0 +1,23 @@
+uuid: f0c8ee92-caf6-431d-b7e4-0d8f7ca8e1fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_percentage9
+    - node.type.assignment_template
+id: node.assignment_template.field_percentage9
+field_name: field_percentage9
+entity_type: node
+bundle: assignment_template
+label: Percentage
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  max: 100
+  min: 0
+  prefix: ''
+  suffix: '%'
+field_type: integer

@@ -1,0 +1,14 @@
+uuid: 9b9fefa8-2faa-46fa-81fa-b775357a822a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.mass_contact_test_web_team
+  module:
+    - user
+id: user_add_role_action.mass_contact_test_web_team
+label: 'Add the Mass_Contact_Test_Web_Team role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: mass_contact_test_web_team

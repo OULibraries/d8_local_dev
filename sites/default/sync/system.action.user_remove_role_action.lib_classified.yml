@@ -1,0 +1,14 @@
+uuid: 14c71bd2-ff37-4b35-a9e6-d397ed615211
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.lib_classified
+  module:
+    - user
+id: user_remove_role_action.lib_classified
+label: 'Remove the Lib-classified role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: lib_classified

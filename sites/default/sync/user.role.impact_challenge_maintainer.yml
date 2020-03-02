@@ -1,0 +1,14 @@
+uuid: 39931549-9770-4a76-b504-7f646dcc9f89
+langcode: en
+status: true
+dependencies: {  }
+id: impact_challenge_maintainer
+label: 'Impact Challenge Maintainer'
+weight: 40
+is_admin: null
+permissions:
+  - 'create impact_challenge_chapter content'
+  - 'delete any impact_challenge_chapter content'
+  - 'delete own impact_challenge_chapter content'
+  - 'edit any impact_challenge_chapter content'
+  - 'edit own impact_challenge_chapter content'

@@ -1,0 +1,14 @@
+uuid: 09c843d8-af71-4b37-82e0-cd85103ee7bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.reservations_admin
+  module:
+    - user
+id: user_remove_role_action.reservations_admin
+label: 'Remove the reservations admin role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: reservations_admin

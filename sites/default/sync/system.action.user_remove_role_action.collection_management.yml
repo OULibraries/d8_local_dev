@@ -1,0 +1,14 @@
+uuid: 8f1dcd5c-bd4b-45d5-930d-4fed208d9626
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.collection_management
+  module:
+    - user
+id: user_remove_role_action.collection_management
+label: 'Remove the Collection Management role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: collection_management

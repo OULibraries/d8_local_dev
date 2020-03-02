@@ -1,0 +1,23 @@
+uuid: 06fcdad5-e886-4083-a502-2de21ad8bc37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publishing_status
+    - node.type.service
+  module:
+    - options
+id: node.service.field_publishing_status
+field_name: field_publishing_status
+entity_type: node
+bundle: service
+label: 'Publishing Status'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: Draft
+default_value_callback: ''
+settings: {  }
+field_type: list_string

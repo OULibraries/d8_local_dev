@@ -1,0 +1,37 @@
+uuid: 892ef1ad-6bad-4942-ab82-cf07b011a6fc
+langcode: en
+status: true
+dependencies: {  }
+id: hr_team
+label: 'HR Team'
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration menu'
+  - 'access administration pages'
+  - 'administer fields'
+  - 'administer userprotect'
+  - 'administer users'
+  - 'change own username'
+  - 'display EU Cookie Compliance popup'
+  - 'edit field_title'
+  - 'edit own account'
+  - 'edit own field_title'
+  - 'mass contact archive messages'
+  - 'mass contact change default sender information'
+  - 'mass contact include attachments'
+  - 'mass contact override archiving'
+  - 'mass contact override text format'
+  - 'mass contact send messages'
+  - 'mass contact send to users in the All Employees category'
+  - 'mass contact send to users in the Classified (Hourly) Employees category'
+  - 'mass contact send to users in the Classified Employees category'
+  - 'mass contact send to users in the Faculty Employees category'
+  - 'mass contact send to users in the Faulty Employees category'
+  - 'mass contact send to users in the Graduate Students category'
+  - 'mass contact send to users in the Library Professional, Classified, and Faculty Employees category'
+  - 'mass contact send to users in the Professional Employees category'
+  - 'mass contact send to users in the Student Employees category'
+  - 'use text format full_html'
+  - 'view field_title'
+  - 'view own field_title'

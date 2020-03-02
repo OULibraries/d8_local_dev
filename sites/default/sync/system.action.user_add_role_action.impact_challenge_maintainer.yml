@@ -1,0 +1,14 @@
+uuid: f03ea6a0-ba8b-4b19-af7a-2235ce26a1e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.impact_challenge_maintainer
+  module:
+    - user
+id: user_add_role_action.impact_challenge_maintainer
+label: 'Add the Impact Challenge Maintainer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: impact_challenge_maintainer

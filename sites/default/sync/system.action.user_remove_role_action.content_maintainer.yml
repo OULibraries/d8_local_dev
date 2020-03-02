@@ -1,0 +1,14 @@
+uuid: a5addd2e-622f-4e2e-9db6-35128996a76a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.content_maintainer
+  module:
+    - user
+id: user_remove_role_action.content_maintainer
+label: 'Remove the Content Maintainer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: content_maintainer

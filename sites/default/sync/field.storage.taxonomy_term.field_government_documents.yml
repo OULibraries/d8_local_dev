@@ -1,0 +1,19 @@
+uuid: 057c2747-0970-4a67-aa24-a6599dd9c859
+langcode: und
+status: true
+dependencies:
+  module:
+    - link
+    - taxonomy
+id: taxonomy_term.field_government_documents
+field_name: field_government_documents
+entity_type: taxonomy_term
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

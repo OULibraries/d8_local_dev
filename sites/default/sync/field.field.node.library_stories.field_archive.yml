@@ -1,0 +1,23 @@
+uuid: 7c05736f-c033-4c24-8979-f8b83618f696
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_archive
+    - node.type.library_stories
+id: node.library_stories.field_archive
+field_name: field_archive
+entity_type: node
+bundle: library_stories
+label: Archive
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: ''
+  off_label: ''
+field_type: boolean

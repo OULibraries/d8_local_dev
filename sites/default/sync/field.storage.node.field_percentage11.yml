@@ -1,0 +1,20 @@
+uuid: 51907a4c-9aa3-4010-a575-24f024ffd9db
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_percentage11
+field_name: field_percentage11
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

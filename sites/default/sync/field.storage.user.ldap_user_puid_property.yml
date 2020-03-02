@@ -1,0 +1,21 @@
+uuid: c7051d34-3906-413b-afcb-f2d22956dffd
+langcode: und
+status: true
+dependencies:
+  module:
+    - user
+id: user.ldap_user_puid_property
+field_name: ldap_user_puid_property
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

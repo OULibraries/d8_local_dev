@@ -1,0 +1,21 @@
+uuid: 68838ea5-5432-4bc5-93cd-c0c6df08d306
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_success_factors
+    - node.type.project_prospectus
+  module:
+    - text
+id: node.project_prospectus.field_success_factors
+field_name: field_success_factors
+entity_type: node
+bundle: project_prospectus
+label: 'Success Factors'
+description: 'Describe how you will measure the impact of the project. What are the key success factors of the project?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

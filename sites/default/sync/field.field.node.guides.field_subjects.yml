@@ -1,0 +1,26 @@
+uuid: 623d204e-9501-4051-8e8e-ea6c189691fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subjects
+    - node.type.guides
+    - taxonomy.vocabulary.architecture
+id: node.guides.field_subjects
+field_name: field_subjects
+entity_type: node
+bundle: guides
+label: Subjects
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      architecture: architecture
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

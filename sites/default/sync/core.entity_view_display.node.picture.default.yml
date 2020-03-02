@@ -1,0 +1,35 @@
+uuid: e8314c42-cba2-473a-99b1-6c9546bb43f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.picture.body
+    - field.field.node.picture.field_add_this_item_to_another_s
+    - field.field.node.picture.field_caption
+    - field.field.node.picture.field_picture
+    - node.type.picture
+  module:
+    - text
+    - user
+id: node.picture.default
+targetEntityType: node
+bundle: picture
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_add_this_item_to_another_s: true
+  field_caption: true
+  field_picture: true

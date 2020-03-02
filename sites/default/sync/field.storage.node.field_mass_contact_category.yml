@@ -1,0 +1,21 @@
+uuid: 28842bfa-8222-45c2-95c3-90c8ec3d11ef
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_mass_contact_category
+field_name: field_mass_contact_category
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

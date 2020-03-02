@@ -1,0 +1,14 @@
+uuid: 8df65c39-3cd4-4ef9-adaa-dcb686c4d47e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.ou_norman
+  module:
+    - user
+id: user_add_role_action.ou_norman
+label: 'Add the ou_norman role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: ou_norman

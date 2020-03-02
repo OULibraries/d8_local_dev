@@ -1,0 +1,15 @@
+uuid: ed708c1b-3c85-44b2-90e8-537f4b4a90fc
+langcode: en
+status: true
+dependencies: {  }
+id: lib_guide_maintainer
+label: 'Lib Guide Maintainer'
+weight: 30
+is_admin: null
+permissions:
+  - 'access content'
+  - 'create guides content'
+  - 'delete own guides content'
+  - 'display EU Cookie Compliance popup'
+  - 'edit own guides content'
+  - 'view own unpublished content'

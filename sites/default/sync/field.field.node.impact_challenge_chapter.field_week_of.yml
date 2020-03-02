@@ -1,0 +1,21 @@
+uuid: 44a8f12e-6f07-4e6d-bdb8-f04ba5b60846
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_week_of
+    - node.type.impact_challenge_chapter
+  module:
+    - datetime
+id: node.impact_challenge_chapter.field_week_of
+field_name: field_week_of
+entity_type: node
+bundle: impact_challenge_chapter
+label: 'Week Of'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

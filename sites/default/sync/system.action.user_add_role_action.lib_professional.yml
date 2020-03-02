@@ -1,0 +1,14 @@
+uuid: 7aeb88e0-7a36-400d-b888-74f1d27f5b2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.lib_professional
+  module:
+    - user
+id: user_add_role_action.lib_professional
+label: 'Add the Lib-professional role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: lib_professional

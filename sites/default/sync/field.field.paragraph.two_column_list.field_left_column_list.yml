@@ -1,0 +1,23 @@
+uuid: 05fa31b9-e87a-4c87-bfec-44d301d75e23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_left_column_list
+    - paragraphs.paragraphs_type.two_column_list
+  module:
+    - link
+id: paragraph.two_column_list.field_left_column_list
+field_name: field_left_column_list
+entity_type: paragraph
+bundle: two_column_list
+label: 'Left Column List'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

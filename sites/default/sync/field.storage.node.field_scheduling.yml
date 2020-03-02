@@ -1,0 +1,19 @@
+uuid: 50f517a8-d009-49d2-850a-526dcf383588
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_scheduling
+field_name: field_scheduling
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

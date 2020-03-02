@@ -1,0 +1,26 @@
+uuid: d8cea231-50ce-4d20-bb05-d8fb7801e13d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pillars
+    - node.type.library_stories
+    - taxonomy.vocabulary.pillars
+id: node.library_stories.field_pillars
+field_name: field_pillars
+entity_type: node
+bundle: library_stories
+label: Pillars
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      pillars: pillars
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

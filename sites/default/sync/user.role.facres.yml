@@ -1,0 +1,13 @@
+uuid: 30d7b94f-4fbe-4e8d-b253-4c48a924f372
+langcode: en
+status: true
+dependencies: {  }
+id: facres
+label: facres
+weight: 36
+is_admin: null
+permissions:
+  - 'access spaces'
+  - 'create faculty studyroom_reservation'
+  - 'create faculty_graduate studyroom_reservation'
+  - 'display EU Cookie Compliance popup'

@@ -1,0 +1,8 @@
+uuid: daa5b008-ab97-4315-85a1-c769d689dda2
+langcode: en
+status: true
+dependencies: {  }
+name: Departments
+vid: departments
+description: 'These correspond to the staff directory'
+weight: -9

@@ -1,0 +1,28 @@
+uuid: 534a8c6a-ec2d-4783-abff-c94cd8fa5c07
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_mass_contact
+    - field.field.comment.comment_node_mass_contact.comment_body
+  module:
+    - text
+id: comment.comment_node_mass_contact.default
+targetEntityType: comment
+bundle: comment_node_mass_contact
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true

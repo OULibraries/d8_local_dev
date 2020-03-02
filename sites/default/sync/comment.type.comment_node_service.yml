@@ -1,0 +1,8 @@
+uuid: f9a732bb-f04f-4ce4-ab80-7f4d895f3344
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_service
+label: 'Service comment'
+target_entity_type_id: node
+description: null

@@ -1,0 +1,14 @@
+uuid: 38e89645-8e51-4e54-a403-c6111a69a720
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.eresource_mgt
+  module:
+    - user
+id: user_add_role_action.eresource_mgt
+label: 'Add the Eresource-mgt role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: eresource_mgt

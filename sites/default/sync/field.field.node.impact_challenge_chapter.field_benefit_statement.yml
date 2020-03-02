@@ -1,0 +1,23 @@
+uuid: 89da225f-4047-4e1f-95ac-adbe39d100fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_benefit_statement
+    - node.type.impact_challenge_chapter
+  module:
+    - text
+id: node.impact_challenge_chapter.field_benefit_statement
+field_name: field_benefit_statement
+entity_type: node
+bundle: impact_challenge_chapter
+label: 'Benefit Statement'
+description: 'This text will appear in the Table of Contents, but will <i>NOT</i> appear in the chapter itself.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

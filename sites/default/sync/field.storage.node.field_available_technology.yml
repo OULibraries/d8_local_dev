@@ -1,0 +1,42 @@
+uuid: cb2aa818-3ef4-49e7-9b62-0163b364f9c0
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_available_technology
+field_name: field_available_technology
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Computer Stations'
+      label: '<i class="fa fa-desktop fa-4x"></i> <span class="location-technology">Computer Stations</span>'
+    -
+      value: Printers
+      label: '<i class="fa fa-print fa-4x"></i> <span class="location-technology">Printers</span>'
+    -
+      value: Copiers
+      label: '<i class="fa fa-files-o fa-4x"></i> <span class="location-technology">Copiers</span>'
+    -
+      value: Scanners
+      label: '<img src="https://lib.ou.edu/documents/scanner_icon.png"><span class="location-technology">Scanners</span>'
+    -
+      value: Wi-Fi
+      label: '<i class="fa fa-wifi fa-4x"></i> <span class="location-technology">Wi-Fi</span>'
+    -
+      value: 'Laptop Checkout'
+      label: '<i class="fa fa-laptop fa-4x"></i> <span class="location-technology">Laptop Checkout</span>'
+    -
+      value: iPad
+      label: ' <img src="https://lib.ou.edu/documents/ipad_icon.png"><span class="location-technology">iPad</span>'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

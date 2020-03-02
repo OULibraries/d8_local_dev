@@ -1,0 +1,23 @@
+uuid: 384091a1-5c63-48dc-a968-4c5520fd9c8a
+langcode: en
+status: true
+dependencies: {  }
+id: mass_contact
+label: mass_contact
+weight: 12
+is_admin: null
+permissions:
+  - 'display EU Cookie Compliance popup'
+  - 'mass contact archive messages'
+  - 'mass contact change default sender information'
+  - 'mass contact include attachments'
+  - 'mass contact override archiving'
+  - 'mass contact send messages'
+  - 'mass contact send to users in the All Employees category'
+  - 'mass contact send to users in the Classified Employees category'
+  - 'mass contact send to users in the Faculty Employees category'
+  - 'mass contact send to users in the Faulty Employees category'
+  - 'mass contact send to users in the Graduate Students category'
+  - 'mass contact send to users in the Library Professional, Classified, and Faculty Employees category'
+  - 'mass contact send to users in the Professional Employees category'
+  - 'mass contact send to users in the Student Employees category'

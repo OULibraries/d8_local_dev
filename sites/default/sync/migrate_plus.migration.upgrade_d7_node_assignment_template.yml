@@ -1,0 +1,384 @@
+uuid: e0678ef3-bbc1-467b-a555-b4d645451a32
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_assignment_template
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Nodes (Assignment Template)'
+source:
+  plugin: d7_node
+  node_type: assignment_template
+process:
+  nid:
+    -
+      plugin: get
+      source: tnid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  comment_node_assignment_template/0/status:
+    -
+      plugin: get
+      source: comment
+  body:
+    -
+      plugin: get
+      source: body
+  field_add_step1:
+    -
+      plugin: get
+      source: field_add_step1
+  field_add_step10:
+    -
+      plugin: get
+      source: field_add_step10
+  field_add_step11:
+    -
+      plugin: get
+      source: field_add_step11
+  field_add_step12:
+    -
+      plugin: get
+      source: field_add_step12
+  field_add_step13:
+    -
+      plugin: get
+      source: field_add_step13
+  field_add_step14:
+    -
+      plugin: get
+      source: field_add_step14
+  field_add_step2:
+    -
+      plugin: get
+      source: field_add_step2
+  field_add_step3:
+    -
+      plugin: get
+      source: field_add_step3
+  field_add_step4:
+    -
+      plugin: get
+      source: field_add_step4
+  field_add_step5:
+    -
+      plugin: get
+      source: field_add_step5
+  field_add_step6:
+    -
+      plugin: get
+      source: field_add_step6
+  field_add_step7:
+    -
+      plugin: get
+      source: field_add_step7
+  field_add_step8:
+    -
+      plugin: get
+      source: field_add_step8
+  field_add_step9:
+    -
+      plugin: get
+      source: field_add_step9
+  field_date_complete1:
+    -
+      plugin: get
+      source: field_date_complete1
+  field_date_complete10:
+    -
+      plugin: get
+      source: field_date_complete10
+  field_date_complete11:
+    -
+      plugin: get
+      source: field_date_complete11
+  field_date_complete12:
+    -
+      plugin: get
+      source: field_date_complete12
+  field_date_complete13:
+    -
+      plugin: get
+      source: field_date_complete13
+  field_date_complete14:
+    -
+      plugin: get
+      source: field_date_complete14
+  field_date_complete15:
+    -
+      plugin: get
+      source: field_date_complete15
+  field_date_complete2:
+    -
+      plugin: get
+      source: field_date_complete2
+  field_date_complete3:
+    -
+      plugin: get
+      source: field_date_complete3
+  field_date_complete4:
+    -
+      plugin: get
+      source: field_date_complete4
+  field_date_complete5:
+    -
+      plugin: get
+      source: field_date_complete5
+  field_date_complete6:
+    -
+      plugin: get
+      source: field_date_complete6
+  field_date_complete7:
+    -
+      plugin: get
+      source: field_date_complete7
+  field_date_complete8:
+    -
+      plugin: get
+      source: field_date_complete8
+  field_date_complete9:
+    -
+      plugin: get
+      source: field_date_complete9
+  field_percentage1:
+    -
+      plugin: get
+      source: field_percentage1
+  field_percentage10:
+    -
+      plugin: get
+      source: field_percentage10
+  field_percentage11:
+    -
+      plugin: get
+      source: field_percentage11
+  field_percentage12:
+    -
+      plugin: get
+      source: field_percentage12
+  field_percentage13:
+    -
+      plugin: get
+      source: field_percentage13
+  field_percentage14:
+    -
+      plugin: get
+      source: field_percentage14
+  field_percentage15:
+    -
+      plugin: get
+      source: field_percentage15
+  field_percentage2:
+    -
+      plugin: get
+      source: field_percentage2
+  field_percentage3:
+    -
+      plugin: get
+      source: field_percentage3
+  field_percentage4:
+    -
+      plugin: get
+      source: field_percentage4
+  field_percentage5:
+    -
+      plugin: get
+      source: field_percentage5
+  field_percentage6:
+    -
+      plugin: get
+      source: field_percentage6
+  field_percentage7:
+    -
+      plugin: get
+      source: field_percentage7
+  field_percentage8:
+    -
+      plugin: get
+      source: field_percentage8
+  field_percentage9:
+    -
+      plugin: get
+      source: field_percentage9
+  field_resources1:
+    -
+      plugin: get
+      source: field_resources1
+  field_resources10:
+    -
+      plugin: get
+      source: field_resources10
+  field_resources11:
+    -
+      plugin: get
+      source: field_resources11
+  field_resources12:
+    -
+      plugin: get
+      source: field_resources12
+  field_resources13:
+    -
+      plugin: get
+      source: field_resources13
+  field_resources14:
+    -
+      plugin: get
+      source: field_resources14
+  field_resources15:
+    -
+      plugin: get
+      source: field_resources15
+  field_resources2:
+    -
+      plugin: get
+      source: field_resources2
+  field_resources3:
+    -
+      plugin: get
+      source: field_resources3
+  field_resources4:
+    -
+      plugin: get
+      source: field_resources4
+  field_resources5:
+    -
+      plugin: get
+      source: field_resources5
+  field_resources6:
+    -
+      plugin: get
+      source: field_resources6
+  field_resources7:
+    -
+      plugin: get
+      source: field_resources7
+  field_resources8:
+    -
+      plugin: get
+      source: field_resources8
+  field_resources9:
+    -
+      plugin: get
+      source: field_resources9
+  field_step_title1:
+    -
+      plugin: get
+      source: field_step_title1
+  field_step_title10:
+    -
+      plugin: get
+      source: field_step_title10
+  field_step_title11:
+    -
+      plugin: get
+      source: field_step_title11
+  field_step_title12:
+    -
+      plugin: get
+      source: field_step_title12
+  field_step_title13:
+    -
+      plugin: get
+      source: field_step_title13
+  field_step_title14:
+    -
+      plugin: get
+      source: field_step_title14
+  field_step_title15:
+    -
+      plugin: get
+      source: field_step_title15
+  field_step_title2:
+    -
+      plugin: get
+      source: field_step_title2
+  field_step_title3:
+    -
+      plugin: get
+      source: field_step_title3
+  field_step_title4:
+    -
+      plugin: get
+      source: field_step_title4
+  field_step_title5:
+    -
+      plugin: get
+      source: field_step_title5
+  field_step_title6:
+    -
+      plugin: get
+      source: field_step_title6
+  field_step_title7:
+    -
+      plugin: get
+      source: field_step_title7
+  field_step_title8:
+    -
+      plugin: get
+      source: field_step_title8
+  field_step_title9:
+    -
+      plugin: get
+      source: field_step_title9
+destination:
+  plugin: 'entity:node'
+  default_bundle: assignment_template
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_comment_field_instance
