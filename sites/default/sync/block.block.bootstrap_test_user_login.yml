@@ -1,0 +1,20 @@
+uuid: c6b8fbc9-c3ec-493b-aad6-82b2eb8c386a
+langcode: en
+status: false
+dependencies:
+  module:
+    - user
+  theme:
+    - bootstrap_test
+id: bootstrap_test_user_login
+theme: bootstrap_test
+region: ''
+weight: -17
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  provider: user
+  label_display: '0'
+visibility: {  }

@@ -3,12 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment_node_picture.default
     - field.field.node.picture.body
+    - field.field.node.picture.comment_node_picture
     - field.field.node.picture.field_add_this_item_to_another_s
     - field.field.node.picture.field_caption
     - field.field.node.picture.field_picture
     - node.type.picture
   module:
+    - comment
     - text
     - user
 id: node.picture.default
@@ -21,6 +24,15 @@ content:
     type: text_default
     weight: 101
     settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_picture:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
     third_party_settings: {  }
     region: content
   links:

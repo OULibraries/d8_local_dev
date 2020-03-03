@@ -1,0 +1,18 @@
+uuid: c09c78cb-1ecf-4b86-ab9c-b34a2963ea30
+langcode: en
+status: false
+dependencies:
+  theme:
+    - entity_iframe_theme
+id: entity_iframe_theme_menu_menu_resources_by_subject_3
+theme: entity_iframe_theme
+region: ''
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-resources-by-subject-3'
+settings:
+  id: broken
+  label: ''
+  provider: core
+  label_display: '0'
+visibility: {  }

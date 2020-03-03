@@ -1,0 +1,38 @@
+uuid: df330e85-351b-4fad-b87a-713d88583cbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_location_carousel.default
+    - field.field.node.location_carousel.comment_node_location_carousel
+    - field.field.node.location_carousel.field_carousel_description
+    - field.field.node.location_carousel.field_carousel_image
+    - field.field.node.location_carousel.field_link
+    - node.type.location_carousel
+  module:
+    - comment
+    - user
+id: node.location_carousel.default
+targetEntityType: node
+bundle: location_carousel
+mode: default
+content:
+  comment_node_location_carousel:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_carousel_description: true
+  field_carousel_image: true
+  field_link: true

@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.test.body
+    - field.field.node.test.comment_node_test
     - field.field.node.test.field_audit_period
     - field.field.node.test.field_last_updated
     - field.field.node.test.field_publishing_status
     - node.type.test
   module:
+    - comment
     - path
     - text
 id: node.test.default
@@ -24,6 +26,12 @@ content:
       summary_rows: 3
       placeholder: ''
       show_summary: false
+    third_party_settings: {  }
+    region: content
+  comment_node_test:
+    type: comment_default
+    weight: 20
+    settings: {  }
     third_party_settings: {  }
     region: content
   created:

@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.picture.body
+    - field.field.node.picture.comment_node_picture
     - field.field.node.picture.field_add_this_item_to_another_s
     - field.field.node.picture.field_caption
     - field.field.node.picture.field_picture
@@ -32,6 +33,7 @@ content:
     region: content
 hidden:
   addtoany: true
+  comment_node_picture: true
   field_add_this_item_to_another_s: true
   field_caption: true
   field_picture: true

@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.test.body
+    - field.field.node.test.comment_node_test
     - field.field.node.test.field_audit_period
     - field.field.node.test.field_last_updated
     - field.field.node.test.field_publishing_status
@@ -32,6 +33,7 @@ content:
     region: content
 hidden:
   addtoany: true
+  comment_node_test: true
   field_audit_period: true
   field_last_updated: true
   field_publishing_status: true

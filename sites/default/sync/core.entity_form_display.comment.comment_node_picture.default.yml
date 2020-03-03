@@ -28,9 +28,9 @@ content:
   subject:
     type: string_textfield
     weight: 10
-    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
 hidden: {  }

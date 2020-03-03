@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.picture.body
+    - field.field.node.picture.comment_node_picture
     - field.field.node.picture.field_add_this_item_to_another_s
     - field.field.node.picture.field_caption
     - field.field.node.picture.field_picture
     - node.type.picture
   module:
+    - comment
     - path
     - text
 id: node.picture.default
@@ -24,6 +26,12 @@ content:
       summary_rows: 3
       placeholder: ''
       show_summary: false
+    third_party_settings: {  }
+    region: content
+  comment_node_picture:
+    type: comment_default
+    weight: 20
+    settings: {  }
     third_party_settings: {  }
     region: content
   created:

@@ -1,0 +1,10 @@
+uuid: 974d7091-a6cf-4402-b747-34c4459bbf14
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.announcement
+label: announcement
+targetEntityType: node
+cache: true

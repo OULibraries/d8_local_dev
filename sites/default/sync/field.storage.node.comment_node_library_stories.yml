@@ -1,0 +1,20 @@
+uuid: 23289fd1-ef4a-4581-8f80-afad6b6c4059
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.comment_node_library_stories
+field_name: comment_node_library_stories
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_library_stories
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,89 @@
+uuid: 0237fbeb-8dd3-4387-ae25-fcb152b9f3fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.lending_technology.comment_node_lending_technology
+    - field.field.node.lending_technology.field_additional_notes
+    - field.field.node.lending_technology.field_bookable
+    - field.field.node.lending_technology.field_image
+    - field.field.node.lending_technology.field_loan_period
+    - field.field.node.lending_technology.field_location_available
+    - field.field.node.lending_technology.field_number_available
+    - field.field.node.lending_technology.field_overdue_fee
+    - field.field.node.lending_technology.field_technology_type
+    - node.type.lending_technology
+  module:
+    - comment
+    - path
+id: node.lending_technology.default
+targetEntityType: node
+bundle: lending_technology
+mode: default
+content:
+  comment_node_lending_technology:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  field_additional_notes: true
+  field_bookable: true
+  field_image: true
+  field_loan_period: true
+  field_location_available: true
+  field_number_available: true
+  field_overdue_fee: true
+  field_technology_type: true

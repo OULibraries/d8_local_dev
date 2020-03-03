@@ -3,7 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment_node_mass_contact.default
     - field.field.node.mass_contact.body
+    - field.field.node.mass_contact.comment_node_mass_contact
     - field.field.node.mass_contact.field_mass_contact_attachments
     - field.field.node.mass_contact.field_mass_contact_bcc
     - field.field.node.mass_contact.field_mass_contact_category
@@ -13,6 +15,7 @@ dependencies:
     - field.field.node.mass_contact.field_mass_contact_to
     - node.type.mass_contact
   module:
+    - comment
     - text
     - user
 id: node.mass_contact.default
@@ -25,6 +28,15 @@ content:
     type: text_default
     weight: 101
     settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_mass_contact:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
     third_party_settings: {  }
     region: content
   links:

@@ -1,0 +1,58 @@
+uuid: ee84f2e6-5f24-428e-bfb2-86561538a7f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_project_prospectus.default
+    - field.field.node.project_prospectus.comment_node_project_prospectus
+    - field.field.node.project_prospectus.field_contact_email
+    - field.field.node.project_prospectus.field_contact_name
+    - field.field.node.project_prospectus.field_contribution_to_ou_goals
+    - field.field.node.project_prospectus.field_deliverables
+    - field.field.node.project_prospectus.field_goals
+    - field.field.node.project_prospectus.field_implications_of_not_doing
+    - field.field.node.project_prospectus.field_out_of_scope
+    - field.field.node.project_prospectus.field_project_needs
+    - field.field.node.project_prospectus.field_scheduling
+    - field.field.node.project_prospectus.field_scope
+    - field.field.node.project_prospectus.field_success_factors
+    - field.field.node.project_prospectus.field_sustainability
+    - field.field.node.project_prospectus.field_team_members
+    - node.type.project_prospectus
+  module:
+    - comment
+    - user
+id: node.project_prospectus.default
+targetEntityType: node
+bundle: project_prospectus
+mode: default
+content:
+  comment_node_project_prospectus:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_contact_email: true
+  field_contact_name: true
+  field_contribution_to_ou_goals: true
+  field_deliverables: true
+  field_goals: true
+  field_implications_of_not_doing: true
+  field_out_of_scope: true
+  field_project_needs: true
+  field_scheduling: true
+  field_scope: true
+  field_success_factors: true
+  field_sustainability: true
+  field_team_members: true

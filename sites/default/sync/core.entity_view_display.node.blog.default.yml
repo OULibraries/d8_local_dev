@@ -3,9 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment_node_blog.default
     - field.field.node.blog.body
+    - field.field.node.blog.comment_node_blog
     - node.type.blog
   module:
+    - comment
     - text
     - user
 id: node.blog.default
@@ -18,6 +21,15 @@ content:
     type: text_default
     weight: 101
     settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_blog:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
     third_party_settings: {  }
     region: content
   links:

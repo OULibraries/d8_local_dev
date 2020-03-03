@@ -3,7 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment_node_assignment_template.default
     - field.field.node.assignment_template.body
+    - field.field.node.assignment_template.comment_node_assignment_template
     - field.field.node.assignment_template.field_add_step1
     - field.field.node.assignment_template.field_add_step10
     - field.field.node.assignment_template.field_add_step11
@@ -80,6 +82,7 @@ dependencies:
     - field.field.node.assignment_template.field_step_title9
     - node.type.assignment_template
   module:
+    - comment
     - text
     - user
 id: node.assignment_template.default
@@ -92,6 +95,15 @@ content:
     type: text_default
     weight: 101
     settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_assignment_template:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
     third_party_settings: {  }
     region: content
   links:

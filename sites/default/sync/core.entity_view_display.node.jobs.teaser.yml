@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.jobs.body
+    - field.field.node.jobs.comment_node_jobs
     - field.field.node.jobs.field_job_link
     - field.field.node.jobs.field_job_status
     - node.type.jobs
@@ -31,5 +32,6 @@ content:
     region: content
 hidden:
   addtoany: true
+  comment_node_jobs: true
   field_job_link: true
   field_job_status: true

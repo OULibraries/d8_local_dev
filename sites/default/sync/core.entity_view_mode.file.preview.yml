@@ -1,0 +1,10 @@
+uuid: 02f5d4ad-ba0f-4e1d-9347-9f98872aecac
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+id: file.preview
+label: preview
+targetEntityType: file
+cache: true

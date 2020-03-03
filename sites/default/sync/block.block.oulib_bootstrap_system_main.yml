@@ -1,0 +1,20 @@
+uuid: ef7b69c3-25f3-4846-b9da-49dd77f76c9f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - oulib_bootstrap
+id: oulib_bootstrap_system_main
+theme: oulib_bootstrap
+region: content
+weight: -63
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

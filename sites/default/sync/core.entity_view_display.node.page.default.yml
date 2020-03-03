@@ -1,0 +1,48 @@
+uuid: 94b52a88-43a5-4a42-9187-c63156301167
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_page.default
+    - field.field.node.page.comment_node_page
+    - field.field.node.page.field_build_your_page
+    - field.field.node.page.field_content_owner
+    - field.field.node.page.field_last_updated
+    - field.field.node.page.field_needs_annual_audit
+    - field.field.node.page.field_one_sentence_teaser
+    - field.field.node.page.field_please_address_the_followi
+    - field.field.node.page.field_publishing_status
+    - field.field.node.page.field_this_content_needs_review
+    - node.type.page
+  module:
+    - comment
+    - user
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  comment_node_page:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_build_your_page: true
+  field_content_owner: true
+  field_last_updated: true
+  field_needs_annual_audit: true
+  field_one_sentence_teaser: true
+  field_please_address_the_followi: true
+  field_publishing_status: true
+  field_this_content_needs_review: true

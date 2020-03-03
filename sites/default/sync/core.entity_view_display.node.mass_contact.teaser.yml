@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.mass_contact.body
+    - field.field.node.mass_contact.comment_node_mass_contact
     - field.field.node.mass_contact.field_mass_contact_attachments
     - field.field.node.mass_contact.field_mass_contact_bcc
     - field.field.node.mass_contact.field_mass_contact_category
@@ -36,6 +37,7 @@ content:
     region: content
 hidden:
   addtoany: true
+  comment_node_mass_contact: true
   field_mass_contact_attachments: true
   field_mass_contact_bcc: true
   field_mass_contact_category: true

@@ -1,0 +1,89 @@
+uuid: 713f71c3-fe27-41b3-891d-ce807c8607b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.comment_node_page
+    - field.field.node.page.field_build_your_page
+    - field.field.node.page.field_content_owner
+    - field.field.node.page.field_last_updated
+    - field.field.node.page.field_needs_annual_audit
+    - field.field.node.page.field_one_sentence_teaser
+    - field.field.node.page.field_please_address_the_followi
+    - field.field.node.page.field_publishing_status
+    - field.field.node.page.field_this_content_needs_review
+    - node.type.page
+  module:
+    - comment
+    - path
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  comment_node_page:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  field_build_your_page: true
+  field_content_owner: true
+  field_last_updated: true
+  field_needs_annual_audit: true
+  field_one_sentence_teaser: true
+  field_please_address_the_followi: true
+  field_publishing_status: true
+  field_this_content_needs_review: true

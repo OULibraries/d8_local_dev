@@ -8,15 +8,15 @@ dependencies:
     - bootstrap
 _core:
   default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
-id: bootstrap_content
+id: bootstrap_system_main
 theme: bootstrap
 region: content
-weight: 0
+weight: -11
 provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
-  label: 'Main page content'
+  label: ''
   provider: system
   label_display: '0'
 visibility: {  }

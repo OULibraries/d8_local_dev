@@ -1,0 +1,68 @@
+uuid: 598e338d-1a87-41af-9bb3-87c1380e25b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_units.default
+    - field.field.node.units.comment_node_units
+    - field.field.node.units.field_blog
+    - field.field.node.units.field_build_your_page
+    - field.field.node.units.field_content_owner
+    - field.field.node.units.field_email
+    - field.field.node.units.field_employees
+    - field.field.node.units.field_facebook
+    - field.field.node.units.field_general_information_1
+    - field.field.node.units.field_general_information_2
+    - field.field.node.units.field_image
+    - field.field.node.units.field_instagram
+    - field.field.node.units.field_last_updated
+    - field.field.node.units.field_locationreference
+    - field.field.node.units.field_needs_annual_audit
+    - field.field.node.units.field_please_address_the_followi
+    - field.field.node.units.field_rm
+    - field.field.node.units.field_this_content_needs_review
+    - field.field.node.units.field_twitter
+    - field.field.node.units.field_youtube
+    - node.type.units
+  module:
+    - comment
+    - user
+id: node.units.default
+targetEntityType: node
+bundle: units
+mode: default
+content:
+  comment_node_units:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_blog: true
+  field_build_your_page: true
+  field_content_owner: true
+  field_email: true
+  field_employees: true
+  field_facebook: true
+  field_general_information_1: true
+  field_general_information_2: true
+  field_image: true
+  field_instagram: true
+  field_last_updated: true
+  field_locationreference: true
+  field_needs_annual_audit: true
+  field_please_address_the_followi: true
+  field_rm: true
+  field_this_content_needs_review: true
+  field_twitter: true
+  field_youtube: true

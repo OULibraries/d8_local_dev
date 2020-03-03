@@ -1,0 +1,91 @@
+uuid: 0fd832b1-f38c-48ec-95e7-b605be8496be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.eresources.comment_node_eresources
+    - field.field.node.eresources.field_coverage
+    - field.field.node.eresources.field_endnote
+    - field.field.node.eresources.field_hsc
+    - field.field.node.eresources.field_info
+    - field.field.node.eresources.field_link
+    - field.field.node.eresources.field_proxy
+    - field.field.node.eresources.field_resource_by_subject
+    - field.field.node.eresources.field_resourcetype
+    - field.field.node.eresources.field_subjects
+    - node.type.eresources
+  module:
+    - comment
+    - path
+id: node.eresources.default
+targetEntityType: node
+bundle: eresources
+mode: default
+content:
+  comment_node_eresources:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  field_coverage: true
+  field_endnote: true
+  field_hsc: true
+  field_info: true
+  field_link: true
+  field_proxy: true
+  field_resource_by_subject: true
+  field_resourcetype: true
+  field_subjects: true

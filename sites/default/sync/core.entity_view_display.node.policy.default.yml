@@ -1,0 +1,48 @@
+uuid: d305331e-e41e-489a-8e1b-fc877e9668e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_policy.default
+    - field.field.node.policy.comment_node_policy
+    - field.field.node.policy.field_build_your_page
+    - field.field.node.policy.field_content_owner
+    - field.field.node.policy.field_last_updated
+    - field.field.node.policy.field_needs_annual_audit
+    - field.field.node.policy.field_please_address_the_followi
+    - field.field.node.policy.field_publishing_status
+    - field.field.node.policy.field_service_categories
+    - field.field.node.policy.field_this_content_needs_review
+    - node.type.policy
+  module:
+    - comment
+    - user
+id: node.policy.default
+targetEntityType: node
+bundle: policy
+mode: default
+content:
+  comment_node_policy:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_build_your_page: true
+  field_content_owner: true
+  field_last_updated: true
+  field_needs_annual_audit: true
+  field_please_address_the_followi: true
+  field_publishing_status: true
+  field_service_categories: true
+  field_this_content_needs_review: true

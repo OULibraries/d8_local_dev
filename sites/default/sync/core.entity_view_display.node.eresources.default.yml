@@ -1,0 +1,50 @@
+uuid: 6183106a-7882-4aa0-9b21-0750b32b1575
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_eresources.default
+    - field.field.node.eresources.comment_node_eresources
+    - field.field.node.eresources.field_coverage
+    - field.field.node.eresources.field_endnote
+    - field.field.node.eresources.field_hsc
+    - field.field.node.eresources.field_info
+    - field.field.node.eresources.field_link
+    - field.field.node.eresources.field_proxy
+    - field.field.node.eresources.field_resource_by_subject
+    - field.field.node.eresources.field_resourcetype
+    - field.field.node.eresources.field_subjects
+    - node.type.eresources
+  module:
+    - comment
+    - user
+id: node.eresources.default
+targetEntityType: node
+bundle: eresources
+mode: default
+content:
+  comment_node_eresources:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_coverage: true
+  field_endnote: true
+  field_hsc: true
+  field_info: true
+  field_link: true
+  field_proxy: true
+  field_resource_by_subject: true
+  field_resourcetype: true
+  field_subjects: true

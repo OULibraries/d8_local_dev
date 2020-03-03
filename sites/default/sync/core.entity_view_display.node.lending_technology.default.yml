@@ -1,0 +1,48 @@
+uuid: a536c312-eddd-4414-9d9c-356a4034cce0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_lending_technology.default
+    - field.field.node.lending_technology.comment_node_lending_technology
+    - field.field.node.lending_technology.field_additional_notes
+    - field.field.node.lending_technology.field_bookable
+    - field.field.node.lending_technology.field_image
+    - field.field.node.lending_technology.field_loan_period
+    - field.field.node.lending_technology.field_location_available
+    - field.field.node.lending_technology.field_number_available
+    - field.field.node.lending_technology.field_overdue_fee
+    - field.field.node.lending_technology.field_technology_type
+    - node.type.lending_technology
+  module:
+    - comment
+    - user
+id: node.lending_technology.default
+targetEntityType: node
+bundle: lending_technology
+mode: default
+content:
+  comment_node_lending_technology:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_additional_notes: true
+  field_bookable: true
+  field_image: true
+  field_loan_period: true
+  field_location_available: true
+  field_number_available: true
+  field_overdue_fee: true
+  field_technology_type: true

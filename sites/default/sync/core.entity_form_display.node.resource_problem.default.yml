@@ -1,0 +1,109 @@
+uuid: f9947bf3-6f65-4361-a7bc-ade7c21aaecb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.resource_problem.comment_node_resource_problem
+    - field.field.node.resource_problem.field_admin_notes
+    - field.field.node.resource_problem.field_article_title
+    - field.field.node.resource_problem.field_author
+    - field.field.node.resource_problem.field_book_title
+    - field.field.node.resource_problem.field_contact_email
+    - field.field.node.resource_problem.field_contact_phone
+    - field.field.node.resource_problem.field_isbn
+    - field.field.node.resource_problem.field_issn
+    - field.field.node.resource_problem.field_journal_title
+    - field.field.node.resource_problem.field_link
+    - field.field.node.resource_problem.field_name
+    - field.field.node.resource_problem.field_notify_me
+    - field.field.node.resource_problem.field_pub_year
+    - field.field.node.resource_problem.field_resource_info
+    - field.field.node.resource_problem.field_screenshot
+    - field.field.node.resource_problem.field_status
+    - field.field.node.resource_problem.field_status_notes
+    - field.field.node.resource_problem.field_volume_issue
+    - node.type.resource_problem
+  module:
+    - comment
+    - path
+id: node.resource_problem.default
+targetEntityType: node
+bundle: resource_problem
+mode: default
+content:
+  comment_node_resource_problem:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  field_admin_notes: true
+  field_article_title: true
+  field_author: true
+  field_book_title: true
+  field_contact_email: true
+  field_contact_phone: true
+  field_isbn: true
+  field_issn: true
+  field_journal_title: true
+  field_link: true
+  field_name: true
+  field_notify_me: true
+  field_pub_year: true
+  field_resource_info: true
+  field_screenshot: true
+  field_status: true
+  field_status_notes: true
+  field_volume_issue: true

@@ -23,7 +23,10 @@ dependencies:
     - field.field.user.user.ldap_user_puid_property
     - field.field.user.user.ldap_user_puid_sid
     - field.field.user.user.mass_contact_opt_out
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
   module:
+    - image
     - path
     - user
 id: user.user.default
@@ -61,6 +64,14 @@ content:
   timezone:
     weight: 6
     settings: {  }
+    third_party_settings: {  }
+    region: content
+  user_picture:
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    type: image_image
+    weight: 31
     third_party_settings: {  }
     region: content
 hidden:

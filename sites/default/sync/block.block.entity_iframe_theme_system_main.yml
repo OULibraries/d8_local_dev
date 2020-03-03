@@ -1,0 +1,20 @@
+uuid: 0fedfbfe-87f4-48c8-8a33-b7a54058a791
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - entity_iframe_theme
+id: entity_iframe_theme_system_main
+theme: entity_iframe_theme
+region: ''
+weight: -63
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,18 @@
+uuid: 426fc5cc-5891-4587-be55-43c162d30c1e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - oulib_bootstrap
+id: oulib_bootstrap_menu_menu_resources_by_subject_1
+theme: oulib_bootstrap
+region: libfooter_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-resources-by-subject-1'
+settings:
+  id: broken
+  label: 'Resources by Subject'
+  provider: core
+  label_display: visible
+visibility: {  }

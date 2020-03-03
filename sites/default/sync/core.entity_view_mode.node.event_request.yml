@@ -1,0 +1,10 @@
+uuid: da2559a6-4f61-452c-bd0e-2df32b80d19d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.event_request
+label: event_request
+targetEntityType: node
+cache: true

@@ -1,0 +1,33 @@
+uuid: d57c13b5-2491-49f4-b673-69b05cfc4079
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.comment_node_assignment_template
+    - node.type.assignment_template
+  module:
+    - comment
+id: node.assignment_template.comment_node_assignment_template
+field_name: comment_node_assignment_template
+entity_type: node
+bundle: assignment_template
+label: Comments
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    status: 2
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 50
+  anonymous: 0
+  form_location: false
+  preview: 1
+field_type: comment

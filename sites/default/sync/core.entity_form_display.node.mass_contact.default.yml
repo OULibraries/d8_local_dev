@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.mass_contact.body
+    - field.field.node.mass_contact.comment_node_mass_contact
     - field.field.node.mass_contact.field_mass_contact_attachments
     - field.field.node.mass_contact.field_mass_contact_bcc
     - field.field.node.mass_contact.field_mass_contact_category
@@ -13,6 +14,7 @@ dependencies:
     - field.field.node.mass_contact.field_mass_contact_to
     - node.type.mass_contact
   module:
+    - comment
     - path
     - text
 id: node.mass_contact.default
@@ -28,6 +30,12 @@ content:
       summary_rows: 3
       placeholder: ''
       show_summary: false
+    third_party_settings: {  }
+    region: content
+  comment_node_mass_contact:
+    type: comment_default
+    weight: 20
+    settings: {  }
     third_party_settings: {  }
     region: content
   created:

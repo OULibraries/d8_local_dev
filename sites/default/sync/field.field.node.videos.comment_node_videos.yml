@@ -1,0 +1,33 @@
+uuid: e803fc52-ce26-4158-a624-d993ac8568eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.comment_node_videos
+    - node.type.videos
+  module:
+    - comment
+id: node.videos.comment_node_videos
+field_name: comment_node_videos
+entity_type: node
+bundle: videos
+label: Comments
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    status: 0
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 50
+  anonymous: 0
+  form_location: true
+  preview: 1
+field_type: comment

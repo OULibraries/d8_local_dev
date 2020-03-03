@@ -1,0 +1,40 @@
+uuid: 2a3b41e9-919f-4d72-9fb1-de37d34a8eb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_videos.default
+    - field.field.node.videos.comment_node_videos
+    - field.field.node.videos.field_add_this_item_to_another_s
+    - field.field.node.videos.field_favorite
+    - field.field.node.videos.field_hp_carousel_start
+    - field.field.node.videos.field_picture
+    - node.type.videos
+  module:
+    - comment
+    - user
+id: node.videos.default
+targetEntityType: node
+bundle: videos
+mode: default
+content:
+  comment_node_videos:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_add_this_item_to_another_s: true
+  field_favorite: true
+  field_hp_carousel_start: true
+  field_picture: true

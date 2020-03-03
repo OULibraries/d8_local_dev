@@ -1,0 +1,20 @@
+uuid: 61bb2f4a-c698-48f7-b342-674cab775cd1
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.comment_node_lending_technology
+field_name: comment_node_lending_technology
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_lending_technology
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

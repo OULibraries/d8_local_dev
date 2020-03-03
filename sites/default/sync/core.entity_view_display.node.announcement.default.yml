@@ -1,0 +1,42 @@
+uuid: eaa3747b-3b84-4b78-8d06-c3c1d69f63e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_announcement.default
+    - field.field.node.announcement.comment_node_announcement
+    - field.field.node.announcement.field_add_media
+    - field.field.node.announcement.field_add_this_item_to_another_s
+    - field.field.node.announcement.field_caption_news
+    - field.field.node.announcement.field_hp_carousel_start
+    - field.field.node.announcement.field_image_announcement
+    - node.type.announcement
+  module:
+    - comment
+    - user
+id: node.announcement.default
+targetEntityType: node
+bundle: announcement
+mode: default
+content:
+  comment_node_announcement:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_add_media: true
+  field_add_this_item_to_another_s: true
+  field_caption_news: true
+  field_hp_carousel_start: true
+  field_image_announcement: true

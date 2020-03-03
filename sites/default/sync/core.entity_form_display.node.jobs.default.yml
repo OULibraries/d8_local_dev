@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.jobs.body
+    - field.field.node.jobs.comment_node_jobs
     - field.field.node.jobs.field_job_link
     - field.field.node.jobs.field_job_status
     - node.type.jobs
   module:
+    - comment
     - path
     - text
 id: node.jobs.default
@@ -23,6 +25,12 @@ content:
       summary_rows: 3
       placeholder: ''
       show_summary: false
+    third_party_settings: {  }
+    region: content
+  comment_node_jobs:
+    type: comment_default
+    weight: 20
+    settings: {  }
     third_party_settings: {  }
     region: content
   created:

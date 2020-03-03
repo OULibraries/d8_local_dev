@@ -1,0 +1,48 @@
+uuid: f5644dbe-93f5-40b1-8817-7ddcb10f2e50
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_service.default
+    - field.field.node.service.comment_node_service
+    - field.field.node.service.field_add_sections
+    - field.field.node.service.field_content_owner
+    - field.field.node.service.field_last_updated
+    - field.field.node.service.field_needs_annual_audit
+    - field.field.node.service.field_please_address_the_followi
+    - field.field.node.service.field_publishing_status
+    - field.field.node.service.field_service_categories
+    - field.field.node.service.field_this_content_needs_review
+    - node.type.service
+  module:
+    - comment
+    - user
+id: node.service.default
+targetEntityType: node
+bundle: service
+mode: default
+content:
+  comment_node_service:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_add_sections: true
+  field_content_owner: true
+  field_last_updated: true
+  field_needs_annual_audit: true
+  field_please_address_the_followi: true
+  field_publishing_status: true
+  field_service_categories: true
+  field_this_content_needs_review: true

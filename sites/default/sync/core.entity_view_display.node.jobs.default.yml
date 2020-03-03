@@ -3,11 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment_node_jobs.default
     - field.field.node.jobs.body
+    - field.field.node.jobs.comment_node_jobs
     - field.field.node.jobs.field_job_link
     - field.field.node.jobs.field_job_status
     - node.type.jobs
   module:
+    - comment
     - text
     - user
 id: node.jobs.default
@@ -20,6 +23,15 @@ content:
     type: text_default
     weight: 101
     settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_jobs:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
     third_party_settings: {  }
     region: content
   links:

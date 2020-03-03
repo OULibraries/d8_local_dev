@@ -1,0 +1,46 @@
+uuid: 28d26fd0-293d-44d5-b0be-679015b7e1aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_event.default
+    - field.field.node.event.comment_node_event
+    - field.field.node.event.field_add_this_item_to_another_s
+    - field.field.node.event.field_hp_carousel_start
+    - field.field.node.event.field_image
+    - field.field.node.event.field_location
+    - field.field.node.event.field_publishing_status
+    - field.field.node.event.field_room_requested
+    - field.field.node.event.field_teaser
+    - node.type.event
+  module:
+    - comment
+    - user
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  comment_node_event:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_add_this_item_to_another_s: true
+  field_hp_carousel_start: true
+  field_image: true
+  field_location: true
+  field_publishing_status: true
+  field_room_requested: true
+  field_teaser: true

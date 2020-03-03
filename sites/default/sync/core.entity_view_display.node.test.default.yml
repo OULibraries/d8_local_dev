@@ -3,12 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment_node_test.default
     - field.field.node.test.body
+    - field.field.node.test.comment_node_test
     - field.field.node.test.field_audit_period
     - field.field.node.test.field_last_updated
     - field.field.node.test.field_publishing_status
     - node.type.test
   module:
+    - comment
     - text
     - user
 id: node.test.default
@@ -21,6 +24,15 @@ content:
     type: text_default
     weight: 101
     settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_test:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
     third_party_settings: {  }
     region: content
   links:

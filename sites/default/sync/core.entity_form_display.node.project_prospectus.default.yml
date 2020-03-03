@@ -1,0 +1,99 @@
+uuid: e2fc3cf6-43b8-4c41-aeee-ec86d357da91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.project_prospectus.comment_node_project_prospectus
+    - field.field.node.project_prospectus.field_contact_email
+    - field.field.node.project_prospectus.field_contact_name
+    - field.field.node.project_prospectus.field_contribution_to_ou_goals
+    - field.field.node.project_prospectus.field_deliverables
+    - field.field.node.project_prospectus.field_goals
+    - field.field.node.project_prospectus.field_implications_of_not_doing
+    - field.field.node.project_prospectus.field_out_of_scope
+    - field.field.node.project_prospectus.field_project_needs
+    - field.field.node.project_prospectus.field_scheduling
+    - field.field.node.project_prospectus.field_scope
+    - field.field.node.project_prospectus.field_success_factors
+    - field.field.node.project_prospectus.field_sustainability
+    - field.field.node.project_prospectus.field_team_members
+    - node.type.project_prospectus
+  module:
+    - comment
+    - path
+id: node.project_prospectus.default
+targetEntityType: node
+bundle: project_prospectus
+mode: default
+content:
+  comment_node_project_prospectus:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden:
+  field_contact_email: true
+  field_contact_name: true
+  field_contribution_to_ou_goals: true
+  field_deliverables: true
+  field_goals: true
+  field_implications_of_not_doing: true
+  field_out_of_scope: true
+  field_project_needs: true
+  field_scheduling: true
+  field_scope: true
+  field_success_factors: true
+  field_sustainability: true
+  field_team_members: true
