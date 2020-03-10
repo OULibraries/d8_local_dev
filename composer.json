@@ -90,6 +90,7 @@
         "drupal/paragraphs": "^1.11",
         "drupal/pathauto": "^1.6",
         "drupal/rules": "^3.0",
+        "drupal/spamspan": "^1.1",
         "drupal/token": "^1.6",
         "drupal/token_filter": "^1.1",
         "drupal/twig_tweak": "^2.4",
@@ -153,7 +154,8 @@
         "enable-patching": true,
         "patches": {
             "drupal/core": {
-                "Fix to layout builder": "https://www.drupal.org/files/issues/2020-01-20/2985882-53.patch"
+                "Fix to layout builder": "https://www.drupal.org/files/issues/2020-01-20/2985882-53.patch",
+                "Fix for filter:null issues": "https://www.drupal.org/files/issues/2020-02-22/3061571-36.patch"
             }
         }
     }

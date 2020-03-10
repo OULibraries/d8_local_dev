@@ -1,13 +1,13 @@
-uuid: 78f8eaaa-0e7a-40d8-9b70-680c1daf0b3c
+uuid: cdc55522-495b-446f-9142-b81da4fc9f5d
 langcode: en
 status: true
 dependencies:
   theme:
-    - stark
+    - claro
 _core:
-  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
-id: stark_local_actions
-theme: stark
+  default_config_hash: osZQ9lL2jTdH5am4LJiZ29RaivhzOf6vCpoRy6FZwIE
+id: claro_local_actions
+theme: claro
 region: content
 weight: -10
 provider: null
