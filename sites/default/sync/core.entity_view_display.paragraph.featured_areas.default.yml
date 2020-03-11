@@ -1,0 +1,39 @@
+uuid: e7599219-9ff5-41de-9379-c36486fc18b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.featured_areas.field_image
+    - field.field.paragraph.featured_areas.field_link
+    - image.style.medium
+    - paragraphs.paragraphs_type.featured_areas
+  module:
+    - image
+    - link
+id: paragraph.featured_areas.default
+targetEntityType: paragraph
+bundle: featured_areas
+mode: default
+content:
+  field_image:
+    label: hidden
+    weight: 0
+    type: image
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_link:
+    label: hidden
+    weight: 3
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -16,6 +16,7 @@ dependencies:
     - node.type.mass_contact
   module:
     - comment
+    - file
     - text
     - user
 id: node.mass_contact.default
@@ -25,8 +26,8 @@ mode: default
 content:
   body:
     label: hidden
+    weight: 0
     type: text_default
-    weight: 101
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -39,6 +40,60 @@ content:
       pager_id: 0
     third_party_settings: {  }
     region: content
+  field_mass_contact_attachments:
+    label: above
+    weight: 10
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_mass_contact_bcc:
+    label: above
+    weight: -7
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_mass_contact_category:
+    label: above
+    weight: -9
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_mass_contact_from:
+    label: above
+    weight: -10
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_mass_contact_headers:
+    label: above
+    weight: -6
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_mass_contact_result:
+    label: above
+    weight: 5
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_mass_contact_to:
+    label: above
+    weight: -8
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -46,10 +101,3 @@ content:
     region: content
 hidden:
   addtoany: true
-  field_mass_contact_attachments: true
-  field_mass_contact_bcc: true
-  field_mass_contact_category: true
-  field_mass_contact_from: true
-  field_mass_contact_headers: true
-  field_mass_contact_result: true
-  field_mass_contact_to: true

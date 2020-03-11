@@ -16,6 +16,7 @@ dependencies:
     - node.type.page
   module:
     - comment
+    - entity_reference_revisions
     - user
 id: node.page.default
 targetEntityType: node
@@ -31,6 +32,15 @@ content:
       pager_id: 0
     third_party_settings: {  }
     region: content
+  field_build_your_page:
+    label: hidden
+    weight: 0
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -38,7 +48,6 @@ content:
     region: content
 hidden:
   addtoany: true
-  field_build_your_page: true
   field_content_owner: true
   field_last_updated: true
   field_needs_annual_audit: true

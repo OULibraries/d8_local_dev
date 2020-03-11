@@ -1,0 +1,101 @@
+uuid: 5ff93c67-5517-4d5c-bb0c-49d453801121
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.location_single
+    - field.field.node.locations.comment_node_locations
+    - field.field.node.locations.field_address
+    - field.field.node.locations.field_askus
+    - field.field.node.locations.field_available_tech
+    - field.field.node.locations.field_available_technology
+    - field.field.node.locations.field_build_your_page
+    - field.field.node.locations.field_content_owner
+    - field.field.node.locations.field_directions
+    - field.field.node.locations.field_email
+    - field.field.node.locations.field_facebook
+    - field.field.node.locations.field_full_hours
+    - field.field.node.locations.field_general_information_1
+    - field.field.node.locations.field_general_information_2
+    - field.field.node.locations.field_geolocation
+    - field.field.node.locations.field_image
+    - field.field.node.locations.field_instagram
+    - field.field.node.locations.field_last_updated
+    - field.field.node.locations.field_link_for_image
+    - field.field.node.locations.field_location_type
+    - field.field.node.locations.field_needs_annual_audit
+    - field.field.node.locations.field_one_sentence_teaser
+    - field.field.node.locations.field_please_address_the_followi
+    - field.field.node.locations.field_room_type
+    - field.field.node.locations.field_this_content_needs_review
+    - field.field.node.locations.field_twitter
+    - field.field.node.locations.field_youtube
+    - node.type.locations
+  module:
+    - address
+    - image
+    - link
+    - user
+id: node.locations.location_single
+targetEntityType: node
+bundle: locations
+mode: location_single
+content:
+  field_address:
+    label: hidden
+    weight: 1
+    type: address_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_directions:
+    label: hidden
+    weight: 5
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_image:
+    label: hidden
+    weight: 0
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  comment_node_locations: true
+  field_askus: true
+  field_available_tech: true
+  field_available_technology: true
+  field_build_your_page: true
+  field_content_owner: true
+  field_email: true
+  field_facebook: true
+  field_full_hours: true
+  field_general_information_1: true
+  field_general_information_2: true
+  field_geolocation: true
+  field_instagram: true
+  field_last_updated: true
+  field_link_for_image: true
+  field_location_type: true
+  field_needs_annual_audit: true
+  field_one_sentence_teaser: true
+  field_please_address_the_followi: true
+  field_room_type: true
+  field_this_content_needs_review: true
+  field_twitter: true
+  field_youtube: true

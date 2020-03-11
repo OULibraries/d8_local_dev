@@ -23,9 +23,13 @@ dependencies:
     - field.field.node.resource_problem.field_status
     - field.field.node.resource_problem.field_status_notes
     - field.field.node.resource_problem.field_volume_issue
+    - image.style.thumbnail
     - node.type.resource_problem
   module:
     - comment
+    - image
+    - link
+    - options
     - user
 id: node.resource_problem.default
 targetEntityType: node
@@ -41,6 +45,149 @@ content:
       pager_id: 0
     third_party_settings: {  }
     region: content
+  field_admin_notes:
+    label: above
+    weight: 20
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_article_title:
+    label: inline
+    weight: 14
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_author:
+    label: inline
+    weight: 11
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_book_title:
+    label: inline
+    weight: 9
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_contact_email:
+    label: inline
+    weight: 3
+    type: email_mailto
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_contact_phone:
+    label: inline
+    weight: 2
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_isbn:
+    label: inline
+    weight: 6
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_issn:
+    label: inline
+    weight: 7
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_journal_title:
+    label: inline
+    weight: 10
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_link:
+    label: inline
+    weight: 4
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_name:
+    label: inline
+    weight: 1
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_notify_me:
+    label: hidden
+    weight: 17
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_pub_year:
+    label: inline
+    weight: 12
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_resource_info:
+    label: hidden
+    weight: 5
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_screenshot:
+    label: hidden
+    weight: 15
+    type: image
+    settings:
+      image_style: thumbnail
+      image_link: file
+    third_party_settings: {  }
+    region: content
+  field_status:
+    label: inline
+    weight: 16
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_status_notes:
+    label: above
+    weight: 19
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_volume_issue:
+    label: inline
+    weight: 13
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -48,21 +195,3 @@ content:
     region: content
 hidden:
   addtoany: true
-  field_admin_notes: true
-  field_article_title: true
-  field_author: true
-  field_book_title: true
-  field_contact_email: true
-  field_contact_phone: true
-  field_isbn: true
-  field_issn: true
-  field_journal_title: true
-  field_link: true
-  field_name: true
-  field_notify_me: true
-  field_pub_year: true
-  field_resource_info: true
-  field_screenshot: true
-  field_status: true
-  field_status_notes: true
-  field_volume_issue: true

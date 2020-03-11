@@ -1,0 +1,32 @@
+uuid: 5734fb2f-e9fd-43fe-94cf-8425c0876b64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.available_technology.field_image
+    - taxonomy.vocabulary.available_technology
+  module:
+    - image
+    - text
+id: taxonomy_term.available_technology.default
+targetEntityType: taxonomy_term
+bundle: available_technology
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    label: above
+    weight: 0
+    type: image
+    settings:
+      image_style: small__150x150_
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

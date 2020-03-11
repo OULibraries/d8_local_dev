@@ -1,0 +1,24 @@
+uuid: e2c817ce-d117-4b6e-9307-f2ad87a6b283
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_large_left_text_right.field_image
+    - paragraphs.paragraphs_type.image_large_left_text_right
+  module:
+    - image
+id: paragraph.image_large_left_text_right.default
+targetEntityType: paragraph
+bundle: image_large_left_text_right
+mode: default
+content:
+  field_image:
+    label: hidden
+    weight: 0
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

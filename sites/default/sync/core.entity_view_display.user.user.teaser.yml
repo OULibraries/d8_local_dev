@@ -1,0 +1,61 @@
+uuid: ba718500-fd0b-45a1-9ac8-7301554d7e4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.teaser
+    - field.field.user.user.field_appointment
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_departments
+    - field.field.user.user.field_employee_status
+    - field.field.user.user.field_firstname
+    - field.field.user.user.field_lastname
+    - field.field.user.user.field_liaison
+    - field.field.user.user.field_resource_by_subject
+    - field.field.user.user.field_searchable
+    - field.field.user.user.field_sooner_id
+    - field.field.user.user.field_specialties
+    - field.field.user.user.field_title
+    - field.field.user.user.ldap_user_current_dn
+    - field.field.user.user.ldap_user_last_checked
+    - field.field.user.user.ldap_user_ldap_exclude
+    - field.field.user.user.ldap_user_prov_entries
+    - field.field.user.user.ldap_user_puid
+    - field.field.user.user.ldap_user_puid_property
+    - field.field.user.user.ldap_user_puid_sid
+    - field.field.user.user.mass_contact_opt_out
+    - field.field.user.user.user_picture
+  module:
+    - user
+id: user.user.teaser
+targetEntityType: user
+bundle: user
+mode: teaser
+content:
+  member_for:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_appointment: true
+  field_bio: true
+  field_departments: true
+  field_employee_status: true
+  field_firstname: true
+  field_lastname: true
+  field_liaison: true
+  field_resource_by_subject: true
+  field_searchable: true
+  field_sooner_id: true
+  field_specialties: true
+  field_title: true
+  ldap_user_current_dn: true
+  ldap_user_last_checked: true
+  ldap_user_ldap_exclude: true
+  ldap_user_prov_entries: true
+  ldap_user_puid: true
+  ldap_user_puid_property: true
+  ldap_user_puid_sid: true
+  mass_contact_opt_out: true
+  user_picture: true

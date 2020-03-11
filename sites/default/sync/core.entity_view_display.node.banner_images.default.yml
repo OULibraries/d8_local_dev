@@ -10,6 +10,8 @@ dependencies:
     - node.type.banner_images
   module:
     - comment
+    - image
+    - link
     - user
 id: node.banner_images.default
 targetEntityType: node
@@ -25,6 +27,27 @@ content:
       pager_id: 0
     third_party_settings: {  }
     region: content
+  field_image:
+    label: above
+    weight: 0
+    type: image
+    settings:
+      image_style: banner
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_link:
+    label: above
+    weight: 1
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -32,5 +55,3 @@ content:
     region: content
 hidden:
   addtoany: true
-  field_image: true
-  field_link: true

@@ -32,7 +32,14 @@ dependencies:
     - field.field.node.locations.field_youtube
     - node.type.locations
   module:
+    - address
     - comment
+    - datetime
+    - entity_reference_revisions
+    - file
+    - image
+    - link
+    - options
     - user
 id: node.locations.default
 targetEntityType: node
@@ -48,6 +55,228 @@ content:
       pager_id: 0
     third_party_settings: {  }
     region: content
+  field_address:
+    label: hidden
+    weight: 1
+    type: address_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_askus:
+    label: above
+    weight: 10
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_available_tech:
+    label: above
+    weight: 22
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_available_technology:
+    label: above
+    weight: 11
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_build_your_page:
+    label: above
+    weight: 14
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_content_owner:
+    label: above
+    weight: 18
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_directions:
+    label: hidden
+    weight: 3
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_email:
+    label: above
+    weight: 9
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_facebook:
+    label: above
+    weight: 5
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_full_hours:
+    label: above
+    weight: 12
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_general_information_1:
+    label: above
+    weight: 20
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_general_information_2:
+    label: above
+    weight: 21
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_image:
+    label: hidden
+    weight: 0
+    type: image
+    settings:
+      image_style: extra_large
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_instagram:
+    label: above
+    weight: 7
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_last_updated:
+    label: above
+    weight: 19
+    type: datetime_default
+    settings:
+      format_type: long
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_link_for_image:
+    label: above
+    weight: 24
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_location_type:
+    label: above
+    weight: 13
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_needs_annual_audit:
+    label: above
+    weight: 17
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_one_sentence_teaser:
+    label: above
+    weight: 23
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_please_address_the_followi:
+    label: above
+    weight: 16
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_this_content_needs_review:
+    label: above
+    weight: 15
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_twitter:
+    label: above
+    weight: 6
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_youtube:
+    label: above
+    weight: 8
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -55,28 +284,5 @@ content:
     region: content
 hidden:
   addtoany: true
-  field_address: true
-  field_askus: true
-  field_available_tech: true
-  field_available_technology: true
-  field_build_your_page: true
-  field_content_owner: true
-  field_directions: true
-  field_email: true
-  field_facebook: true
-  field_full_hours: true
-  field_general_information_1: true
-  field_general_information_2: true
   field_geolocation: true
-  field_image: true
-  field_instagram: true
-  field_last_updated: true
-  field_link_for_image: true
-  field_location_type: true
-  field_needs_annual_audit: true
-  field_one_sentence_teaser: true
-  field_please_address_the_followi: true
   field_room_type: true
-  field_this_content_needs_review: true
-  field_twitter: true
-  field_youtube: true

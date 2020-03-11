@@ -1,0 +1,47 @@
+uuid: 7867eca1-f629-42fd-b5ad-c9dcd5befd1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.frontpage
+    - field.field.node.announcement.comment_node_announcement
+    - field.field.node.announcement.field_add_media
+    - field.field.node.announcement.field_add_this_item_to_another_s
+    - field.field.node.announcement.field_caption_news
+    - field.field.node.announcement.field_hp_carousel_start
+    - field.field.node.announcement.field_image_announcement
+    - node.type.announcement
+  module:
+    - colorbox
+    - user
+id: node.announcement.frontpage
+targetEntityType: node
+bundle: announcement
+mode: frontpage
+content:
+  field_image_announcement:
+    label: hidden
+    weight: 2
+    type: colorbox
+    settings:
+      colorbox_caption: auto
+      colorbox_caption_custom: ''
+      colorbox_gallery: post
+      colorbox_gallery_custom: ''
+      colorbox_image_style: ''
+      colorbox_node_style: ''
+      colorbox_node_style_first: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  comment_node_announcement: true
+  field_add_media: true
+  field_add_this_item_to_another_s: true
+  field_caption_news: true
+  field_hp_carousel_start: true

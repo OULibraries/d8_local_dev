@@ -11,6 +11,7 @@ dependencies:
     - node.type.jobs
   module:
     - comment
+    - link
     - text
     - user
 id: node.jobs.default
@@ -20,8 +21,8 @@ mode: default
 content:
   body:
     label: hidden
+    weight: 0
     type: text_default
-    weight: 101
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -34,6 +35,26 @@ content:
       pager_id: 0
     third_party_settings: {  }
     region: content
+  field_job_link:
+    label: above
+    weight: 1
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_job_status:
+    label: above
+    weight: 2
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -41,5 +62,3 @@ content:
     region: content
 hidden:
   addtoany: true
-  field_job_link: true
-  field_job_status: true

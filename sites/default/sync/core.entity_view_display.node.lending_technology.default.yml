@@ -16,6 +16,9 @@ dependencies:
     - node.type.lending_technology
   module:
     - comment
+    - image
+    - options
+    - text
     - user
 id: node.lending_technology.default
 targetEntityType: node
@@ -31,6 +34,68 @@ content:
       pager_id: 0
     third_party_settings: {  }
     region: content
+  field_additional_notes:
+    label: above
+    weight: 6
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_bookable:
+    label: above
+    weight: 5
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    label: above
+    weight: 0
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_loan_period:
+    label: above
+    weight: 4
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_location_available:
+    label: above
+    weight: 7
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_number_available:
+    label: above
+    weight: 2
+    type: number_integer
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    region: content
+  field_overdue_fee:
+    label: above
+    weight: 3
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_technology_type:
+    label: above
+    weight: 1
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -38,11 +103,3 @@ content:
     region: content
 hidden:
   addtoany: true
-  field_additional_notes: true
-  field_bookable: true
-  field_image: true
-  field_loan_period: true
-  field_location_available: true
-  field_number_available: true
-  field_overdue_fee: true
-  field_technology_type: true

@@ -1,0 +1,47 @@
+uuid: 36477352-1e40-49f5-af5a-3aa3b64d641c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.locations_index
+    - field.field.node.library_stories.comment_node_library_stories
+    - field.field.node.library_stories.field_add_to_events_page
+    - field.field.node.library_stories.field_archive
+    - field.field.node.library_stories.field_call_out_quote
+    - field.field.node.library_stories.field_caption
+    - field.field.node.library_stories.field_custom_area
+    - field.field.node.library_stories.field_extended_description
+    - field.field.node.library_stories.field_image
+    - field.field.node.library_stories.field_initiatives
+    - field.field.node.library_stories.field_introduction
+    - field.field.node.library_stories.field_link
+    - field.field.node.library_stories.field_pillars
+    - field.field.node.library_stories.field_sticky
+    - node.type.library_stories
+  module:
+    - user
+id: node.library_stories.locations_index
+targetEntityType: node
+bundle: library_stories
+mode: locations_index
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  comment_node_library_stories: true
+  field_add_to_events_page: true
+  field_archive: true
+  field_call_out_quote: true
+  field_caption: true
+  field_custom_area: true
+  field_extended_description: true
+  field_image: true
+  field_initiatives: true
+  field_introduction: true
+  field_link: true
+  field_pillars: true
+  field_sticky: true

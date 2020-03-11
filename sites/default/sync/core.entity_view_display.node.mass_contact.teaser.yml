@@ -24,8 +24,8 @@ mode: teaser
 content:
   body:
     label: hidden
+    weight: 0
     type: text_summary_or_trimmed
-    weight: 101
     settings:
       trim_length: 600
     third_party_settings: {  }

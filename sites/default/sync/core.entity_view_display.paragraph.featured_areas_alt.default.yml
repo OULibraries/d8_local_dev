@@ -1,0 +1,39 @@
+uuid: 69ec7f5e-d1a0-4603-b787-23f839d6bec4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.featured_areas_alt.field_image
+    - field.field.paragraph.featured_areas_alt.field_link
+    - image.style.medium
+    - paragraphs.paragraphs_type.featured_areas_alt
+  module:
+    - image
+    - link
+id: paragraph.featured_areas_alt.default
+targetEntityType: paragraph
+bundle: featured_areas_alt
+mode: default
+content:
+  field_image:
+    label: hidden
+    weight: 0
+    type: image
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  field_link:
+    label: hidden
+    weight: 1
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

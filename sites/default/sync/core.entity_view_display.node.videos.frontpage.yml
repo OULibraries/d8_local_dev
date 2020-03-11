@@ -1,0 +1,31 @@
+uuid: 0f3ff897-7662-4fbd-96fc-cbcb2842b35b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.frontpage
+    - field.field.node.videos.comment_node_videos
+    - field.field.node.videos.field_add_this_item_to_another_s
+    - field.field.node.videos.field_favorite
+    - field.field.node.videos.field_hp_carousel_start
+    - field.field.node.videos.field_picture
+    - node.type.videos
+  module:
+    - user
+id: node.videos.frontpage
+targetEntityType: node
+bundle: videos
+mode: frontpage
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  comment_node_videos: true
+  field_add_this_item_to_another_s: true
+  field_favorite: true
+  field_hp_carousel_start: true
+  field_picture: true

@@ -14,8 +14,8 @@ mode: default
 content:
   comment_body:
     label: hidden
-    type: text_default
     weight: 0
+    type: text_default
     settings: {  }
     third_party_settings: {  }
     region: content

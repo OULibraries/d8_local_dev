@@ -12,6 +12,8 @@ dependencies:
     - node.type.test
   module:
     - comment
+    - datetime
+    - options
     - text
     - user
 id: node.test.default
@@ -21,8 +23,8 @@ mode: default
 content:
   body:
     label: hidden
+    weight: 0
     type: text_default
-    weight: 101
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -35,6 +37,29 @@ content:
       pager_id: 0
     third_party_settings: {  }
     region: content
+  field_audit_period:
+    label: above
+    weight: 2
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_last_updated:
+    label: above
+    weight: 3
+    type: datetime_default
+    settings:
+      format_type: long
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_publishing_status:
+    label: above
+    weight: 1
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -42,6 +67,3 @@ content:
     region: content
 hidden:
   addtoany: true
-  field_audit_period: true
-  field_last_updated: true
-  field_publishing_status: true

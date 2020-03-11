@@ -20,6 +20,11 @@ dependencies:
     - node.type.library_stories
   module:
     - comment
+    - entity_reference_revisions
+    - image
+    - link
+    - options
+    - text
     - user
 id: node.library_stories.default
 targetEntityType: node
@@ -35,6 +40,103 @@ content:
       pager_id: 0
     third_party_settings: {  }
     region: content
+  field_add_to_events_page:
+    label: above
+    weight: 8
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_archive:
+    label: above
+    weight: 9
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_call_out_quote:
+    label: above
+    weight: 3
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_caption:
+    label: above
+    weight: 13
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_custom_area:
+    label: hidden
+    weight: 11
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_extended_description:
+    label: above
+    weight: 5
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    label: above
+    weight: 1
+    type: image
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    region: content
+  field_initiatives:
+    label: above
+    weight: 14
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_introduction:
+    label: above
+    weight: 4
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_link:
+    label: above
+    weight: 12
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_pillars:
+    label: above
+    weight: 15
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_sticky:
+    label: above
+    weight: 10
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -42,15 +144,3 @@ content:
     region: content
 hidden:
   addtoany: true
-  field_add_to_events_page: true
-  field_archive: true
-  field_call_out_quote: true
-  field_caption: true
-  field_custom_area: true
-  field_extended_description: true
-  field_image: true
-  field_initiatives: true
-  field_introduction: true
-  field_link: true
-  field_pillars: true
-  field_sticky: true

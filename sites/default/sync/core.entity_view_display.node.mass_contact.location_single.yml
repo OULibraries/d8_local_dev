@@ -1,0 +1,39 @@
+uuid: de672d70-63a1-4d75-8d46-48456b12d413
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.location_single
+    - field.field.node.mass_contact.body
+    - field.field.node.mass_contact.comment_node_mass_contact
+    - field.field.node.mass_contact.field_mass_contact_attachments
+    - field.field.node.mass_contact.field_mass_contact_bcc
+    - field.field.node.mass_contact.field_mass_contact_category
+    - field.field.node.mass_contact.field_mass_contact_from
+    - field.field.node.mass_contact.field_mass_contact_headers
+    - field.field.node.mass_contact.field_mass_contact_result
+    - field.field.node.mass_contact.field_mass_contact_to
+    - node.type.mass_contact
+  module:
+    - user
+id: node.mass_contact.location_single
+targetEntityType: node
+bundle: mass_contact
+mode: location_single
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  comment_node_mass_contact: true
+  field_mass_contact_attachments: true
+  field_mass_contact_bcc: true
+  field_mass_contact_category: true
+  field_mass_contact_from: true
+  field_mass_contact_headers: true
+  field_mass_contact_result: true
+  field_mass_contact_to: true

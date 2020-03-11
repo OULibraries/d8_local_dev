@@ -18,8 +18,8 @@ mode: default
 content:
   body:
     label: hidden
+    weight: 0
     type: text_default
-    weight: 101
     settings: {  }
     third_party_settings: {  }
     region: content

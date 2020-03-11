@@ -1,0 +1,35 @@
+uuid: a2e141cc-4fa3-41e3-93d0-00d0d17649e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.resources_by_subject.field_government_documents
+    - taxonomy.vocabulary.resources_by_subject
+  module:
+    - link
+    - text
+id: taxonomy_term.resources_by_subject.default
+targetEntityType: taxonomy_term
+bundle: resources_by_subject
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_government_documents:
+    label: above
+    weight: 0
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

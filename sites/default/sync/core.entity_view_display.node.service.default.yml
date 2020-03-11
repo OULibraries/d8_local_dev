@@ -16,6 +16,9 @@ dependencies:
     - node.type.service
   module:
     - comment
+    - datetime
+    - entity_reference_revisions
+    - options
     - user
 id: node.service.default
 targetEntityType: node
@@ -31,6 +34,68 @@ content:
       pager_id: 0
     third_party_settings: {  }
     region: content
+  field_add_sections:
+    label: hidden
+    weight: 1
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_content_owner:
+    label: above
+    weight: 5
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_last_updated:
+    label: above
+    weight: 4
+    type: datetime_default
+    settings:
+      format_type: long
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_needs_annual_audit:
+    label: above
+    weight: 9
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_please_address_the_followi:
+    label: above
+    weight: 10
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_publishing_status:
+    label: above
+    weight: 12
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_service_categories:
+    label: above
+    weight: 6
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_this_content_needs_review:
+    label: above
+    weight: 7
+    type: list_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -38,11 +103,3 @@ content:
     region: content
 hidden:
   addtoany: true
-  field_add_sections: true
-  field_content_owner: true
-  field_last_updated: true
-  field_needs_annual_audit: true
-  field_please_address_the_followi: true
-  field_publishing_status: true
-  field_service_categories: true
-  field_this_content_needs_review: true

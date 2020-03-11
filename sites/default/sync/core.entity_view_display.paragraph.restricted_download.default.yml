@@ -1,0 +1,23 @@
+uuid: 45de44d5-e087-4d25-9220-0d7c004f0442
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.restricted_download.field_restricted_file
+    - paragraphs.paragraphs_type.restricted_download
+  module:
+    - file
+id: paragraph.restricted_download.default
+targetEntityType: paragraph
+bundle: restricted_download
+mode: default
+content:
+  field_restricted_file:
+    label: hidden
+    weight: 0
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+hidden: {  }
