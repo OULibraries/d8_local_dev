@@ -1,0 +1,8 @@
+uuid: 28cc1ecd-5311-4087-bb35-f115fcb13c2c
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_imp_chal_chap
+label: 'Impact Challenge Chapter comment'
+target_entity_type_id: node
+description: null
