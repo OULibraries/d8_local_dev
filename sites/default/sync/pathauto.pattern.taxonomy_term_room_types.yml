@@ -1,0 +1,22 @@
+uuid: b38efd4a-21ee-4aec-9597-546476b0f220
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: taxonomy_term_room_types
+label: 'Taxonomy term - Room Types'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'room-types/[term:name]'
+selection_criteria:
+  -
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      room_types: room_types
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+selection_logic: and
+weight: 0
+relationships: {  }

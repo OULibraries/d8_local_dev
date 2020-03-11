@@ -8,9 +8,11 @@ dependencies:
     - field.field.node.picture.field_add_this_item_to_another_s
     - field.field.node.picture.field_caption
     - field.field.node.picture.field_picture
+    - image.style.thumbnail
     - node.type.picture
   module:
     - comment
+    - image
     - path
     - text
 id: node.picture.default
@@ -19,8 +21,8 @@ bundle: picture
 mode: default
 content:
   body:
+    weight: 5
     type: text_textarea_with_summary
-    weight: 121
     settings:
       rows: 9
       summary_rows: 3
@@ -40,6 +42,28 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_add_this_item_to_another_s:
+    weight: 7
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_caption:
+    weight: 2
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_picture:
+    weight: 1
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 30
@@ -85,7 +109,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  field_add_this_item_to_another_s: true
-  field_caption: true
-  field_picture: true
+hidden: {  }

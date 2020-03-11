@@ -1,0 +1,18 @@
+uuid: 0f741a63-0ca8-428d-a82c-b54ab8dc234e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.units
+id: node.units.title
+field_name: title
+entity_type: node
+bundle: units
+label: 'Unit Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

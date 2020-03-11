@@ -1,0 +1,54 @@
+uuid: dd079fee-e59b-45b6-98af-20218fb56336
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.resources_by_subject.field_government_documents
+    - taxonomy.vocabulary.resources_by_subject
+  module:
+    - link
+    - path
+    - text
+id: taxonomy_term.resources_by_subject.default
+targetEntityType: taxonomy_term
+bundle: resources_by_subject
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_government_documents:
+    weight: 31
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
+hidden: {  }

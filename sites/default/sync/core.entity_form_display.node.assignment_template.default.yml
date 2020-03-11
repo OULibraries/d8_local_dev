@@ -90,8 +90,8 @@ bundle: assignment_template
 mode: default
 content:
   body:
+    weight: 3
     type: text_textarea_with_summary
-    weight: 121
     settings:
       rows: 9
       summary_rows: 3
@@ -111,6 +111,569 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_add_step1:
+    weight: 38
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_add_step10:
+    weight: 59
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_add_step11:
+    weight: 60
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_add_step12:
+    weight: 61
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_add_step13:
+    weight: 62
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_add_step14:
+    weight: 63
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_add_step2:
+    weight: 41
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_add_step3:
+    weight: 49
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_add_step4:
+    weight: 53
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_add_step5:
+    weight: 54
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_add_step6:
+    weight: 55
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_add_step7:
+    weight: 56
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_add_step8:
+    weight: 57
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_add_step9:
+    weight: 58
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_date_complete1:
+    weight: 35
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_date_complete10:
+    weight: 57
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_date_complete11:
+    weight: 58
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_date_complete12:
+    weight: 59
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_date_complete13:
+    weight: 60
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_date_complete14:
+    weight: 61
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_date_complete15:
+    weight: 62
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_date_complete2:
+    weight: 39
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_date_complete3:
+    weight: 47
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_date_complete4:
+    weight: 51
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_date_complete5:
+    weight: 52
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_date_complete6:
+    weight: 53
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_date_complete7:
+    weight: 54
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_date_complete8:
+    weight: 55
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_date_complete9:
+    weight: 56
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_percentage1:
+    weight: 34
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_percentage10:
+    weight: 56
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_percentage11:
+    weight: 57
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_percentage12:
+    weight: 58
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_percentage13:
+    weight: 59
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_percentage14:
+    weight: 60
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_percentage15:
+    weight: 61
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_percentage2:
+    weight: 38
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_percentage3:
+    weight: 46
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_percentage4:
+    weight: 50
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_percentage5:
+    weight: 51
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_percentage6:
+    weight: 52
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_percentage7:
+    weight: 53
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_percentage8:
+    weight: 54
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_percentage9:
+    weight: 55
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_resources1:
+    weight: 37
+    type: text_textarea
+    settings:
+      rows: 25
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_resources10:
+    weight: 58
+    type: text_textarea
+    settings:
+      rows: 25
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_resources11:
+    weight: 59
+    type: text_textarea
+    settings:
+      rows: 25
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_resources12:
+    weight: 60
+    type: text_textarea
+    settings:
+      rows: 25
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_resources13:
+    weight: 61
+    type: text_textarea
+    settings:
+      rows: 25
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_resources14:
+    weight: 62
+    type: text_textarea
+    settings:
+      rows: 25
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_resources15:
+    weight: 63
+    type: text_textarea
+    settings:
+      rows: 25
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_resources2:
+    weight: 40
+    type: text_textarea
+    settings:
+      rows: 25
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_resources3:
+    weight: 48
+    type: text_textarea
+    settings:
+      rows: 25
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_resources4:
+    weight: 52
+    type: text_textarea
+    settings:
+      rows: 25
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_resources5:
+    weight: 53
+    type: text_textarea
+    settings:
+      rows: 25
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_resources6:
+    weight: 54
+    type: text_textarea
+    settings:
+      rows: 25
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_resources7:
+    weight: 55
+    type: text_textarea
+    settings:
+      rows: 25
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_resources8:
+    weight: 56
+    type: text_textarea
+    settings:
+      rows: 25
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_resources9:
+    weight: 57
+    type: text_textarea
+    settings:
+      rows: 25
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_step_title1:
+    weight: 33
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_step_title10:
+    weight: 55
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_step_title11:
+    weight: 56
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_step_title12:
+    weight: 57
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_step_title13:
+    weight: 58
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_step_title14:
+    weight: 59
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_step_title15:
+    weight: 60
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_step_title2:
+    weight: 37
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_step_title3:
+    weight: 45
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_step_title4:
+    weight: 49
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_step_title5:
+    weight: 50
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_step_title6:
+    weight: 51
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_step_title7:
+    weight: 52
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_step_title8:
+    weight: 53
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_step_title9:
+    weight: 54
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 30
@@ -156,78 +719,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  field_add_step1: true
-  field_add_step10: true
-  field_add_step11: true
-  field_add_step12: true
-  field_add_step13: true
-  field_add_step14: true
-  field_add_step2: true
-  field_add_step3: true
-  field_add_step4: true
-  field_add_step5: true
-  field_add_step6: true
-  field_add_step7: true
-  field_add_step8: true
-  field_add_step9: true
-  field_date_complete1: true
-  field_date_complete10: true
-  field_date_complete11: true
-  field_date_complete12: true
-  field_date_complete13: true
-  field_date_complete14: true
-  field_date_complete15: true
-  field_date_complete2: true
-  field_date_complete3: true
-  field_date_complete4: true
-  field_date_complete5: true
-  field_date_complete6: true
-  field_date_complete7: true
-  field_date_complete8: true
-  field_date_complete9: true
-  field_percentage1: true
-  field_percentage10: true
-  field_percentage11: true
-  field_percentage12: true
-  field_percentage13: true
-  field_percentage14: true
-  field_percentage15: true
-  field_percentage2: true
-  field_percentage3: true
-  field_percentage4: true
-  field_percentage5: true
-  field_percentage6: true
-  field_percentage7: true
-  field_percentage8: true
-  field_percentage9: true
-  field_resources1: true
-  field_resources10: true
-  field_resources11: true
-  field_resources12: true
-  field_resources13: true
-  field_resources14: true
-  field_resources15: true
-  field_resources2: true
-  field_resources3: true
-  field_resources4: true
-  field_resources5: true
-  field_resources6: true
-  field_resources7: true
-  field_resources8: true
-  field_resources9: true
-  field_step_title1: true
-  field_step_title10: true
-  field_step_title11: true
-  field_step_title12: true
-  field_step_title13: true
-  field_step_title14: true
-  field_step_title15: true
-  field_step_title2: true
-  field_step_title3: true
-  field_step_title4: true
-  field_step_title5: true
-  field_step_title6: true
-  field_step_title7: true
-  field_step_title8: true
-  field_step_title9: true
+hidden: {  }

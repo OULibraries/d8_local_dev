@@ -27,10 +27,17 @@ dependencies:
     - field.field.node.room.field_room_type
     - field.field.node.room.field_this_content_needs_review
     - field.field.node.room.field_user_type
+    - image.style.thumbnail
     - node.type.room
   module:
     - comment
+    - datetime
+    - file
+    - image
+    - link
+    - paragraphs
     - path
+    - text
 id: node.room.default
 targetEntityType: node
 bundle: room
@@ -48,6 +55,171 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_available_tech:
+    weight: 8
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_build_your_page:
+    weight: 7
+    type: entity_reference_paragraphs
+    settings:
+      title: Section
+      title_plural: Sections
+      edit_mode: open
+      add_mode: select
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_content_owner:
+    weight: 14
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_floor:
+    weight: 11
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 3
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_last_updated:
+    weight: 15
+    type: datetime_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_location:
+    weight: 10
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_lockable:
+    weight: 9
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_map:
+    weight: 13
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+  field_max_occupancy:
+    weight: 22
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_needs_annual_audit:
+    weight: 13
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_occupancy:
+    weight: 23
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_one_sentence_teaser:
+    weight: 2
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_please_address_the_followi:
+    weight: 12
+    type: string_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_publishing_status:
+    weight: 1
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_reservation_link:
+    weight: 24
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_reserve:
+    weight: 27
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_room_features:
+    weight: 28
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_room_number:
+    weight: 12
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_room_policy:
+    weight: 8
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_room_type:
+    weight: 26
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_this_content_needs_review:
+    weight: 11
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_user_type:
+    weight: 25
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 30
@@ -93,27 +265,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  field_available_tech: true
-  field_build_your_page: true
-  field_content_owner: true
-  field_floor: true
-  field_image: true
-  field_last_updated: true
-  field_location: true
-  field_lockable: true
-  field_map: true
-  field_max_occupancy: true
-  field_needs_annual_audit: true
-  field_occupancy: true
-  field_one_sentence_teaser: true
-  field_please_address_the_followi: true
-  field_publishing_status: true
-  field_reservation_link: true
-  field_reserve: true
-  field_room_features: true
-  field_room_number: true
-  field_room_policy: true
-  field_room_type: true
-  field_this_content_needs_review: true
-  field_user_type: true
+hidden: {  }

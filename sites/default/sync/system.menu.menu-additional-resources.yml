@@ -1,0 +1,8 @@
+uuid: 70303904-bad9-4354-972c-e6c20d6094d2
+langcode: en
+status: true
+dependencies: {  }
+id: menu-additional-resources
+label: 'Additional Resources'
+description: 'The <i>Additional Resources</i> menu contains links for additional resources as listed on the resources page.'
+locked: false

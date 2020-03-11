@@ -12,10 +12,13 @@ dependencies:
     - field.field.node.lending_technology.field_number_available
     - field.field.node.lending_technology.field_overdue_fee
     - field.field.node.lending_technology.field_technology_type
+    - image.style.thumbnail
     - node.type.lending_technology
   module:
     - comment
+    - image
     - path
+    - text
 id: node.lending_technology.default
 targetEntityType: node
 bundle: lending_technology
@@ -33,6 +36,63 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_additional_notes:
+    weight: 39
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_bookable:
+    weight: 38
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 33
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_loan_period:
+    weight: 36
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_location_available:
+    weight: 34
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_number_available:
+    weight: 35
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_overdue_fee:
+    weight: 37
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_technology_type:
+    weight: 31
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 30
@@ -78,12 +138,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  field_additional_notes: true
-  field_bookable: true
-  field_image: true
-  field_loan_period: true
-  field_location_available: true
-  field_number_available: true
-  field_overdue_fee: true
-  field_technology_type: true
+hidden: {  }

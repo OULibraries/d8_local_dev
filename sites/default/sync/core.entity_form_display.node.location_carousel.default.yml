@@ -7,10 +7,14 @@ dependencies:
     - field.field.node.location_carousel.field_carousel_description
     - field.field.node.location_carousel.field_carousel_image
     - field.field.node.location_carousel.field_link
+    - image.style.thumbnail
     - node.type.location_carousel
   module:
     - comment
+    - image
+    - link
     - path
+    - text
 id: node.location_carousel.default
 targetEntityType: node
 bundle: location_carousel
@@ -28,6 +32,30 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_carousel_description:
+    weight: 31
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_carousel_image:
+    weight: 2
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 1
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 30
@@ -73,7 +101,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  field_carousel_description: true
-  field_carousel_image: true
-  field_link: true
+hidden: {  }

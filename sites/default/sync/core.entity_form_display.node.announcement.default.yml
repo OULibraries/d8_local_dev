@@ -9,9 +9,12 @@ dependencies:
     - field.field.node.announcement.field_caption_news
     - field.field.node.announcement.field_hp_carousel_start
     - field.field.node.announcement.field_image_announcement
+    - image.style.thumbnail
     - node.type.announcement
   module:
     - comment
+    - datetime
+    - image
     - path
 id: node.announcement.default
 targetEntityType: node
@@ -30,6 +33,41 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_add_media:
+    weight: 1
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_add_this_item_to_another_s:
+    weight: 9
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_caption_news:
+    weight: 5
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_hp_carousel_start:
+    weight: 4
+    type: datetime_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image_announcement:
+    weight: 2
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 30
@@ -75,9 +113,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  field_add_media: true
-  field_add_this_item_to_another_s: true
-  field_caption_news: true
-  field_hp_carousel_start: true
-  field_image_announcement: true
+hidden: {  }

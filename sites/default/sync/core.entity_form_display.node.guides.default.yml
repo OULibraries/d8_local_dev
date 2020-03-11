@@ -12,6 +12,7 @@ dependencies:
     - node.type.guides
   module:
     - comment
+    - link
     - path
 id: node.guides.default
 targetEntityType: node
@@ -30,6 +31,38 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_link:
+    weight: 1
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_location:
+    weight: 5
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_resource_by_subject:
+    weight: 4
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_subjects:
+    weight: 3
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_units:
+    weight: 6
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 30
@@ -75,9 +108,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  field_link: true
-  field_location: true
-  field_resource_by_subject: true
-  field_subjects: true
-  field_units: true
+hidden: {  }

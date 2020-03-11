@@ -1,0 +1,18 @@
+uuid: ada018fb-33d5-45d7-82a1-485a160fe14e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.project_prospectus
+id: node.project_prospectus.title
+field_name: title
+entity_type: node
+bundle: project_prospectus
+label: 'Project Title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

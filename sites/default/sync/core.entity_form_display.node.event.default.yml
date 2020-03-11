@@ -11,9 +11,12 @@ dependencies:
     - field.field.node.event.field_publishing_status
     - field.field.node.event.field_room_requested
     - field.field.node.event.field_teaser
+    - image.style.thumbnail
     - node.type.event
   module:
     - comment
+    - datetime
+    - image
     - path
 id: node.event.default
 targetEntityType: node
@@ -32,6 +35,52 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_add_this_item_to_another_s:
+    weight: 13
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_hp_carousel_start:
+    weight: 2
+    type: datetime_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 6
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_location:
+    weight: 3
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_publishing_status:
+    weight: 1
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_room_requested:
+    weight: 4
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_teaser:
+    weight: 5
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 30
@@ -77,11 +126,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  field_add_this_item_to_another_s: true
-  field_hp_carousel_start: true
-  field_image: true
-  field_location: true
-  field_publishing_status: true
-  field_room_requested: true
-  field_teaser: true
+hidden: {  }

@@ -10,6 +10,7 @@ dependencies:
     - node.type.jobs
   module:
     - comment
+    - link
     - path
     - text
 id: node.jobs.default
@@ -18,8 +19,8 @@ bundle: jobs
 mode: default
 content:
   body:
+    weight: 31
     type: text_textarea_with_summary
-    weight: 121
     settings:
       rows: 9
       summary_rows: 3
@@ -39,6 +40,20 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_job_link:
+    weight: 32
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_job_status:
+    weight: 33
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 30
@@ -84,6 +99,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  field_job_link: true
-  field_job_status: true
+hidden: {  }

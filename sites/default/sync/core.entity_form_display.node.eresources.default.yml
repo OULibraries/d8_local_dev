@@ -16,7 +16,9 @@ dependencies:
     - node.type.eresources
   module:
     - comment
+    - link
     - path
+    - text
 id: node.eresources.default
 targetEntityType: node
 bundle: eresources
@@ -34,6 +36,78 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_coverage:
+    weight: 2
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_endnote:
+    weight: 13
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_hsc:
+    weight: 7
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_info:
+    weight: 4
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 1
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_proxy:
+    weight: 8
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    region: content
+  field_resource_by_subject:
+    weight: 6
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_resourcetype:
+    weight: 9
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_subjects:
+    weight: 5
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 30
@@ -79,13 +153,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  field_coverage: true
-  field_endnote: true
-  field_hsc: true
-  field_info: true
-  field_link: true
-  field_proxy: true
-  field_resource_by_subject: true
-  field_resourcetype: true
-  field_subjects: true
+hidden: {  }

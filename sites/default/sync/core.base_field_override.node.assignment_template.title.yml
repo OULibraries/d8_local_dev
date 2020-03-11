@@ -1,0 +1,18 @@
+uuid: fc4f89fa-9484-4fec-82af-76b74a9ccf43
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.assignment_template
+id: node.assignment_template.title
+field_name: title
+entity_type: node
+bundle: assignment_template
+label: 'Assignment Template'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

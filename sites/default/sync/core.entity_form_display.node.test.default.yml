@@ -11,6 +11,7 @@ dependencies:
     - node.type.test
   module:
     - comment
+    - datetime
     - path
     - text
 id: node.test.default
@@ -19,8 +20,8 @@ bundle: test
 mode: default
 content:
   body:
+    weight: 3
     type: text_textarea_with_summary
-    weight: 121
     settings:
       rows: 9
       summary_rows: 3
@@ -40,6 +41,24 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_audit_period:
+    weight: 6
+    type: options_buttons
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_last_updated:
+    weight: 5
+    type: datetime_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_publishing_status:
+    weight: 4
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 30
@@ -85,7 +104,4 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden:
-  field_audit_period: true
-  field_last_updated: true
-  field_publishing_status: true
+hidden: {  }

@@ -1,0 +1,18 @@
+uuid: 1396ef88-5f1c-4dc2-9c9c-130fa7046a07
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.room
+id: node.room.title
+field_name: title
+entity_type: node
+bundle: room
+label: 'Room Name'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

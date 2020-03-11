@@ -1,0 +1,8 @@
+uuid: 73f40006-488f-446a-a759-4f3b5437765c
+langcode: en
+status: true
+dependencies: {  }
+id: menu-productivity-tools
+label: 'Writing Tools'
+description: 'The <i>Productivity Tools</i> menu contains links for research productivity tools as listed on the resources page.'
+locked: false

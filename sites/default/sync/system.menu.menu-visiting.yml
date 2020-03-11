@@ -1,0 +1,8 @@
+uuid: 872994cf-7e99-4d98-a0ca-0fd8c0295602
+langcode: en
+status: true
+dependencies: {  }
+id: menu-visiting
+label: Visit
+description: 'Use the <i>visit</i> menu to add items to the visitor menu on the About page.'
+locked: false

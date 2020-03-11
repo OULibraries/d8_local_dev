@@ -1,0 +1,36 @@
+uuid: ad4ef7bc-1fc9-40d8-9ca0-cc0c6ed1c537
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.featured_areas.field_image
+    - field.field.paragraph.featured_areas.field_link
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.featured_areas
+  module:
+    - image
+    - link
+id: paragraph.featured_areas.default
+targetEntityType: paragraph
+bundle: featured_areas
+mode: default
+content:
+  field_image:
+    weight: 0
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 1
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

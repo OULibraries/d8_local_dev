@@ -1,0 +1,24 @@
+uuid: 465274d8-52ca-415b-bbd5-f1af872bc9fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.restricted_download.field_restricted_file
+    - paragraphs.paragraphs_type.restricted_download
+  module:
+    - file
+id: paragraph.restricted_download.default
+targetEntityType: paragraph
+bundle: restricted_download
+mode: default
+content:
+  field_restricted_file:
+    weight: 1
+    type: file_generic
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
