@@ -2,6 +2,10 @@ uuid: f1c57c3f-621d-47e9-bc60-d51ac3a56307
 langcode: en
 status: false
 dependencies:
+  config:
+    - system.menu.menu-resources-by-subject-1
+  module:
+    - system
   theme:
     - bootstrap_test
 id: bootstrap_test_menu_menu_resources_by_subject_1
@@ -11,8 +15,11 @@ weight: 0
 provider: null
 plugin: 'system_menu_block:menu-resources-by-subject-1'
 settings:
-  id: broken
+  id: 'system_menu_block:menu-resources-by-subject-1'
   label: 'Resources by Subject'
-  provider: core
+  provider: system
   label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
 visibility: {  }

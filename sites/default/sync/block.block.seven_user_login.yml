@@ -1,14 +1,14 @@
 uuid: 89936d98-e3c5-4b37-ae83-1e4168b1aedb
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - user
   theme:
-    - ''
+    - claro
 id: seven_user_login
-theme: ''
-region: ''
+theme: claro
+region: content
 weight: 10
 provider: null
 plugin: user_login_block

@@ -1,16 +1,16 @@
-uuid: b01d7f50-98c3-4091-9082-cab48bd81899
+uuid: 921ac5ec-992f-418e-96c9-25a8cff2e5d6
 langcode: en
 status: true
 dependencies:
   module:
     - comment
     - node
-id: node.comment_node_event
-field_name: comment_node_event
+id: node.comment_node_imp_chal_chap
+field_name: comment_node_imp_chal_chap
 entity_type: node
 type: comment
 settings:
-  comment_type: comment_node_event
+  comment_type: comment_node_imp_chal_chap
 module: comment
 locked: false
 cardinality: 1

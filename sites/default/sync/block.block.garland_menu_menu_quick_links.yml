@@ -2,6 +2,10 @@ uuid: 68062bbd-c5e4-47e3-9b90-3636b435f77c
 langcode: en
 status: false
 dependencies:
+  config:
+    - system.menu.menu-quick-links
+  module:
+    - system
   theme:
     - garland
 id: garland_menu_menu_quick_links
@@ -11,8 +15,11 @@ weight: 0
 provider: null
 plugin: 'system_menu_block:menu-quick-links'
 settings:
-  id: broken
+  id: 'system_menu_block:menu-quick-links'
   label: 'Quick Links'
-  provider: core
+  provider: system
   label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
 visibility: {  }

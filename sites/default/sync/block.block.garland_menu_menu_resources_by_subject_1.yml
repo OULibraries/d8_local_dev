@@ -2,6 +2,10 @@ uuid: 2a74245f-d27e-44ac-88c6-dae393403ac6
 langcode: en
 status: false
 dependencies:
+  config:
+    - system.menu.menu-resources-by-subject-1
+  module:
+    - system
   theme:
     - garland
 id: garland_menu_menu_resources_by_subject_1
@@ -11,8 +15,11 @@ weight: 0
 provider: null
 plugin: 'system_menu_block:menu-resources-by-subject-1'
 settings:
-  id: broken
+  id: 'system_menu_block:menu-resources-by-subject-1'
   label: 'Resources by Subject'
-  provider: core
+  provider: system
   label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
 visibility: {  }

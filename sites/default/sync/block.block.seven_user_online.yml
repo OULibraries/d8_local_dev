@@ -7,10 +7,10 @@ dependencies:
   module:
     - views
   theme:
-    - ''
+    - claro
 id: seven_user_online
-theme: ''
-region: ''
+theme: claro
+region: content
 weight: 0
 provider: null
 plugin: 'views_block:who_s_online-who_s_online_block'

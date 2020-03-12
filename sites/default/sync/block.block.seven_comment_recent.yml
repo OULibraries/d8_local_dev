@@ -7,10 +7,10 @@ dependencies:
   module:
     - views
   theme:
-    - ''
+    - claro
 id: seven_comment_recent
-theme: ''
-region: ''
+theme: claro
+region: content
 weight: 0
 provider: null
 plugin: 'views_block:comments_recent-block_1'

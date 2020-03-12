@@ -2,6 +2,10 @@ uuid: 880e5a47-4a54-45c0-833f-0c4b6b5cb3cf
 langcode: en
 status: false
 dependencies:
+  config:
+    - system.menu.menu-resources-by-subject-2
+  module:
+    - system
   theme:
     - oulib_bootstrap_iframe
 id: oulib_bootstrap_iframe_menu_menu_resources_by_subject_2
@@ -11,8 +15,11 @@ weight: 0
 provider: null
 plugin: 'system_menu_block:menu-resources-by-subject-2'
 settings:
-  id: broken
+  id: 'system_menu_block:menu-resources-by-subject-2'
   label: 'Resources by Subject'
-  provider: core
+  provider: system
   label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
 visibility: {  }

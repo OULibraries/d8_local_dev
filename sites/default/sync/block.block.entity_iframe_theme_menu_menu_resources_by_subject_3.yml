@@ -2,6 +2,10 @@ uuid: c09c78cb-1ecf-4b86-ab9c-b34a2963ea30
 langcode: en
 status: false
 dependencies:
+  config:
+    - system.menu.menu-resources-by-subject-3
+  module:
+    - system
   theme:
     - entity_iframe_theme
 id: entity_iframe_theme_menu_menu_resources_by_subject_3
@@ -11,8 +15,11 @@ weight: 0
 provider: null
 plugin: 'system_menu_block:menu-resources-by-subject-3'
 settings:
-  id: broken
+  id: 'system_menu_block:menu-resources-by-subject-3'
   label: ''
-  provider: core
+  provider: system
   label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
 visibility: {  }
