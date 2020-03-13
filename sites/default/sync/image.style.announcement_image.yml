@@ -5,8 +5,8 @@ dependencies: {  }
 name: announcement_image
 label: 'Announcement Image'
 effects:
-  29674f8b-09da-4dae-938e-521b50902928:
-    uuid: 29674f8b-09da-4dae-938e-521b50902928
+  529181d0-f068-4120-b862-e02347613a3d:
+    uuid: 529181d0-f068-4120-b862-e02347613a3d
     id: image_scale_and_crop
     weight: 1
     data:

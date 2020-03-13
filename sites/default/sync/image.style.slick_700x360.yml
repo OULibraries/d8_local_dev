@@ -5,8 +5,8 @@ dependencies: {  }
 name: slick_700x360
 label: slick_700x360
 effects:
-  dceae4db-777f-4934-abd9-0d752753ef7c:
-    uuid: dceae4db-777f-4934-abd9-0d752753ef7c
+  1d746a89-ac5a-465d-9785-aefc683c4bd9:
+    uuid: 1d746a89-ac5a-465d-9785-aefc683c4bd9
     id: image_scale_and_crop
     weight: 1
     data:

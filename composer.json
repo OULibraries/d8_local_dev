@@ -28,12 +28,12 @@
             "type": "package",
             "package": {
                 "name": "oulibraries/studyroom",
-                "version": "1.0.0",
+                "version": "2.0.0",
                 "type": "drupal-custom-module",
                 "source": {
                     "url": "https://github.com/OULibraries/studyroom.git",
                     "type": "git",
-                    "reference": "master"
+                    "reference": "d8"
                 }
             }
         }
@@ -61,6 +61,7 @@
         "drupal/core-vendor-hardening": "^8.8",
         "drupal/ctools": "^3.2",
         "drupal/custom_search": "^1.0",
+        "drupal/date_all_day": "^1.0",
         "drupal/entity": "^1.0",
         "drupal/eu_cookie_compliance": "^1.8",
         "drupal/exclude_node_title": "^1.0",
@@ -103,7 +104,7 @@
         "drupal/webform_views": "^5.0",
         "drush/drush": "9.*",
         "oulibraries/oulib_bootstrap": "^1.0",
-        "oulibraries/studyroom": "^1.0"
+        "oulibraries/studyroom": "^2.0"
     },
     "require-dev": {
         "drupal/devel": "^2.1"

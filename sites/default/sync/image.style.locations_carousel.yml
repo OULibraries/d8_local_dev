@@ -5,8 +5,8 @@ dependencies: {  }
 name: locations_carousel
 label: 'Locations Carousel'
 effects:
-  bb906b24-48a5-4004-b9fd-1b48ef737d91:
-    uuid: bb906b24-48a5-4004-b9fd-1b48ef737d91
+  363ed77a-1813-4199-99d4-8d089ffbef3d:
+    uuid: 363ed77a-1813-4199-99d4-8d089ffbef3d
     id: image_resize
     weight: 1
     data:

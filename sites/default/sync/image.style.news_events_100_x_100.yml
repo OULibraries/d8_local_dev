@@ -5,8 +5,8 @@ dependencies: {  }
 name: news_events_100_x_100
 label: 'News Events 100 x 100'
 effects:
-  545b58ec-979c-4d52-82ec-068259f1fd6f:
-    uuid: 545b58ec-979c-4d52-82ec-068259f1fd6f
+  2bddb55f-176a-4a21-88b3-74bd46f83980:
+    uuid: 2bddb55f-176a-4a21-88b3-74bd46f83980
     id: image_scale_and_crop
     weight: 1
     data:

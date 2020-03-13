@@ -24,6 +24,7 @@ module:
   contextual: 0
   ctools: 0
   ctools_views: 0
+  date_all_day: 0
   datetime: 0
   datetime_range: 0
   dblog: 0
