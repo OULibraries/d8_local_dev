@@ -1,0 +1,30 @@
+uuid: 05453c8c-4572-4c0f-a455-f885c274c30b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_imp_chal_chap.default
+    - field.field.node.imp_chal_chap.comment_node_imp_chal_chap
+    - node.type.imp_chal_chap
+  module:
+    - comment
+    - user
+id: node.imp_chal_chap.default
+targetEntityType: node
+bundle: imp_chal_chap
+mode: default
+content:
+  comment_node_imp_chal_chap:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
