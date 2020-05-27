@@ -1,0 +1,19 @@
+uuid: 315b0479-e7c9-41b5-a7f3-312b5af39768
+langcode: und
+status: true
+dependencies:
+  module:
+    - telephone
+    - user
+id: user.field_fax
+field_name: field_fax
+entity_type: user
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

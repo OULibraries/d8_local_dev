@@ -1,8 +1,0 @@
-uuid: ee3c0ca3-fe89-4044-900f-8f9924f463c1
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_room
-label: 'Room comment'
-target_entity_type_id: node
-description: null

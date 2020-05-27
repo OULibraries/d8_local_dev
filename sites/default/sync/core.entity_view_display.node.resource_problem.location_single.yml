@@ -1,4 +1,4 @@
-uuid: fe4bcf77-0f9e-46c1-8ec6-39e3807e7c66
+uuid: 2515e9ec-4d72-47da-93e5-30f19bb43024
 langcode: en
 status: true
 dependencies:
@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.resource_problem.field_book_title
     - field.field.node.resource_problem.field_contact_email
     - field.field.node.resource_problem.field_contact_phone
+    - field.field.node.resource_problem.field_description
     - field.field.node.resource_problem.field_isbn
     - field.field.node.resource_problem.field_issn
     - field.field.node.resource_problem.field_journal_title
@@ -45,6 +46,7 @@ hidden:
   field_book_title: true
   field_contact_email: true
   field_contact_phone: true
+  field_description: true
   field_isbn: true
   field_issn: true
   field_journal_title: true
@@ -57,3 +59,4 @@ hidden:
   field_status: true
   field_status_notes: true
   field_volume_issue: true
+  search_api_excerpt: true

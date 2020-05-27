@@ -1,8 +1,0 @@
-uuid: a5670724-210a-437c-adac-38bdf1650a0f
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_locations
-label: 'Locations comment'
-target_entity_type_id: node
-description: null

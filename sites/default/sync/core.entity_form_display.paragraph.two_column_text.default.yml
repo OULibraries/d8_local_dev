@@ -1,4 +1,4 @@
-uuid: c46a2da7-2477-4693-8643-46438fce24f0
+uuid: e2d154b1-eaf6-4695-b210-3406a28d0e0e
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,14 @@ dependencies:
     - field.field.paragraph.two_column_text.field_right_column_text
     - paragraphs.paragraphs_type.two_column_text
   module:
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: paragraph.two_column_text.default
 targetEntityType: paragraph
 bundle: two_column_text

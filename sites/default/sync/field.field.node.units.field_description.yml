@@ -1,0 +1,21 @@
+uuid: 31a6aeef-59e6-49c0-98b3-56733c982f4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.units
+  module:
+    - text
+id: node.units.field_description
+field_name: field_description
+entity_type: node
+bundle: units
+label: Description
+description: 'Add a short description to a Unit page.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

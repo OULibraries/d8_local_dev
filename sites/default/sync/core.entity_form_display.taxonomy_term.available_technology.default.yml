@@ -1,4 +1,4 @@
-uuid: c950b3ad-bb68-437f-8746-e26404921aea
+uuid: 8ed6cc32-10cd-4fbc-84b5-f3caa9873aaa
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,16 @@ dependencies:
     - image.style.thumbnail
     - taxonomy.vocabulary.available_technology
   module:
+    - field_layout
     - image
+    - layout_discovery
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: taxonomy_term.available_technology.default
 targetEntityType: taxonomy_term
 bundle: available_technology

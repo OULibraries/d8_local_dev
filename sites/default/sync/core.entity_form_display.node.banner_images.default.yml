@@ -1,4 +1,4 @@
-uuid: 4cb4313f-b15c-4630-9fe7-e0b47978bd3a
+uuid: f231749d-e08a-48e2-94c6-b12a8c997288
 langcode: en
 status: true
 dependencies:
@@ -10,9 +10,16 @@ dependencies:
     - node.type.banner_images
   module:
     - comment
+    - field_layout
     - image
+    - layout_discovery
     - link
     - path
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.banner_images.default
 targetEntityType: node
 bundle: banner_images
@@ -91,4 +98,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

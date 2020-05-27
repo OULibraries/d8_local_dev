@@ -1,10 +1,11 @@
-uuid: 0fd832b1-f38c-48ec-95e7-b605be8496be
+uuid: 8cc34a18-4e26-4fc8-8b24-ba88c04f0230
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.eresources.comment_node_eresources
     - field.field.node.eresources.field_coverage
+    - field.field.node.eresources.field_description
     - field.field.node.eresources.field_endnote
     - field.field.node.eresources.field_hsc
     - field.field.node.eresources.field_info
@@ -16,9 +17,16 @@ dependencies:
     - node.type.eresources
   module:
     - comment
+    - field_layout
+    - layout_discovery
     - link
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.eresources.default
 targetEntityType: node
 bundle: eresources
@@ -41,6 +49,14 @@ content:
     type: string_textfield
     settings:
       size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_description:
+    weight: 3
+    type: text_textarea
+    settings:
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
     region: content
@@ -153,4 +169,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

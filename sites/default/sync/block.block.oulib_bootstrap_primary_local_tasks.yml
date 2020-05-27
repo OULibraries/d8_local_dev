@@ -1,0 +1,22 @@
+uuid: 7fb92b46-39f1-4f62-bb90-7e90a094f3bf
+langcode: en
+status: true
+dependencies:
+  theme:
+    - oulib_bootstrap
+_core:
+  default_config_hash: 7cvXIzw8NabmQCWMPqBz0mvIQZzXUZB3OeOTa5eqbCo
+id: oulib_bootstrap_primary_local_tasks
+theme: oulib_bootstrap
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility: {  }

@@ -1,4 +1,4 @@
-uuid: 545df739-ed6c-487e-8ed0-00eadcbb77f9
+uuid: 8901edfa-caca-4852-b174-db680af958ad
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,14 @@ dependencies:
     - comment.type.comment_node_project_prospectus
     - field.field.comment.comment_node_project_prospectus.comment_body
   module:
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: comment.comment_node_project_prospectus.default
 targetEntityType: comment
 bundle: comment_node_project_prospectus

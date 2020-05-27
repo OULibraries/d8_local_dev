@@ -1,12 +1,12 @@
-uuid: 835aadb8-1141-4cdd-ab2f-4d5d1d574941
+uuid: e0ba87bb-62d0-4223-93be-65618d87bb25
 langcode: en
 status: true
 dependencies: {  }
 name: news_events_100_x_100
 label: 'News Events 100 x 100'
 effects:
-  2bddb55f-176a-4a21-88b3-74bd46f83980:
-    uuid: 2bddb55f-176a-4a21-88b3-74bd46f83980
+  e84b5fbd-956e-4454-9e5d-4031d47e3b1c:
+    uuid: e84b5fbd-956e-4454-9e5d-4031d47e3b1c
     id: image_scale_and_crop
     weight: 1
     data:

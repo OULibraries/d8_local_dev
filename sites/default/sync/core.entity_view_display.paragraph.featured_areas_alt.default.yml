@@ -1,8 +1,9 @@
-uuid: 69ec7f5e-d1a0-4603-b787-23f839d6bec4
+uuid: 7f722a1d-3382-4341-9c90-9177b2c1488e
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.featured_areas_alt.field_description
     - field.field.paragraph.featured_areas_alt.field_image
     - field.field.paragraph.featured_areas_alt.field_link
     - image.style.medium
@@ -10,11 +11,19 @@ dependencies:
   module:
     - image
     - link
+    - text
 id: paragraph.featured_areas_alt.default
 targetEntityType: paragraph
 bundle: featured_areas_alt
 mode: default
 content:
+  field_description:
+    label: hidden
+    weight: 2
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_image:
     label: hidden
     weight: 0
@@ -36,4 +45,5 @@ content:
       target: ''
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  search_api_excerpt: true

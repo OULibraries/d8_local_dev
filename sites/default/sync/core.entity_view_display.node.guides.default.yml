@@ -1,12 +1,12 @@
-uuid: 90e5fab3-949e-41eb-bf51-0c1e5605510e
+uuid: d15363b3-8dbb-409a-8201-89e60959767a
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_display.comment.comment_node_guides.default
     - field.field.node.guides.comment_node_guides
+    - field.field.node.guides.field_description
     - field.field.node.guides.field_link
-    - field.field.node.guides.field_location
     - field.field.node.guides.field_resource_by_subject
     - field.field.node.guides.field_subjects
     - field.field.node.guides.field_units
@@ -14,6 +14,7 @@ dependencies:
   module:
     - comment
     - link
+    - text
     - user
 id: node.guides.default
 targetEntityType: node
@@ -29,6 +30,13 @@ content:
       pager_id: 0
     third_party_settings: {  }
     region: content
+  field_description:
+    label: hidden
+    weight: 2
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_link:
     label: hidden
     weight: 0
@@ -39,14 +47,6 @@ content:
       url_plain: false
       rel: ''
       target: ''
-    third_party_settings: {  }
-    region: content
-  field_location:
-    label: above
-    weight: 3
-    type: entity_reference_label
-    settings:
-      link: false
     third_party_settings: {  }
     region: content
   field_subjects:
@@ -73,3 +73,4 @@ content:
 hidden:
   addtoany: true
   field_resource_by_subject: true
+  search_api_excerpt: true

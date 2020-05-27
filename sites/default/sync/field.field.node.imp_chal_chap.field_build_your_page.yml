@@ -1,0 +1,69 @@
+uuid: 19f1d9d1-0ce8-4d22-a614-c90c804bbb6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_build_your_page
+    - node.type.imp_chal_chap
+    - paragraphs.paragraphs_type.full_width_image
+    - paragraphs.paragraphs_type.full_width_text
+    - paragraphs.paragraphs_type.image_left_text_right
+    - paragraphs.paragraphs_type.image_right_text_left
+    - paragraphs.paragraphs_type.section_header
+  module:
+    - entity_reference_revisions
+id: node.imp_chal_chap.field_build_your_page
+field_name: field_build_your_page
+entity_type: node
+bundle: imp_chal_chap
+label: 'Build Your Page'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    negate: 0
+    target_bundles:
+      section_header: section_header
+      full_width_text: full_width_text
+      full_width_image: full_width_image
+      image_left_text_right: image_left_text_right
+      image_right_text_left: image_right_text_left
+    target_bundles_drag_drop:
+      featured_areas:
+        enabled: false
+        weight: -20
+      featured_areas_alt:
+        enabled: false
+        weight: -19
+      section_header:
+        enabled: true
+        weight: -18
+      full_width_text:
+        enabled: true
+        weight: -17
+      full_width_image:
+        enabled: true
+        weight: -16
+      image_left_text_right:
+        enabled: true
+        weight: -15
+      image_right_text_left:
+        enabled: true
+        weight: -14
+      restricted_download:
+        enabled: false
+        weight: -13
+      two_column_list:
+        enabled: false
+        weight: -12
+      two_column_text:
+        enabled: false
+        weight: -11
+      image_large_left_text_right:
+        enabled: false
+        weight: -10
+  handler: 'default:paragraph'
+field_type: entity_reference_revisions

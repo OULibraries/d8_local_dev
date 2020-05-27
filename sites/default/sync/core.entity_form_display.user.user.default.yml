@@ -1,4 +1,4 @@
-uuid: be652133-7462-40ee-b934-684190157bee
+uuid: 78e549e0-71eb-4a90-b172-767505605d4d
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,11 @@ dependencies:
     - field.field.user.user.field_bio
     - field.field.user.user.field_departments
     - field.field.user.user.field_employee_status
+    - field.field.user.user.field_fax
     - field.field.user.user.field_firstname
     - field.field.user.user.field_lastname
     - field.field.user.user.field_liaison
+    - field.field.user.user.field_phone
     - field.field.user.user.field_resource_by_subject
     - field.field.user.user.field_searchable
     - field.field.user.user.field_sooner_id
@@ -26,11 +28,19 @@ dependencies:
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
+    - field_layout
     - image
+    - layout_discovery
     - link
     - path
+    - telephone
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: user.user.default
 targetEntityType: user
 bundle: user
@@ -74,6 +84,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_fax:
+    weight: 9
+    type: telephone_default
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
   field_firstname:
     weight: 0
     type: string_textfield
@@ -94,6 +111,13 @@ content:
     weight: 12
     type: options_buttons
     settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_phone:
+    weight: 8
+    type: telephone_default
+    settings:
+      placeholder: ''
     third_party_settings: {  }
     region: content
   field_resource_by_subject:

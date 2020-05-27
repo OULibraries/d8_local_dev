@@ -1,4 +1,4 @@
-uuid: 19b18679-2630-4014-be57-e0c3cb1f8325
+uuid: 9f843f20-f325-490e-acbd-a2645006af2a
 langcode: en
 status: true
 dependencies: {  }
@@ -90,29 +90,16 @@ process:
         entityreference_autocomplete_tags: entity_reference_autocomplete_tags
         taxonomy_autocomplete: entity_reference_autocomplete
         d7_text: d7_text_default
-        geofield_wkt: geofield_default
-        geofield_geojson: geofield_default
-        geofield_kml: geofield_default
-        geofield_gpx: geofield_default
-        geofield_geohash: geofield_default
-        geofield_latlon: geofield_latlon
-        geofield_lat: geofield_default
-        geofield_lon: geofield_default
-        geofield_geo_type: geofield_default
-        geofield_def_list: geofield_default
-        geofield_description: geofield_default
-        geofield_openlayers: geofield_default
-        image: image_default
-        addressfield_standard: address_default
-        list: list_default
-        filefield_widget: file_generic
         taxonomy_term_reference: taxonomy_term_reference_default
-        paragraphs_embed: entity_reference_paragraphs
-        paragraphs: paragraphs_default
+        entityreference: entityreference_default
+        image: image_default
+        list: list_default
         date: datetime_default
         datetime: datetime_default
         datestamp: datetime_timestamp
-        entityreference: entityreference_default
+        paragraphs_embed: entity_reference_paragraphs
+        paragraphs: paragraphs_default
+        filefield_widget: file_generic
         number_default: number_default_default
   options/settings:
     -

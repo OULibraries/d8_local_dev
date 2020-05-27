@@ -1,4 +1,4 @@
-uuid: b1e7e27e-118e-41b0-a2d7-5bdf805a65d8
+uuid: f74c3068-6ae4-4155-990f-f0bf2189a183
 langcode: en
 status: true
 dependencies:
@@ -35,3 +35,4 @@ hidden:
   comment_node_jobs: true
   field_job_link: true
   field_job_status: true
+  search_api_excerpt: true

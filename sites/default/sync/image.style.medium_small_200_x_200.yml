@@ -1,0 +1,15 @@
+uuid: 16faa0ef-40b5-4343-a628-20a59732cac4
+langcode: en
+status: true
+dependencies: {  }
+name: medium_small_200_x_200
+label: 'Medium Small 200 x 200'
+effects:
+  8a2a855d-eb22-4b41-9a3f-5716f5929702:
+    uuid: 8a2a855d-eb22-4b41-9a3f-5716f5929702
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 200
+      height: 200
+      anchor: center-center

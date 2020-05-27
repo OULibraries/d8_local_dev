@@ -1,4 +1,4 @@
-uuid: 465274d8-52ca-415b-bbd5-f1af872bc9fe
+uuid: ec5c6ebe-4097-4c31-80ae-8c167345b79e
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,14 @@ dependencies:
     - field.field.paragraph.restricted_download.field_restricted_file
     - paragraphs.paragraphs_type.restricted_download
   module:
+    - field_layout
     - file
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: paragraph.restricted_download.default
 targetEntityType: paragraph
 bundle: restricted_download

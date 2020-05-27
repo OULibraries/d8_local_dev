@@ -1,4 +1,4 @@
-uuid: 9e6d0183-23ba-473d-a609-8699a7fc3e1b
+uuid: 6342b904-efc8-432d-9e1b-d7c6706b0446
 langcode: en
 status: true
 dependencies:
@@ -8,8 +8,10 @@ dependencies:
     - field.field.node.announcement.field_add_media
     - field.field.node.announcement.field_add_this_item_to_another_s
     - field.field.node.announcement.field_caption_news
+    - field.field.node.announcement.field_description
     - field.field.node.announcement.field_hp_carousel_start
     - field.field.node.announcement.field_image_announcement
+    - field.field.node.announcement.field_new_video
     - node.type.announcement
   module:
     - user
@@ -29,5 +31,8 @@ hidden:
   field_add_media: true
   field_add_this_item_to_another_s: true
   field_caption_news: true
+  field_description: true
   field_hp_carousel_start: true
   field_image_announcement: true
+  field_new_video: true
+  search_api_excerpt: true

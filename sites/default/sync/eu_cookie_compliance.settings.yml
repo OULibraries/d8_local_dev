@@ -17,8 +17,8 @@ popup_bg_hex: 0779bf
 popup_clicking_confirmation: true
 popup_scrolling_confirmation: false
 popup_delay: 1000
-show_disagree_button: true
-popup_disagree_button_message: 'More info'
+show_more_info: true
+popup_more_info_button_message: 'More info'
 popup_enabled: true
 popup_find_more_button_message: 'More info'
 popup_height: 0
@@ -65,4 +65,4 @@ select_all_categories_by_default: false
 withdraw_button_on_info_popup: false
 domain_all_sites: false
 _core:
-  default_config_hash: HwyPQpj5lIcdzj0xE5VMS12fUdAv7dXaSueT8crtmHk
+  default_config_hash: R5A0_DuaSt9WRwy5rPzLIbeLdqlyFCkRIHjr02fxKxY

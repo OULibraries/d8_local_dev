@@ -1,4 +1,4 @@
-uuid: 897b92bc-141f-4a88-b0cf-188c7e4be2fc
+uuid: 07d5a47e-0bba-47c2-8cfe-36ce23eaffd0
 langcode: en
 status: true
 dependencies:
@@ -7,16 +7,18 @@ dependencies:
     - field.field.node.units.field_blog
     - field.field.node.units.field_build_your_page
     - field.field.node.units.field_content_owner
+    - field.field.node.units.field_description
     - field.field.node.units.field_email
     - field.field.node.units.field_employees
     - field.field.node.units.field_facebook
+    - field.field.node.units.field_fax
     - field.field.node.units.field_general_information_1
     - field.field.node.units.field_general_information_2
     - field.field.node.units.field_image
     - field.field.node.units.field_instagram
     - field.field.node.units.field_last_updated
-    - field.field.node.units.field_locationreference
     - field.field.node.units.field_needs_annual_audit
+    - field.field.node.units.field_phone
     - field.field.node.units.field_please_address_the_followi
     - field.field.node.units.field_rm
     - field.field.node.units.field_this_content_needs_review
@@ -27,10 +29,179 @@ dependencies:
   module:
     - comment
     - datetime
+    - field_group
+    - field_layout
     - image
+    - layout_discovery
     - link
     - paragraphs
     - path
+    - telephone
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  field_group:
+    group_contactgroup:
+      children:
+        - field_locationreference
+        - field_phone
+        - field_email
+        - field_fax
+        - field_rm
+      parent_name: group_contact
+      weight: 21
+      label: Contact
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        required_fields: 1
+      format_type: accordion-item
+      region: content
+    group_contact:
+      children:
+        - group_contactgroup
+      parent_name: ''
+      weight: 5
+      label: Contact
+      format_settings:
+        formatter: ''
+        effect: none
+        classes: ''
+        id: ''
+      format_type: accordion
+      region: content
+    group_socialmediagroup:
+      children:
+        - group_socialmedia
+      parent_name: ''
+      weight: 6
+      label: 'Social Media'
+      format_settings:
+        formatter: ''
+        effect: none
+        classes: ''
+        id: ''
+      format_type: accordion
+      region: content
+    group_socialmedia:
+      children:
+        - field_facebook
+        - field_twitter
+        - field_blog
+        - field_youtube
+        - field_instagram
+      parent_name: group_socialmediagroup
+      weight: 8
+      label: 'Social Media'
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        required_fields: 1
+      format_type: accordion-item
+      region: content
+    group_generalinfogroup:
+      children:
+        - field_general_information_1
+      parent_name: group_generalinfo
+      weight: 13
+      label: 'General Info Column 1'
+      format_settings:
+        label: 'General Info Column 1'
+        formatter: open
+        required_fields: true
+        classes: ''
+        description: ''
+      format_type: tab
+      region: content
+    group_generalinfo:
+      children:
+        - group_generalinfogroup
+        - group_generalinfo2
+      parent_name: ''
+      weight: 3
+      label: 'General Info'
+      format_settings:
+        formatter: ''
+        classes: ''
+        id: ''
+        direction: horizontal
+      format_type: tabs
+      region: content
+    group_generalinfo2:
+      children:
+        - field_general_information_2
+      parent_name: group_generalinfo
+      weight: 14
+      label: 'General Info Column 2'
+      format_settings:
+        label: 'General Info Column 2'
+        formatter: open
+        required_fields: true
+        classes: 'group-generalinfo2 field-group-htab'
+        description: ''
+      format_type: tab
+      region: content
+    group_admingroups:
+      children:
+        - group_review
+      parent_name: ''
+      weight: 10
+      label: 'Needs Immediate Review'
+      format_settings:
+        label: 'Needs Immediate Review'
+        id: ''
+        classes: 'group-admingroups field-group-accordion'
+        effect: none
+      format_type: accordion
+      region: content
+    group_review:
+      children:
+        - field_this_content_needs_review
+        - field_please_address_the_followi
+      parent_name: group_admingroups
+      weight: 11
+      label: 'Needs Immediate Review'
+      format_settings:
+        label: 'Needs Immediate Review'
+        formatter: closed
+        required_fields: 1
+        classes: 'group-review field-group-accordion-item'
+        description: ''
+      format_type: accordion-item
+      region: content
+    group_contentgroup:
+      children:
+        - field_needs_annual_audit
+        - field_content_owner
+        - field_last_updated
+      parent_name: group_auditgroup
+      weight: 12
+      label: 'Content Audit'
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        required_fields: 1
+      format_type: accordion-item
+      region: content
+    group_auditgroup:
+      children:
+        - group_contentgroup
+      parent_name: ''
+      weight: 19
+      label: Audit
+      format_settings:
+        formatter: ''
+        effect: none
+        classes: 'group-auditgroup field-group-accordion'
+        id: ''
+      format_type: accordion
+      region: content
 id: node.units.default
 targetEntityType: node
 bundle: units
@@ -76,6 +247,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  field_description:
+    weight: 2
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
   field_email:
     weight: 7
     type: link_default
@@ -100,6 +279,13 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_fax:
+    weight: 6
+    type: telephone_default
+    settings:
+      placeholder: ''
     third_party_settings: {  }
     region: content
   field_general_information_1:
@@ -140,17 +326,18 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_locationreference:
-    weight: 3
-    type: options_select
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_needs_annual_audit:
     weight: 14
     type: boolean_checkbox
     settings:
       display_label: true
+    third_party_settings: {  }
+    region: content
+  field_phone:
+    weight: 5
+    type: telephone_default
+    settings:
+      placeholder: ''
     third_party_settings: {  }
     region: content
   field_please_address_the_followi:
@@ -237,4 +424,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

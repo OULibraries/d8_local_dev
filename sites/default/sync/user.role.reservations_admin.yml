@@ -1,4 +1,4 @@
-uuid: 7b948c53-9a0d-40e4-bc94-ce58de0c14fa
+uuid: a21c3d98-89bd-4eb1-911d-47fb1ee98352
 langcode: en
 status: true
 dependencies: {  }
@@ -7,33 +7,5 @@ label: 'reservations admin'
 weight: 10
 is_admin: null
 permissions:
-  - 'access reservations overview'
-  - 'access spaces'
-  - 'access spaces overview'
-  - 'administer studyroom_closed'
-  - 'administer studyroom_reservation types'
-  - 'bypass studyroom_reservations access'
-  - 'create admin studyroom_reservation'
-  - 'create faculty_graduate studyroom_reservation'
-  - 'create main space'
-  - 'delete any admin studyroom_reservation'
-  - 'delete any main space'
-  - 'delete own admin studyroom_reservation'
   - 'display EU Cookie Compliance popup'
-  - 'edit any admin studyroom_reservation'
-  - 'edit any bizzell_consultation_room space'
-  - 'edit any bizzell_dsl space'
-  - 'edit any bizzell_dsl_conference_room space'
-  - 'edit any bizzell_faculty_focus_room space'
-  - 'edit any bizzell_faculty_meeting_room space'
-  - 'edit any bizzell_graduate_student_focus_r space'
-  - 'edit any bizzell_group_study space'
-  - 'edit any bizzell_internal space'
-  - 'edit any bizzell_ll1_group_study space'
-  - 'edit any bizzell_meeting space'
-  - 'edit any bizzell_recording_studio space'
-  - 'edit any main space'
-  - 'edit own admin studyroom_reservation'
-  - 'see past studyroom_availability'
-  - 'view admin studyroom_reservation'
   - 'view the administration theme'

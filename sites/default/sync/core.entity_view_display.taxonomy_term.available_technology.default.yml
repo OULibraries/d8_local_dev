@@ -1,9 +1,10 @@
-uuid: 5734fb2f-e9fd-43fe-94cf-8425c0876b64
+uuid: a0af6c8e-0bd5-4e5e-8db3-899dda7d77ee
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.taxonomy_term.available_technology.field_image
+    - image.style.small__150x150_
     - taxonomy.vocabulary.available_technology
   module:
     - image
@@ -29,4 +30,5 @@ content:
       image_link: ''
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  search_api_excerpt: true

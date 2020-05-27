@@ -1,4 +1,4 @@
-uuid: 69a83c41-4c4a-493d-8cc2-e8a980ed7202
+uuid: e84065ce-42f5-4725-a6e3-056405067976
 langcode: en
 status: true
 dependencies:
@@ -20,11 +20,74 @@ dependencies:
     - node.type.library_stories
   module:
     - comment
+    - field_group
+    - field_layout
     - image
+    - layout_discovery
     - link
     - paragraphs
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  field_group:
+    group_stories_basic:
+      children:
+        - field_call_out_quote
+        - field_custom_area
+        - field_extended_description
+        - field_image
+        - field_introduction
+        - field_caption
+        - field_initiatives
+        - field_pillars
+        - title
+      parent_name: ''
+      weight: 0
+      label: 'Basic Info'
+      format_settings:
+        formatter: collapsible
+        description: ''
+        classes: 'group-stories-basic field-group-fieldset'
+        required_fields: true
+        id: ''
+      format_type: fieldset
+      region: content
+    group_stories_display:
+      children:
+        - field_add_to_events_page
+        - field_archive
+        - field_sticky
+      parent_name: ''
+      weight: 1
+      label: Display
+      format_settings:
+        formatter: collapsible
+        description: ''
+        classes: 'group-stories-display field-group-fieldset'
+        required_fields: true
+        id: ''
+      format_type: fieldset
+      region: content
+    group_stories_url:
+      children:
+        - field_link
+        - path
+        - redirect
+      parent_name: ''
+      weight: 2
+      label: 'URL Settings'
+      format_settings:
+        formatter: collapsible
+        description: ''
+        classes: 'group-stories-url field-group-fieldset'
+        required_fields: true
+        id: ''
+      format_type: fieldset
+      region: content
 id: node.library_stories.default
 targetEntityType: node
 bundle: library_stories
@@ -180,4 +243,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

@@ -1,4 +1,4 @@
-uuid: e72e9f42-1a7b-4081-a730-a0fef107de5a
+uuid: a6a831af-8bf5-4c3b-ad2b-775425827d73
 langcode: en
 status: true
 dependencies:
@@ -8,8 +8,15 @@ dependencies:
     - node.type.blog
   module:
     - comment
+    - field_layout
+    - layout_discovery
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.blog.default
 targetEntityType: node
 bundle: blog
@@ -82,4 +89,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

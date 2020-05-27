@@ -1,4 +1,4 @@
-uuid: eb96d891-5b1c-4a78-b592-668006945dac
+uuid: 492ad866-4731-4087-b43c-bfb0917e44a5
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,14 @@ dependencies:
     - comment.type.comment_node_mass_contact
     - field.field.comment.comment_node_mass_contact.comment_body
   module:
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: comment.comment_node_mass_contact.default
 targetEntityType: comment
 bundle: comment_node_mass_contact

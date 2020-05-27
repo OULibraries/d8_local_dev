@@ -1,12 +1,12 @@
-uuid: ead9f7ca-241b-4ae6-92de-4b86c292f45e
+uuid: f583db71-7334-4e16-898a-9f89717eba28
 langcode: en
 status: true
 dependencies: {  }
 name: announcement_image
 label: 'Announcement Image'
 effects:
-  529181d0-f068-4120-b862-e02347613a3d:
-    uuid: 529181d0-f068-4120-b862-e02347613a3d
+  c0326ddf-9cd5-4c7b-8bc5-c467d99a8c63:
+    uuid: c0326ddf-9cd5-4c7b-8bc5-c467d99a8c63
     id: image_scale_and_crop
     weight: 1
     data:

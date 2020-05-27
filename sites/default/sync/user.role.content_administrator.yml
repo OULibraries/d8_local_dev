@@ -1,4 +1,4 @@
-uuid: 98e443a2-913b-41b2-ace2-2217367ddd80
+uuid: 52fda456-20c8-4727-9c74-83c07a2e8a5b
 langcode: en
 status: true
 dependencies: {  }
@@ -13,7 +13,6 @@ permissions:
   - 'create announcement content'
   - 'create assignment_template content'
   - 'create event content'
-  - 'create field_this_content_needs_review'
   - 'create guides content'
   - 'create page content'
   - 'create policy content'
@@ -49,11 +48,9 @@ permissions:
   - 'edit any room content'
   - 'edit any service content'
   - 'edit any special_collections content'
-  - 'edit field_this_content_needs_review'
   - 'edit own announcement content'
   - 'edit own assignment_template content'
   - 'edit own event content'
-  - 'edit own field_this_content_needs_review'
   - 'edit own guides content'
   - 'edit own page content'
   - 'edit own policy content'
@@ -61,7 +58,5 @@ permissions:
   - 'edit own service content'
   - 'edit own special_collections content'
   - 'revert revisions'
-  - 'view field_this_content_needs_review'
-  - 'view own field_this_content_needs_review'
   - 'view own unpublished content'
   - 'view revisions'

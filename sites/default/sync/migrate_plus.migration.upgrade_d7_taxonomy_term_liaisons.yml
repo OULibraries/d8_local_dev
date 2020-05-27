@@ -1,4 +1,4 @@
-uuid: 18fe4c65-911d-4ef9-a216-aa23954edf43
+uuid: 55796b0c-b1ea-43f8-9ee0-5500dd583503
 langcode: en
 status: true
 dependencies: {  }
@@ -52,12 +52,10 @@ process:
         - upgrade_d7_taxonomy_term_employee_status
         - upgrade_d7_taxonomy_term_initiatives
         - upgrade_d7_taxonomy_term_marketing_projects
-        - upgrade_d7_taxonomy_term_space_category
         - upgrade_d7_taxonomy_term_room_features
         - upgrade_d7_taxonomy_term_user_type
         - upgrade_d7_taxonomy_term_professional_keywords
         - upgrade_d7_taxonomy_term_job_type
-        - upgrade_d7_taxonomy_term_occupancy
         - upgrade_d7_taxonomy_term_room_types
         - upgrade_d7_taxonomy_term_available_technology
         - upgrade_d7_taxonomy_term_service_categories
@@ -104,12 +102,10 @@ migration_dependencies:
     - upgrade_d7_taxonomy_term_service_categories
     - upgrade_d7_taxonomy_term_available_technology
     - upgrade_d7_taxonomy_term_room_types
-    - upgrade_d7_taxonomy_term_occupancy
     - upgrade_d7_taxonomy_term_job_type
     - upgrade_d7_taxonomy_term_professional_keywords
     - upgrade_d7_taxonomy_term_user_type
     - upgrade_d7_taxonomy_term_room_features
-    - upgrade_d7_taxonomy_term_space_category
     - upgrade_d7_taxonomy_term_marketing_projects
     - upgrade_d7_taxonomy_term_initiatives
     - upgrade_d7_taxonomy_term_employee_status
@@ -118,12 +114,10 @@ migration_dependencies:
     - upgrade_d7_taxonomy_term_employee_status
     - upgrade_d7_taxonomy_term_initiatives
     - upgrade_d7_taxonomy_term_marketing_projects
-    - upgrade_d7_taxonomy_term_space_category
     - upgrade_d7_taxonomy_term_room_features
     - upgrade_d7_taxonomy_term_user_type
     - upgrade_d7_taxonomy_term_professional_keywords
     - upgrade_d7_taxonomy_term_job_type
-    - upgrade_d7_taxonomy_term_occupancy
     - upgrade_d7_taxonomy_term_room_types
     - upgrade_d7_taxonomy_term_available_technology
     - upgrade_d7_taxonomy_term_service_categories

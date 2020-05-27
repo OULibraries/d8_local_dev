@@ -1,4 +1,4 @@
-uuid: c4b53539-b02f-4f80-a886-8d8c69c1ea4a
+uuid: 98cabd29-19d2-42fd-ace7-88bc7fa9a07c
 langcode: en
 status: true
 dependencies: {  }
@@ -86,10 +86,6 @@ process:
         title: title
         width: width
         height: height
-  field_locationreference:
-    -
-      plugin: get
-      source: field_locationreference
   field_phone:
     -
       plugin: get

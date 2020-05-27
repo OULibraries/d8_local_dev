@@ -1,14 +1,14 @@
-uuid: 1bbac285-01bc-4c0b-a3cd-85e7a325f82c
+uuid: d0a929b7-19f6-46d0-9083-bb14f96a61b5
 langcode: en
 status: true
 dependencies:
   theme:
     - oulib_bootstrap
 _core:
-  default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
+  default_config_hash: gfXKmThltk6eewwrjAEaxVPxzPEVHV1UfNjjOUQ5A7g
 id: oulib_bootstrap_page_title
 theme: oulib_bootstrap
-region: content
+region: header
 weight: -30
 provider: null
 plugin: page_title_block

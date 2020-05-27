@@ -1,4 +1,4 @@
-uuid: 35eb4b5e-4813-45ba-b507-161bb86888d9
+uuid: e9d1b843-0c78-44e5-97c7-f29bc363d4e6
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,14 @@ dependencies:
     - node.type.webform
   module:
     - comment
+    - field_layout
+    - layout_discovery
     - path
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.webform.default
 targetEntityType: node
 bundle: webform
@@ -70,4 +77,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

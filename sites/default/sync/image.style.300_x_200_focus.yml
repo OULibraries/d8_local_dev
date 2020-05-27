@@ -1,0 +1,15 @@
+uuid: d9c5c3d3-7ae9-4122-9ec3-9477661902f4
+langcode: en
+status: true
+dependencies: {  }
+name: 300_x_200_focus
+label: '300 x 200 (with focus)'
+effects:
+  b8133438-7073-429d-b23c-bdd014384fea:
+    uuid: b8133438-7073-429d-b23c-bdd014384fea
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 300
+      height: 200
+      anchor: center-center

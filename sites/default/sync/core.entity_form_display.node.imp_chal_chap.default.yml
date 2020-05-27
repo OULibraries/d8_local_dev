@@ -1,13 +1,26 @@
-uuid: 2d370779-f935-496b-8f9b-6062c99d833c
+uuid: 2ca14130-31bf-4287-9359-40c8489193fb
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.imp_chal_chap.comment_node_imp_chal_chap
+    - field.field.node.imp_chal_chap.field_benefit_statement
+    - field.field.node.imp_chal_chap.field_build_your_page
+    - field.field.node.imp_chal_chap.field_week_of
     - node.type.imp_chal_chap
   module:
     - comment
+    - datetime
+    - field_layout
+    - layout_discovery
+    - paragraphs
     - path
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.imp_chal_chap.default
 targetEntityType: node
 bundle: imp_chal_chap
@@ -25,6 +38,34 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_benefit_statement:
+    weight: 2
+    type: text_textarea_with_summary
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_build_your_page:
+    weight: 5
+    type: entity_reference_paragraphs
+    settings:
+      title: section
+      title_plural: sections
+      edit_mode: open
+      add_mode: select
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_week_of:
+    weight: 0
+    type: datetime_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 30
@@ -70,4 +111,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

@@ -1,4 +1,4 @@
-uuid: f0852683-5496-4028-be68-b8e6fea4cda1
+uuid: e8ac542c-ca79-4f23-b9e7-8dc68bd113d1
 langcode: en
 status: true
 dependencies: {  }
@@ -72,10 +72,6 @@ process:
     -
       plugin: get
       source: comment
-  field_location:
-    -
-      plugin: get
-      source: field_location
   field_description:
     -
       plugin: get
@@ -94,10 +90,6 @@ process:
         title: title
         width: width
         height: height
-  field_room_requested:
-    -
-      plugin: get
-      source: field_room_requested
   field_publishing_status:
     -
       plugin: get

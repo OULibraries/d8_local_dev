@@ -1,10 +1,7 @@
-uuid: d74ffe9e-b169-4402-a2af-f5c0edbeb5c1
+uuid: 4eaa669b-47f0-4520-9675-ea4a03825bde
 langcode: en
 status: true
-dependencies:
-  module:
-    - media
-    - token_filter
+dependencies: {  }
 name: 'Filtered HTML'
 format: filtered_html
 weight: -9
@@ -37,19 +34,3 @@ filters:
     weight: 0
     settings:
       filter_url_length: 72
-  media_embed:
-    id: media_embed
-    provider: media
-    status: false
-    weight: 100
-    settings:
-      default_view_mode: default
-      allowed_media_types: {  }
-      allowed_view_modes: {  }
-  token_filter:
-    id: token_filter
-    provider: token_filter
-    status: false
-    weight: 0
-    settings:
-      replace_empty: '0'

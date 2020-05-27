@@ -1,4 +1,4 @@
-uuid: ef7b69c3-25f3-4846-b9da-49dd77f76c9f
+uuid: 7df59d03-3d36-4681-9527-d5e65c8a0c6e
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - system
   theme:
     - oulib_bootstrap
+_core:
+  default_config_hash: QTwkfDaGeBUk6aerktJBDXso4fCsqLTQOuWKXE1xMPU
 id: oulib_bootstrap_system_main
 theme: oulib_bootstrap
 region: content

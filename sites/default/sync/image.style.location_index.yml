@@ -1,0 +1,15 @@
+uuid: 128bbdcd-702e-450f-b056-be57082d0705
+langcode: en
+status: true
+dependencies: {  }
+name: location_index
+label: 'Location Index 80 x 80'
+effects:
+  61d2024f-0aca-4863-8154-9b0e8058c0c5:
+    uuid: 61d2024f-0aca-4863-8154-9b0e8058c0c5
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 80
+      height: 80
+      anchor: center-center

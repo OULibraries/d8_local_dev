@@ -1,4 +1,4 @@
-uuid: c4423845-4c7f-4cd8-8b1c-28d49e3ce0e3
+uuid: da76ec16-3978-44c4-8185-e5b6b3f59576
 langcode: en
 status: true
 dependencies:
@@ -12,9 +12,16 @@ dependencies:
     - node.type.picture
   module:
     - comment
+    - field_layout
     - image
+    - layout_discovery
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.picture.default
 targetEntityType: node
 bundle: picture
@@ -109,4 +116,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

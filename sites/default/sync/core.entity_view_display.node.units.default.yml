@@ -1,4 +1,4 @@
-uuid: 598e338d-1a87-41af-9bb3-87c1380e25b6
+uuid: 79546f58-aec0-4394-ac1d-faa43bb59d01
 langcode: en
 status: true
 dependencies:
@@ -8,16 +8,18 @@ dependencies:
     - field.field.node.units.field_blog
     - field.field.node.units.field_build_your_page
     - field.field.node.units.field_content_owner
+    - field.field.node.units.field_description
     - field.field.node.units.field_email
     - field.field.node.units.field_employees
     - field.field.node.units.field_facebook
+    - field.field.node.units.field_fax
     - field.field.node.units.field_general_information_1
     - field.field.node.units.field_general_information_2
     - field.field.node.units.field_image
     - field.field.node.units.field_instagram
     - field.field.node.units.field_last_updated
-    - field.field.node.units.field_locationreference
     - field.field.node.units.field_needs_annual_audit
+    - field.field.node.units.field_phone
     - field.field.node.units.field_please_address_the_followi
     - field.field.node.units.field_rm
     - field.field.node.units.field_this_content_needs_review
@@ -31,6 +33,7 @@ dependencies:
     - image
     - link
     - options
+    - text
     - user
 id: node.units.default
 targetEntityType: node
@@ -75,6 +78,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     region: content
+  field_description:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_email:
     label: above
     weight: 12
@@ -105,6 +115,14 @@ content:
       url_plain: false
       rel: ''
       target: ''
+    third_party_settings: {  }
+    region: content
+  field_fax:
+    label: inline
+    weight: 14
+    type: string
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
     region: content
   field_general_information_1:
@@ -161,20 +179,19 @@ content:
       timezone_override: ''
     third_party_settings: {  }
     region: content
-  field_locationreference:
-    label: hidden
-    weight: 4
-    type: entity_reference_entity_view
-    settings:
-      view_mode: teaser
-      link: false
-    third_party_settings: {  }
-    region: content
   field_needs_annual_audit:
     label: above
     weight: 22
     type: list_default
     settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_phone:
+    label: hidden
+    weight: 6
+    type: string
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
     region: content
   field_please_address_the_followi:
@@ -230,3 +247,4 @@ content:
     region: content
 hidden:
   addtoany: true
+  search_api_excerpt: true

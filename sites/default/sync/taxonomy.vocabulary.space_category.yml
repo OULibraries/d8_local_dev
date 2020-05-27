@@ -1,8 +1,0 @@
-uuid: e890d9b4-5527-4b2d-8280-4427117e31fe
-langcode: en
-status: true
-dependencies: {  }
-name: 'Space Category'
-vid: space_category
-description: 'Use space category to group spaces into categories.'
-weight: 0

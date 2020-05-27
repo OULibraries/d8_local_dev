@@ -1,4 +1,4 @@
-uuid: 1073b475-96ef-4481-b243-4b90dd8b0740
+uuid: cf1de18d-bf26-4165-979b-06f823ad09f6
 langcode: en
 status: true
 dependencies:
@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.resource_problem.field_book_title
     - field.field.node.resource_problem.field_contact_email
     - field.field.node.resource_problem.field_contact_phone
+    - field.field.node.resource_problem.field_description
     - field.field.node.resource_problem.field_isbn
     - field.field.node.resource_problem.field_issn
     - field.field.node.resource_problem.field_journal_title
@@ -30,6 +31,7 @@ dependencies:
     - image
     - link
     - options
+    - text
     - user
 id: node.resource_problem.default
 targetEntityType: node
@@ -89,6 +91,13 @@ content:
     type: string
     settings:
       link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_description:
+    label: above
+    weight: 21
+    type: text_default
+    settings: {  }
     third_party_settings: {  }
     region: content
   field_isbn:
@@ -195,3 +204,4 @@ content:
     region: content
 hidden:
   addtoany: true
+  search_api_excerpt: true

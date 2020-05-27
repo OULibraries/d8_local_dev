@@ -2,36 +2,34 @@ module:
   address: 0
   addtoany: 0
   admin_toolbar: 0
-  admin_toolbar_tools: 0
   backup_migrate: 0
   better_exposed_filters: 0
   block: 0
   block_content: 0
   breakpoint: 0
+  calendar_recurring_event: 0
   captcha: 0
   cas: 0
   cas_attributes: 0
   ckeditor: 0
+  color: 0
   colorbox: 0
   comment: 0
   conditional_fields: 0
   config: 0
   config_filter: 0
   config_split: 0
-  config_update: 0
   contact: 0
-  content_sync: 0
   contextual: 0
   ctools: 0
-  ctools_views: 0
   date_all_day: 0
+  date_popup: 0
   datetime: 0
   datetime_range: 0
   dblog: 0
   devel: 0
   dynamic_page_cache: 0
   editor: 0
-  entity: 0
   entity_reference_revisions: 0
   exclude_node_title: 0
   ezproxy: 0
@@ -40,23 +38,29 @@ module:
   field: 0
   field_default_token: 0
   field_group: 0
+  field_group_migrate: 0
+  field_layout: 0
   field_permissions: 0
   field_ui: 0
   file: 0
   filter: 0
   fitvids: 0
   flag: 0
+  flag_bookmark: 0
   fontawesome: 0
   fullcalendar_view: 0
   geofield: 0
   geophp: 0
+  help: 0
   image: 0
+  image_captcha: 0
   inline_form_errors: 0
   job_scheduler: 0
   layout_builder: 0
   layout_discovery: 0
   leaflet: 0
   leaflet_more_maps: 0
+  leaflet_views: 0
   libraries: 0
   link: 0
   mass_contact: 0
@@ -65,6 +69,7 @@ module:
   menu_ui: 0
   migrate: 0
   migrate_drupal: 0
+  migrate_drupal_ui: 0
   migrate_plus: 0
   migrate_tools: 0
   migrate_upgrade: 0
@@ -73,13 +78,18 @@ module:
   options: 0
   owlcarousel: 0
   page_cache: 0
-  paragraphs_type_permissions: 0
   path: 0
   path_alias: 0
-  responsive_image: 0
+  rdf: 0
+  redirect: 0
+  rules: 0
+  rules_webform: 0
   search: 0
-  serialization: 0
+  search_api: 0
+  search_api_solr: 0
+  shortcut: 0
   spamspan: 0
+  syslog: 0
   system: 0
   tamper: 0
   taxonomy: 0
@@ -92,17 +102,18 @@ module:
   typed_data: 0
   user: 0
   userprotect: 0
+  video_embed_field: 0
   views_accordion: 0
   views_bootstrap: 0
   views_bulk_operations: 0
   views_entity_form_field: 0
   views_ui: 0
   webform: 0
-  webform_ui: 0
   webform_views: 0
   fontyourface: 1
   menu_link_content: 1
   pathauto: 1
+  webform_bootstrap: 1
   externalauth: 10
   fontscom_api: 10
   google_fonts_api: 10
@@ -112,11 +123,11 @@ module:
   minimal: 1000
   eu_cookie_compliance: 1001
 theme:
-  bootstrap: 0
-  oulib_bootstrap: 0
   stable: 0
   classy: 0
   claro: 0
+  bootstrap: 0
+  oulib_bootstrap: 0
 profile: minimal
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

@@ -1,24 +1,32 @@
-uuid: 09df99ca-0492-4698-b59e-bb6d47df085e
+uuid: 2867d998-3941-498f-9bca-ab72d9020571
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.guides.comment_node_guides
+    - field.field.node.guides.field_description
     - field.field.node.guides.field_link
-    - field.field.node.guides.field_location
     - field.field.node.guides.field_resource_by_subject
     - field.field.node.guides.field_subjects
     - field.field.node.guides.field_units
     - node.type.guides
   module:
     - link
+    - text
     - user
 id: node.guides.teaser
 targetEntityType: node
 bundle: guides
 mode: teaser
 content:
+  field_description:
+    label: hidden
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_link:
     label: hidden
     weight: 0
@@ -39,7 +47,7 @@ content:
 hidden:
   addtoany: true
   comment_node_guides: true
-  field_location: true
   field_resource_by_subject: true
   field_subjects: true
   field_units: true
+  search_api_excerpt: true

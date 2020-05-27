@@ -1,12 +1,12 @@
-uuid: ab20d005-d9be-46c7-8aa0-9c5dcfee92ec
+uuid: ce0cf135-10a1-4e14-8cdf-d28fc7dd352d
 langcode: en
 status: true
 dependencies: {  }
 name: locations_carousel
 label: 'Locations Carousel'
 effects:
-  363ed77a-1813-4199-99d4-8d089ffbef3d:
-    uuid: 363ed77a-1813-4199-99d4-8d089ffbef3d
+  5239354c-7de2-4bd5-a6a5-033a9a01ffa9:
+    uuid: 5239354c-7de2-4bd5-a6a5-033a9a01ffa9
     id: image_resize
     weight: 1
     data:

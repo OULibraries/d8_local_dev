@@ -1,12 +1,7 @@
-uuid: 029340d6-ce70-468c-9be2-78ff2fbeaed5
+uuid: 4e11f528-8a20-44b0-8c46-cb5137298bc4
 langcode: en
 status: true
-dependencies:
-  module:
-    - editor
-    - media
-    - spamspan
-    - token_filter
+dependencies: {  }
 _core:
   default_config_hash: NIKBt6kw_uPhNI0qtR2DnRf7mSOgAQdx7Q94SKMjXbQ
 name: 'Plain text'
@@ -17,87 +12,18 @@ filters:
     id: filter_html_escape
     provider: filter
     status: true
-    weight: -50
+    weight: -10
     settings: {  }
   filter_url:
     id: filter_url
     provider: filter
     status: true
-    weight: -48
+    weight: 0
     settings:
       filter_url_length: 72
   filter_autop:
     id: filter_autop
     provider: filter
     status: true
-    weight: -47
+    weight: 0
     settings: {  }
-  editor_file_reference:
-    id: editor_file_reference
-    provider: editor
-    status: false
-    weight: -45
-    settings: {  }
-  filter_html_image_secure:
-    id: filter_html_image_secure
-    provider: filter
-    status: false
-    weight: -41
-    settings: {  }
-  filter_html:
-    id: filter_html
-    provider: filter
-    status: false
-    weight: -46
-    settings:
-      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type=''1 A I''> <li> <dl> <dt> <dd> <h2 id=''jump-*''> <h3 id> <h4 id> <h5 id> <h6 id>'
-      filter_html_help: true
-      filter_html_nofollow: false
-  filter_align:
-    id: filter_align
-    provider: filter
-    status: false
-    weight: -44
-    settings: {  }
-  filter_caption:
-    id: filter_caption
-    provider: filter
-    status: false
-    weight: -43
-    settings: {  }
-  filter_htmlcorrector:
-    id: filter_htmlcorrector
-    provider: filter
-    status: false
-    weight: -40
-    settings: {  }
-  media_embed:
-    id: media_embed
-    provider: media
-    status: false
-    weight: -39
-    settings:
-      default_view_mode: default
-      allowed_media_types: {  }
-      allowed_view_modes: {  }
-  filter_spamspan:
-    id: filter_spamspan
-    provider: spamspan
-    status: true
-    weight: -49
-    settings:
-      spamspan_at: ' [at] '
-      spamspan_use_graphic: '0'
-      spamspan_dot_enable: '0'
-      spamspan_dot: ' [dot] '
-      spamspan_use_form: '0'
-      spamspan_form_pattern: '<a href="%url?goto=%email">%displaytext</a>'
-      spamspan_form_default_url: contact
-      spamspan_form_default_displaytext: 'contact form'
-  token_filter:
-    id: token_filter
-    provider: token_filter
-    status: false
-    weight: -42
-    settings:
-      replace_empty: '0'

@@ -1,0 +1,15 @@
+uuid: 5c5c3123-4d63-4226-bc63-ed6e87fc6236
+langcode: en
+status: true
+dependencies: {  }
+name: featured_spaces_photo
+label: 'Featured Spaces Photo'
+effects:
+  334e90a7-15e3-4ae3-aff2-664d3908f995:
+    uuid: 334e90a7-15e3-4ae3-aff2-664d3908f995
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 550
+      height: 550
+      anchor: center-center

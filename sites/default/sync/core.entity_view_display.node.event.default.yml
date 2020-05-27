@@ -1,4 +1,4 @@
-uuid: 28d26fd0-293d-44d5-b0be-679015b7e1aa
+uuid: 6db22b31-ea06-4dd9-83ba-84b02fefa22b
 langcode: en
 status: true
 dependencies:
@@ -6,18 +6,19 @@ dependencies:
     - core.entity_view_display.comment.comment_node_event.default
     - field.field.node.event.comment_node_event
     - field.field.node.event.field_add_this_item_to_another_s
+    - field.field.node.event.field_description
     - field.field.node.event.field_hp_carousel_start
     - field.field.node.event.field_image
-    - field.field.node.event.field_location
     - field.field.node.event.field_publishing_status
-    - field.field.node.event.field_room_requested
     - field.field.node.event.field_teaser
+    - image.style.300_x_200_focus
     - node.type.event
   module:
     - comment
     - datetime
     - image
     - options
+    - text
     - user
 id: node.event.default
 targetEntityType: node
@@ -31,6 +32,13 @@ content:
     settings:
       view_mode: default
       pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_description:
+    label: hidden
+    weight: 1
+    type: text_default
+    settings: {  }
     third_party_settings: {  }
     region: content
   field_hp_carousel_start:
@@ -51,24 +59,9 @@ content:
       image_style: 300_x_200_focus
     third_party_settings: {  }
     region: content
-  field_location:
-    label: hidden
-    weight: 2
-    type: entity_reference_label
-    settings:
-      link: true
-    third_party_settings: {  }
-    region: content
   field_publishing_status:
     label: above
     weight: 4
-    type: list_default
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_room_requested:
-    label: hidden
-    weight: 3
     type: list_default
     settings: {  }
     third_party_settings: {  }
@@ -82,3 +75,4 @@ hidden:
   addtoany: true
   field_add_this_item_to_another_s: true
   field_teaser: true
+  search_api_excerpt: true

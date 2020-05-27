@@ -1,4 +1,4 @@
-uuid: 6183106a-7882-4aa0-9b21-0750b32b1575
+uuid: faf9ef9c-dccb-403c-b07c-321f12154c10
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_display.comment.comment_node_eresources.default
     - field.field.node.eresources.comment_node_eresources
     - field.field.node.eresources.field_coverage
+    - field.field.node.eresources.field_description
     - field.field.node.eresources.field_endnote
     - field.field.node.eresources.field_hsc
     - field.field.node.eresources.field_info
@@ -19,6 +20,7 @@ dependencies:
     - comment
     - link
     - options
+    - text
     - user
 id: node.eresources.default
 targetEntityType: node
@@ -40,6 +42,13 @@ content:
     type: string
     settings:
       link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_description:
+    label: inline
+    weight: 2
+    type: text_default
+    settings: {  }
     third_party_settings: {  }
     region: content
   field_endnote:
@@ -101,3 +110,4 @@ hidden:
   addtoany: true
   field_info: true
   field_link: true
+  search_api_excerpt: true

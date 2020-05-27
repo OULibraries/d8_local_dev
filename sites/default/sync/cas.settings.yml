@@ -1,7 +1,7 @@
 server:
-  version: '3.0'
+  version: '2.0'
   protocol: https
-  hostname: login.opstest.lib.ou.edu
+  hostname: ''
   port: 443
   path: /
   verify: 0

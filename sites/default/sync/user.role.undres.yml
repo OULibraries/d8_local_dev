@@ -1,4 +1,4 @@
-uuid: 352a804a-07f0-4e80-ad22-f9c536fdb3d9
+uuid: df184883-d653-484a-b1a0-ddac3c0d9977
 langcode: en
 status: true
 dependencies: {  }
@@ -7,6 +7,4 @@ label: undres
 weight: 38
 is_admin: null
 permissions:
-  - 'access spaces'
-  - 'create user studyroom_reservation'
   - 'display EU Cookie Compliance popup'

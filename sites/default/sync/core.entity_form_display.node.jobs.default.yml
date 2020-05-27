@@ -1,4 +1,4 @@
-uuid: 180fe766-dde1-40b9-9768-7ea06648246a
+uuid: f8f918b0-299b-4871-93a7-c027912303a6
 langcode: en
 status: true
 dependencies:
@@ -10,9 +10,16 @@ dependencies:
     - node.type.jobs
   module:
     - comment
+    - field_layout
+    - layout_discovery
     - link
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.jobs.default
 targetEntityType: node
 bundle: jobs
@@ -99,4 +106,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

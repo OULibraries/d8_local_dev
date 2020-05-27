@@ -1,4 +1,4 @@
-uuid: daf96c84-d0a1-433b-99b7-c5d24739abdb
+uuid: 1c06f991-a0d4-4bef-ad39-1444c3529181
 langcode: en
 status: true
 dependencies: {  }
@@ -7,7 +7,4 @@ label: gradres
 weight: 37
 is_admin: null
 permissions:
-  - 'access spaces'
-  - 'create faculty_graduate studyroom_reservation'
-  - 'create graduate_student studyroom_reservation'
   - 'display EU Cookie Compliance popup'

@@ -1,8 +1,0 @@
-uuid: 7b0f5e04-6487-41bb-9b85-3538592f6d9c
-langcode: en
-status: true
-dependencies: {  }
-id: comment_node_location_carousel
-label: 'Location Carousel comment'
-target_entity_type_id: node
-description: null

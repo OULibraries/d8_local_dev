@@ -1,14 +1,14 @@
-uuid: 8a4509e1-f1f9-4a14-b1c6-32bedaa30714
+uuid: e50071e9-6692-4b55-b582-7cf9c5740f7e
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.special_collections.comment_node_special_collections
     - field.field.node.special_collections.field_content_owner
+    - field.field.node.special_collections.field_description
     - field.field.node.special_collections.field_image
     - field.field.node.special_collections.field_info
     - field.field.node.special_collections.field_last_updated
-    - field.field.node.special_collections.field_location
     - field.field.node.special_collections.field_needs_annual_audit
     - field.field.node.special_collections.field_please_address_the_followi
     - field.field.node.special_collections.field_this_content_needs_review
@@ -17,9 +17,73 @@ dependencies:
   module:
     - comment
     - datetime
+    - field_group
+    - field_layout
     - image
+    - layout_discovery
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  field_group:
+    group_reviewgroup:
+      children:
+        - group_reviewitem
+      parent_name: ''
+      weight: 5
+      label: 'Needs Immediate Review'
+      format_settings:
+        formatter: ''
+        effect: none
+        classes: 'group-reviewgroup field-group-accordion'
+        id: ''
+      format_type: accordion
+      region: content
+    group_reviewitem:
+      children:
+        - field_this_content_needs_review
+        - field_please_address_the_followi
+      parent_name: group_reviewgroup
+      weight: 8
+      label: 'Needs Immediate Review'
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: 'group-reviewitem field-group-accordion-item'
+        required_fields: 1
+      format_type: accordion-item
+      region: content
+    group_auditgroup:
+      children:
+        - group_audititem
+      parent_name: ''
+      weight: 6
+      label: Audit
+      format_settings:
+        formatter: ''
+        effect: none
+        classes: 'group-auditgroup field-group-accordion'
+        id: ''
+      format_type: accordion
+      region: content
+    group_audititem:
+      children:
+        - field_needs_annual_audit
+        - field_content_owner
+        - field_last_updated
+      parent_name: group_auditgroup
+      weight: 12
+      label: 'Content Audit'
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: 'group-audititem field-group-accordion-item'
+        required_fields: 1
+      format_type: accordion-item
+      region: content
 id: node.special_collections.default
 targetEntityType: node
 bundle: special_collections
@@ -45,6 +109,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  field_description:
+    weight: 2
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
   field_image:
     weight: 1
     type: image_image
@@ -64,12 +136,6 @@ content:
   field_last_updated:
     weight: 13
     type: datetime_default
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_location:
-    weight: 3
-    type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -140,4 +206,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

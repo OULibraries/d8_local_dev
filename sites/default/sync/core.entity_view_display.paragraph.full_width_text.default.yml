@@ -1,0 +1,23 @@
+uuid: 270b0201-7255-4252-a451-8c82be433151
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.full_width_text.field_description
+    - paragraphs.paragraphs_type.full_width_text
+  module:
+    - text
+id: paragraph.full_width_text.default
+targetEntityType: paragraph
+bundle: full_width_text
+mode: default
+content:
+  field_description:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,15 @@
+uuid: f8adc8fc-47a9-4015-bd45-4b04d0764b86
+langcode: en
+status: true
+dependencies: {  }
+name: profile_resource_pages
+label: 'Profile Resource Pages'
+effects:
+  d05110a7-9ba3-4da5-9352-104e50b6528b:
+    uuid: d05110a7-9ba3-4da5-9352-104e50b6528b
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 230
+      height: 285
+      anchor: center-center

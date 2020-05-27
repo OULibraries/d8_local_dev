@@ -1,4 +1,4 @@
-uuid: 64e194db-88dd-4de4-bac0-eb20bede56bb
+uuid: be21db55-3680-46bd-acf8-727103c59708
 langcode: en
 status: true
 dependencies:
@@ -171,3 +171,4 @@ hidden:
   field_step_title7: true
   field_step_title8: true
   field_step_title9: true
+  search_api_excerpt: true

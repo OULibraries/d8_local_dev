@@ -1,4 +1,4 @@
-uuid: 188a4926-5682-4c56-8fed-71f0ee79dc6c
+uuid: 6e626ea4-5576-4a86-a8f8-49ff5952aad7
 langcode: en
 status: true
 dependencies:
@@ -37,3 +37,4 @@ hidden:
   field_mass_contact_headers: true
   field_mass_contact_result: true
   field_mass_contact_to: true
+  search_api_excerpt: true

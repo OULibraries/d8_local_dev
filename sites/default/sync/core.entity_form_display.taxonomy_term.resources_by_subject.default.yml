@@ -1,4 +1,4 @@
-uuid: dd079fee-e59b-45b6-98af-20218fb56336
+uuid: e7eae7f8-8bd0-4235-a130-3c15eeec5919
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,16 @@ dependencies:
     - field.field.taxonomy_term.resources_by_subject.field_government_documents
     - taxonomy.vocabulary.resources_by_subject
   module:
+    - field_layout
+    - layout_discovery
     - link
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: taxonomy_term.resources_by_subject.default
 targetEntityType: taxonomy_term
 bundle: resources_by_subject

@@ -1,11 +1,11 @@
-uuid: 2d136d62-6553-409e-8c84-afa42bf8a2ca
+uuid: 1c119859-3fc0-4c62-9e8d-d9c9056efb14
 langcode: en
 status: true
 dependencies:
   theme:
     - oulib_bootstrap
 _core:
-  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
+  default_config_hash: osZQ9lL2jTdH5am4LJiZ29RaivhzOf6vCpoRy6FZwIE
 id: oulib_bootstrap_local_actions
 theme: oulib_bootstrap
 region: content

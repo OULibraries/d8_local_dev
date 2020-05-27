@@ -1,0 +1,15 @@
+uuid: 799b2d8a-8e42-47d8-aaf9-02b9591c5e68
+langcode: en
+status: true
+dependencies: {  }
+name: extra_large
+label: 'Location Banner '
+effects:
+  91cd7a29-38ad-40b1-9902-88c6fe4efbf6:
+    uuid: 91cd7a29-38ad-40b1-9902-88c6fe4efbf6
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 750
+      height: 500
+      anchor: center-center

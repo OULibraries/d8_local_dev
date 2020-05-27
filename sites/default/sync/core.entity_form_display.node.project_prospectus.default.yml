@@ -1,4 +1,4 @@
-uuid: e2fc3cf6-43b8-4c41-aeee-ec86d357da91
+uuid: 7484f1cd-4d33-42b4-9f95-cdde22dc7e0d
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,11 @@ dependencies:
     - field.field.node.project_prospectus.field_contact_name
     - field.field.node.project_prospectus.field_contribution_to_ou_goals
     - field.field.node.project_prospectus.field_deliverables
+    - field.field.node.project_prospectus.field_description
     - field.field.node.project_prospectus.field_goals
     - field.field.node.project_prospectus.field_implications_of_not_doing
     - field.field.node.project_prospectus.field_out_of_scope
+    - field.field.node.project_prospectus.field_phone
     - field.field.node.project_prospectus.field_project_needs
     - field.field.node.project_prospectus.field_scheduling
     - field.field.node.project_prospectus.field_scope
@@ -20,8 +22,16 @@ dependencies:
     - node.type.project_prospectus
   module:
     - comment
+    - field_layout
+    - layout_discovery
     - path
+    - telephone
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.project_prospectus.default
 targetEntityType: node
 bundle: project_prospectus
@@ -71,6 +81,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     region: content
+  field_description:
+    weight: 1
+    type: text_textarea
+    settings:
+      rows: 7
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
   field_goals:
     weight: 5
     type: text_textarea
@@ -92,6 +110,13 @@ content:
     type: text_textarea
     settings:
       rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_phone:
+    weight: 19
+    type: telephone_default
+    settings:
       placeholder: ''
     third_party_settings: {  }
     region: content
@@ -188,4 +213,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

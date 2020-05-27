@@ -1,4 +1,4 @@
-uuid: 8f031045-416b-474a-8f1e-c94cd9d84ff9
+uuid: a6e19325-0f01-4389-8858-f510c35b1389
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,14 @@ dependencies:
     - field.field.file.image.field_file_image_alt_text
     - field.field.file.image.field_file_image_title_text
   module:
+    - field_layout
     - file
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: file.image.default
 targetEntityType: file
 bundle: image

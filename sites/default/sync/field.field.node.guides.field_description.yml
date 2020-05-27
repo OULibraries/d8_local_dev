@@ -1,0 +1,21 @@
+uuid: 17dd1db2-f86f-496b-8359-1edceda67de1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.guides
+  module:
+    - text
+id: node.guides.field_description
+field_name: field_description
+entity_type: node
+bundle: guides
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

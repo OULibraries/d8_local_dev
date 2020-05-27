@@ -1,4 +1,4 @@
-uuid: 25474e0d-7ce5-4169-89df-6ef8d36322ed
+uuid: a7e6afe0-ec12-4776-841c-a626ac027eb9
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,14 @@ dependencies:
     - image.style.thumbnail
     - paragraphs.paragraphs_type.full_width_image
   module:
+    - field_layout
     - image
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: paragraph.full_width_image.default
 targetEntityType: paragraph
 bundle: full_width_image

@@ -1,4 +1,4 @@
-uuid: 7867eca1-f629-42fd-b5ad-c9dcd5befd1b
+uuid: e83b5c6d-7780-4245-b32b-367847ba03dc
 langcode: en
 status: true
 dependencies:
@@ -8,17 +8,28 @@ dependencies:
     - field.field.node.announcement.field_add_media
     - field.field.node.announcement.field_add_this_item_to_another_s
     - field.field.node.announcement.field_caption_news
+    - field.field.node.announcement.field_description
     - field.field.node.announcement.field_hp_carousel_start
     - field.field.node.announcement.field_image_announcement
+    - field.field.node.announcement.field_new_video
     - node.type.announcement
   module:
     - colorbox
+    - text
     - user
 id: node.announcement.frontpage
 targetEntityType: node
 bundle: announcement
 mode: frontpage
 content:
+  field_description:
+    label: hidden
+    weight: 0
+    type: text_trimmed
+    settings:
+      trim_length: 400
+    third_party_settings: {  }
+    region: content
   field_image_announcement:
     label: hidden
     weight: 2
@@ -45,3 +56,5 @@ hidden:
   field_add_this_item_to_another_s: true
   field_caption_news: true
   field_hp_carousel_start: true
+  field_new_video: true
+  search_api_excerpt: true

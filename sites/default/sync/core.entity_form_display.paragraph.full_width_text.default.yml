@@ -1,0 +1,32 @@
+uuid: 8df4bc41-1e0c-4f3d-9c6d-1f32cd5c946d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.full_width_text.field_description
+    - paragraphs.paragraphs_type.full_width_text
+  module:
+    - field_layout
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.full_width_text.default
+targetEntityType: paragraph
+bundle: full_width_text
+mode: default
+content:
+  field_description:
+    weight: 2
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

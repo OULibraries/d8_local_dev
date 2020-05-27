@@ -1,17 +1,49 @@
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://localhost:8888/drupal_8_dev_2/themes/contrib/bootstrap/favicon.ico'
-  use_default: true
+  url: 'http://localhost:8888/drupal_8_dev_migrate/themes/contrib/bootstrap/favicon.ico'
+  use_default: 1
 features:
-  comment_user_picture: true
-  comment_user_verification: true
-  favicon: true
-  node_user_picture: false
-logo:
-  path: ''
-  url: ''
-  use_default: true
+  comment_user_picture: 0
+  comment_user_verification: 0
+  favicon: 1
+  node_user_picture: 0
+  name: false
+  slogan: false
 schemas:
   bootstrap: 8000
   oulib_bootstrap: 8000
+logo:
+  path: ''
+  url: ''
+  use_default: 1
+table_responsive: '-1'
+region_wells:
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: well
+  footer: ''
+  libfooter: ''
+  libfooter_detail: ''
+  libfooter_first: ''
+  libfooter_second: ''
+  libfooter_third: ''
+  logo: ''
+  login: ''
+  login-left: ''
+  login-right: ''
+  login-dots: ''
+  askus: ''
+  nav-icons: ''
+  menu: ''
+  site-name: ''
+cdn_theme: bootstrap
+cdn_cache_ttl_versions: '604800'
+cdn_cache_ttl_themes: '604800'
+cdn_cache_ttl_assets: '0'
+cdn_cache_ttl_library: '0'
+reset_http_request_cache: ''
+table: ''

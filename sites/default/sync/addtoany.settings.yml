@@ -1,5 +1,5 @@
 buttons_size: 32
-additional_html: "<a class=\"a2a_button_facebook\"></a>\n<a class=\"a2a_button_twitter\"></a>\n<a class=\"a2a_button_google_plus\"></a>\n"
+additional_html: "<a class=\"a2a_button_facebook\"></a>\n<a class=\"a2a_button_twitter\"></a>\n<a class=\"a2a_button_email\"></a>\n"
 additional_css: ''
 additional_js: ''
 universal_button: default
@@ -11,4 +11,4 @@ entities:
   node: 1
   comment: 1
 _core:
-  default_config_hash: 9YPlBuinIKLe5jVEf-aIhZvKFn77i18yD4CrNR0BbVQ
+  default_config_hash: '-oeXHVXl-m1HE6XR_-FXfNgJOgPuHcOCWSkymfOR7Sc'

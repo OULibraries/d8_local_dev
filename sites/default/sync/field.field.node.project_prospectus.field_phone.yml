@@ -1,0 +1,21 @@
+uuid: 1fbc431c-59f9-4425-bbc4-193ebe8f681a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone
+    - node.type.project_prospectus
+  module:
+    - telephone
+id: node.project_prospectus.field_phone
+field_name: field_phone
+entity_type: node
+bundle: project_prospectus
+label: 'Contact Phone'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

@@ -1,4 +1,4 @@
-uuid: ba718500-fd0b-45a1-9ac8-7301554d7e4e
+uuid: 2993c816-0d23-4517-959a-c2de8d8ae41e
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,11 @@ dependencies:
     - field.field.user.user.field_bio
     - field.field.user.user.field_departments
     - field.field.user.user.field_employee_status
+    - field.field.user.user.field_fax
     - field.field.user.user.field_firstname
     - field.field.user.user.field_lastname
     - field.field.user.user.field_liaison
+    - field.field.user.user.field_phone
     - field.field.user.user.field_resource_by_subject
     - field.field.user.user.field_searchable
     - field.field.user.user.field_sooner_id
@@ -42,9 +44,11 @@ hidden:
   field_bio: true
   field_departments: true
   field_employee_status: true
+  field_fax: true
   field_firstname: true
   field_lastname: true
   field_liaison: true
+  field_phone: true
   field_resource_by_subject: true
   field_searchable: true
   field_sooner_id: true
@@ -58,4 +62,5 @@ hidden:
   ldap_user_puid_property: true
   ldap_user_puid_sid: true
   mass_contact_opt_out: true
+  search_api_excerpt: true
   user_picture: true

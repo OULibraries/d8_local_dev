@@ -1,0 +1,122 @@
+uuid: aa18317a-f7cf-45c5-99d5-c78705a23fa9
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_node_revision_imp_chal_chap
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node revisions (Impact Challenge Chapter)'
+source:
+  plugin: d7_node_revision
+  node_type: imp_chal_chap
+process:
+  nid:
+    -
+      plugin: get
+      source: nid
+  vid:
+    -
+      plugin: get
+      source: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  comment_node_imp_chal_chap/0/status:
+    -
+      plugin: get
+      source: comment
+  field_week_of:
+    -
+      plugin: sub_process
+      source: field_week_of
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d H:i:s'
+          to_format: Y-m-d
+          source: value
+  field_build_your_page:
+    -
+      plugin: get
+      source: field_build_your_page
+  field_benefit_statement:
+    -
+      plugin: get
+      source: field_benefit_statement
+destination:
+  plugin: 'entity_revision:node'
+  default_bundle: imp_chal_chap
+migration_dependencies:
+  required:
+    - upgrade_d7_node_announcement
+    - upgrade_d7_node_assignment_template
+    - upgrade_d7_node_banner_images
+    - upgrade_d7_node_blog
+    - upgrade_d7_node_eresources
+    - upgrade_d7_node_event
+    - upgrade_d7_node_guides
+    - upgrade_d7_node_imp_chal_chap
+    - upgrade_d7_node_jobs
+    - upgrade_d7_node_lending_technology
+    - upgrade_d7_node_library_stories
+    - upgrade_d7_node_mass_contact
+    - upgrade_d7_node_page
+    - upgrade_d7_node_panel
+    - upgrade_d7_node_picture
+    - upgrade_d7_node_policy
+    - upgrade_d7_node_project_prospectus
+    - upgrade_d7_node_resource_problem
+    - upgrade_d7_node_service
+    - upgrade_d7_node_special_collections
+    - upgrade_d7_node_test
+    - upgrade_d7_node_units
+    - upgrade_d7_node_videos
+    - upgrade_d7_node_webform
+  optional: {  }

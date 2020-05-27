@@ -1,0 +1,15 @@
+uuid: b70b31fb-731c-497c-86f0-7bc9284a8371
+langcode: en
+status: true
+dependencies: {  }
+name: small_announcement
+label: 'Thumb Announcement 110 x 90'
+effects:
+  8798b6c6-3ad7-4ac3-b6ec-2df55671d4bb:
+    uuid: 8798b6c6-3ad7-4ac3-b6ec-2df55671d4bb
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 110
+      height: 90
+      anchor: center-center

@@ -1,0 +1,21 @@
+uuid: 505f88d8-3388-40b3-bc67-9edd302bcfab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_week_of
+    - node.type.imp_chal_chap
+  module:
+    - datetime
+id: node.imp_chal_chap.field_week_of
+field_name: field_week_of
+entity_type: node
+bundle: imp_chal_chap
+label: 'Week Of'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

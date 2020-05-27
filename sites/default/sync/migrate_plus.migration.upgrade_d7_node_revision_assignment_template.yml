@@ -1,4 +1,4 @@
-uuid: b2b73429-5271-44e4-9759-4a381406790c
+uuid: 3c9ae52f-cf23-4be9-9a60-070ee99ee076
 langcode: en
 status: true
 dependencies: {  }
@@ -384,12 +384,10 @@ migration_dependencies:
     - upgrade_d7_node_eresources
     - upgrade_d7_node_event
     - upgrade_d7_node_guides
-    - upgrade_d7_node_impact_challenge_chapter
+    - upgrade_d7_node_imp_chal_chap
     - upgrade_d7_node_jobs
     - upgrade_d7_node_lending_technology
     - upgrade_d7_node_library_stories
-    - upgrade_d7_node_locations
-    - upgrade_d7_node_location_carousel
     - upgrade_d7_node_mass_contact
     - upgrade_d7_node_page
     - upgrade_d7_node_panel
@@ -397,7 +395,6 @@ migration_dependencies:
     - upgrade_d7_node_policy
     - upgrade_d7_node_project_prospectus
     - upgrade_d7_node_resource_problem
-    - upgrade_d7_node_room
     - upgrade_d7_node_service
     - upgrade_d7_node_special_collections
     - upgrade_d7_node_test

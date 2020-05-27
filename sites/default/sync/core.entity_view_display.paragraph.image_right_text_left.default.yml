@@ -1,17 +1,26 @@
-uuid: 7b3b743a-8d7b-4696-8156-e803b0d07538
+uuid: 77af1f0e-7f91-4788-a209-03fc99016495
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.image_right_text_left.field_description
     - field.field.paragraph.image_right_text_left.field_image
     - paragraphs.paragraphs_type.image_right_text_left
   module:
     - image
+    - text
 id: paragraph.image_right_text_left.default
 targetEntityType: paragraph
 bundle: image_right_text_left
 mode: default
 content:
+  field_description:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_image:
     label: hidden
     weight: 1
@@ -21,4 +30,5 @@ content:
       image_link: ''
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  search_api_excerpt: true

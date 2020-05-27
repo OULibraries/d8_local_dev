@@ -1,4 +1,4 @@
-uuid: b622f821-54ce-47df-959b-2a7896eb22ed
+uuid: c62e55d6-5c94-46da-8015-696a054cdac0
 langcode: en
 status: true
 dependencies: {  }
@@ -7,11 +7,8 @@ label: employee
 weight: 2
 is_admin: null
 permissions:
-  - 'access spaces'
   - 'create announcement content'
   - 'create event content'
-  - 'create faculty studyroom_reservation'
-  - 'create faculty_graduate studyroom_reservation'
   - 'create test content'
   - 'delete own announcement content'
   - 'delete own event content'

@@ -1,4 +1,4 @@
-uuid: 4be63c54-5d75-48bd-83a6-f3b4466ae4fd
+uuid: ac2bdb55-8266-4631-959f-a21f0f423ffe
 langcode: en
 status: true
 dependencies: {  }
@@ -20,20 +20,16 @@ permissions:
   - 'access print'
   - 'access send by email'
   - 'access site-wide contact form'
-  - 'access spaces'
   - 'access user contact forms'
   - 'access user profiles'
   - 'change own e-mail'
   - 'change own openid'
   - 'change own password'
   - 'create resource_problem content'
-  - 'create user studyroom_reservation'
   - 'create webform content'
   - 'delete own resource_problem content'
-  - 'delete own user studyroom_reservation'
   - 'display EU Cookie Compliance popup'
   - 'edit own resource_problem content'
-  - 'edit own user studyroom_reservation'
   - 'edit own webform content'
   - 'flag databaseflag'
   - 'flag ereferenceflag'

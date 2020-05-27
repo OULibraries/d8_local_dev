@@ -1,4 +1,4 @@
-uuid: 713f71c3-fe27-41b3-891d-ce807c8607b8
+uuid: b4bc13cd-d109-4f3d-af71-c5d92ac5dc87
 langcode: en
 status: true
 dependencies:
@@ -16,8 +16,73 @@ dependencies:
   module:
     - comment
     - datetime
+    - field_group
+    - field_layout
+    - layout_discovery
     - paragraphs
     - path
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  field_group:
+    group_admingroups:
+      children:
+        - group_content
+      parent_name: ''
+      weight: 5
+      label: 'Content Audit'
+      format_settings:
+        label: 'Content Audit'
+        id: ''
+        classes: 'group-admingroups field-group-accordion'
+        effect: none
+      format_type: accordion
+      region: content
+    group_review:
+      children:
+        - field_this_content_needs_review
+        - field_please_address_the_followi
+      parent_name: group_reviewgroup
+      weight: 35
+      label: 'Needs Immediate Review'
+      format_settings:
+        label: 'Needs Immediate Review'
+        formatter: closed
+        required_fields: 1
+        classes: 'group-review field-group-accordion-item'
+        description: ''
+      format_type: accordion-item
+      region: content
+    group_content:
+      children:
+        - field_needs_annual_audit
+        - field_content_owner
+        - field_last_updated
+      parent_name: group_admingroups
+      weight: 36
+      label: 'Content Audit'
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: 'group-content field-group-accordion-item'
+        required_fields: 1
+      format_type: accordion-item
+      region: content
+    group_reviewgroup:
+      children:
+        - group_review
+      parent_name: ''
+      weight: 4
+      label: 'Needs Immediate Review'
+      format_settings:
+        formatter: ''
+        effect: none
+        classes: 'group-reviewgroup field-group-accordion'
+        id: ''
+      format_type: accordion
+      region: content
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -142,4 +207,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

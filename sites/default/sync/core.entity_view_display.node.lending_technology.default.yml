@@ -1,4 +1,4 @@
-uuid: a536c312-eddd-4414-9d9c-356a4034cce0
+uuid: 3063c76d-15bd-4dd0-a1b9-ee8186777fc2
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.lending_technology.field_bookable
     - field.field.node.lending_technology.field_image
     - field.field.node.lending_technology.field_loan_period
-    - field.field.node.lending_technology.field_location_available
     - field.field.node.lending_technology.field_number_available
     - field.field.node.lending_technology.field_overdue_fee
     - field.field.node.lending_technology.field_technology_type
@@ -65,13 +64,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     region: content
-  field_location_available:
-    label: above
-    weight: 7
-    type: list_default
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_number_available:
     label: above
     weight: 2
@@ -103,3 +95,4 @@ content:
     region: content
 hidden:
   addtoany: true
+  search_api_excerpt: true

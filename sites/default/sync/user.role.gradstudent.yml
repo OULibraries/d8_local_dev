@@ -1,4 +1,4 @@
-uuid: 359d79e2-532c-4a46-994b-e3cfc1e9045c
+uuid: 10236cef-707a-4dd2-8487-6e1c59ec593c
 langcode: en
 status: true
 dependencies: {  }
@@ -7,11 +7,5 @@ label: gradstudent
 weight: 7
 is_admin: null
 permissions:
-  - 'create faculty_graduate studyroom_reservation'
-  - 'create graduate_student studyroom_reservation'
-  - 'delete own faculty_graduate studyroom_reservation'
-  - 'delete own graduate_student studyroom_reservation'
   - 'display EU Cookie Compliance popup'
-  - 'edit own faculty_graduate studyroom_reservation'
-  - 'edit own graduate_student studyroom_reservation'
   - 'view the administration theme'

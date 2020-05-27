@@ -1,4 +1,4 @@
-uuid: 2366aa55-bbfe-45de-aab8-3e90bdf0fb1a
+uuid: 592b2687-f0f6-4af8-ac52-e97f86fabf5e
 langcode: en
 status: true
 dependencies: {  }
@@ -47,28 +47,24 @@ process:
       map:
         d7_text:
           d7_text: d7_text
-        geofield:
-          geofield: geofield
-        image:
-          image: image
-        addressfield:
-          addressfield: addressfield
         link_field:
           link_field: link_field
-        list:
-          list: list
-        file:
-          file: file
         taxonomy_term_reference:
           taxonomy_term_reference: taxonomy_term_reference
-        datetime:
-          datetime: datetime
         entityreference:
           entityreference: entityreference
-        number_default:
-          number_default: number_default
+        image:
+          image: image
+        list:
+          list: list
+        datetime:
+          datetime: datetime
         email:
           email: email
+        file:
+          file: file
+        number_default:
+          number_default: number_default
   cardinality:
     -
       plugin: get

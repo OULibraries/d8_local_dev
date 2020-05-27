@@ -1,4 +1,4 @@
-uuid: dff42e6e-9770-442a-b198-352e5fa789d7
+uuid: 020ee7bb-12d2-4c35-85c1-63589e82c17f
 langcode: en
 status: true
 dependencies:
@@ -6,10 +6,10 @@ dependencies:
     - core.entity_view_display.comment.comment_node_special_collections.default
     - field.field.node.special_collections.comment_node_special_collections
     - field.field.node.special_collections.field_content_owner
+    - field.field.node.special_collections.field_description
     - field.field.node.special_collections.field_image
     - field.field.node.special_collections.field_info
     - field.field.node.special_collections.field_last_updated
-    - field.field.node.special_collections.field_location
     - field.field.node.special_collections.field_needs_annual_audit
     - field.field.node.special_collections.field_please_address_the_followi
     - field.field.node.special_collections.field_this_content_needs_review
@@ -44,6 +44,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     region: content
+  field_description:
+    label: hidden
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_image:
     label: hidden
     weight: 0
@@ -67,14 +74,6 @@ content:
     settings:
       format_type: long
       timezone_override: ''
-    third_party_settings: {  }
-    region: content
-  field_location:
-    label: hidden
-    weight: 2
-    type: entity_reference_label
-    settings:
-      link: false
     third_party_settings: {  }
     region: content
   field_needs_annual_audit:
@@ -105,3 +104,4 @@ content:
     region: content
 hidden:
   addtoany: true
+  search_api_excerpt: true

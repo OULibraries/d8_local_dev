@@ -1,4 +1,4 @@
-uuid: 0237fbeb-8dd3-4387-ae25-fcb152b9f3fe
+uuid: d8e2447d-3f5c-45da-88f3-6b1c3f4396a6
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.lending_technology.field_bookable
     - field.field.node.lending_technology.field_image
     - field.field.node.lending_technology.field_loan_period
-    - field.field.node.lending_technology.field_location_available
     - field.field.node.lending_technology.field_number_available
     - field.field.node.lending_technology.field_overdue_fee
     - field.field.node.lending_technology.field_technology_type
@@ -16,9 +15,16 @@ dependencies:
     - node.type.lending_technology
   module:
     - comment
+    - field_layout
     - image
+    - layout_discovery
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.lending_technology.default
 targetEntityType: node
 bundle: lending_technology
@@ -64,12 +70,6 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-    region: content
-  field_location_available:
-    weight: 34
-    type: options_buttons
-    settings: {  }
     third_party_settings: {  }
     region: content
   field_number_available:
@@ -138,4 +138,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

@@ -1,4 +1,4 @@
-uuid: 30d7b94f-4fbe-4e8d-b253-4c48a924f372
+uuid: e2f20408-c677-4a47-bec6-fc185ba66032
 langcode: en
 status: true
 dependencies: {  }
@@ -7,7 +7,4 @@ label: facres
 weight: 36
 is_admin: null
 permissions:
-  - 'access spaces'
-  - 'create faculty studyroom_reservation'
-  - 'create faculty_graduate studyroom_reservation'
   - 'display EU Cookie Compliance popup'

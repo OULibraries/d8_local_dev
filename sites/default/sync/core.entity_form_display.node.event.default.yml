@@ -1,23 +1,30 @@
-uuid: 19f2718d-97ae-4a2b-be1a-271e948bb47b
+uuid: 69f8ac10-f1db-43c8-bf25-9eb95ea48901
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.event.comment_node_event
     - field.field.node.event.field_add_this_item_to_another_s
+    - field.field.node.event.field_description
     - field.field.node.event.field_hp_carousel_start
     - field.field.node.event.field_image
-    - field.field.node.event.field_location
     - field.field.node.event.field_publishing_status
-    - field.field.node.event.field_room_requested
     - field.field.node.event.field_teaser
     - image.style.thumbnail
     - node.type.event
   module:
     - comment
     - datetime
+    - field_layout
     - image
+    - layout_discovery
     - path
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -41,6 +48,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_description:
+    weight: 7
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
   field_hp_carousel_start:
     weight: 2
     type: datetime_default
@@ -55,20 +70,8 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     region: content
-  field_location:
-    weight: 3
-    type: options_select
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_publishing_status:
     weight: 1
-    type: options_select
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_room_requested:
-    weight: 4
     type: options_select
     settings: {  }
     third_party_settings: {  }
@@ -126,4 +129,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

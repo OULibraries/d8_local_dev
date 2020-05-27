@@ -17,12 +17,10 @@ node_search:
       eresources: eresources
       event: event
       guides: guides
-      impact_challenge_chapter: impact_challenge_chapter
+      imp_chal_chap: imp_chal_chap
       jobs: jobs
       lending_technology: lending_technology
       library_stories: library_stories
-      locations: locations
-      location_carousel: location_carousel
       mass_contact: mass_contact
       page: page
       panel: panel
@@ -30,14 +28,12 @@ node_search:
       policy: policy
       project_prospectus: project_prospectus
       resource_problem: resource_problem
-      room: room
       service: service
       special_collections: special_collections
       test: test
       units: units
       videos: videos
       webform: webform
-      imp_chal_chap: imp_chal_chap
     languages:
       en: en
       und: und
@@ -61,12 +57,10 @@ user_search:
       eresources: eresources
       event: event
       guides: guides
-      impact_challenge_chapter: impact_challenge_chapter
+      imp_chal_chap: imp_chal_chap
       jobs: jobs
       lending_technology: lending_technology
       library_stories: library_stories
-      locations: locations
-      location_carousel: location_carousel
       mass_contact: mass_contact
       page: page
       panel: panel
@@ -74,11 +68,9 @@ user_search:
       policy: policy
       project_prospectus: project_prospectus
       resource_problem: resource_problem
-      room: room
       service: service
       special_collections: special_collections
       test: test
       units: units
       videos: videos
       webform: webform
-      imp_chal_chap: imp_chal_chap

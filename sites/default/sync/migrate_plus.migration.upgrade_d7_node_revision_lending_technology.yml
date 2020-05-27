@@ -1,4 +1,4 @@
-uuid: 5cb6e250-decb-4665-801f-2339e1dc046b
+uuid: 5342231a-5b00-49e3-b5f0-8b5a2a332638
 langcode: en
 status: true
 dependencies: {  }
@@ -86,10 +86,6 @@ process:
         title: title
         width: width
         height: height
-  field_location_available:
-    -
-      plugin: get
-      source: field_location_available
   field_number_available:
     -
       plugin: get
@@ -122,12 +118,10 @@ migration_dependencies:
     - upgrade_d7_node_eresources
     - upgrade_d7_node_event
     - upgrade_d7_node_guides
-    - upgrade_d7_node_impact_challenge_chapter
+    - upgrade_d7_node_imp_chal_chap
     - upgrade_d7_node_jobs
     - upgrade_d7_node_lending_technology
     - upgrade_d7_node_library_stories
-    - upgrade_d7_node_locations
-    - upgrade_d7_node_location_carousel
     - upgrade_d7_node_mass_contact
     - upgrade_d7_node_page
     - upgrade_d7_node_panel
@@ -135,7 +129,6 @@ migration_dependencies:
     - upgrade_d7_node_policy
     - upgrade_d7_node_project_prospectus
     - upgrade_d7_node_resource_problem
-    - upgrade_d7_node_room
     - upgrade_d7_node_service
     - upgrade_d7_node_special_collections
     - upgrade_d7_node_test

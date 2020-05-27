@@ -1,17 +1,17 @@
-uuid: b91e5d02-fc22-4f2a-9b62-0bfc2277ae6c
+uuid: 445e387d-236e-46e4-a1a3-dc14da6368d2
 langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: Y9NmnZHQq20ASSyTNA6JnwtWrJJiSajOehGDtmUFdM0
 name: medium
-label: 'Medium (220×220)'
+label: 'Medium (220x220)'
 effects:
-  bddf0d06-42f9-4c75-a700-a33cafa25ea0:
-    uuid: bddf0d06-42f9-4c75-a700-a33cafa25ea0
-    id: image_scale
-    weight: 0
+  fc54798f-dfd2-4493-883e-1261822f15a0:
+    uuid: fc54798f-dfd2-4493-883e-1261822f15a0
+    id: image_scale_and_crop
+    weight: 2
     data:
       width: 220
       height: 220
-      upscale: false
+      anchor: center-center

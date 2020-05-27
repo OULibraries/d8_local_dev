@@ -1,4 +1,4 @@
-uuid: 94b52a88-43a5-4a42-9187-c63156301167
+uuid: ffd19091-ed8b-43f9-8ca0-78f5d49281ea
 langcode: en
 status: true
 dependencies:
@@ -41,6 +41,11 @@ content:
       link: ''
     third_party_settings: {  }
     region: content
+  flag_bookmark:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -55,3 +60,4 @@ hidden:
   field_please_address_the_followi: true
   field_publishing_status: true
   field_this_content_needs_review: true
+  search_api_excerpt: true

@@ -1,8 +1,0 @@
-uuid: 79d585a6-b5cf-49d1-a44e-50ac57bd2fa9
-langcode: en
-status: true
-dependencies: {  }
-name: Occupancy
-vid: occupancy
-description: 'Room occupancy range.'
-weight: -4

@@ -1,4 +1,4 @@
-uuid: 1aa91d86-1a45-4a4c-8715-ac4d17438aa6
+uuid: 54326173-3577-45d5-84b4-cd4693064822
 langcode: en
 status: true
 dependencies:
@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.videos.field_add_this_item_to_another_s
     - field.field.node.videos.field_favorite
     - field.field.node.videos.field_hp_carousel_start
+    - field.field.node.videos.field_new_video
     - field.field.node.videos.field_picture
     - node.type.videos
   module:
@@ -28,4 +29,6 @@ hidden:
   field_add_this_item_to_another_s: true
   field_favorite: true
   field_hp_carousel_start: true
+  field_new_video: true
   field_picture: true
+  search_api_excerpt: true

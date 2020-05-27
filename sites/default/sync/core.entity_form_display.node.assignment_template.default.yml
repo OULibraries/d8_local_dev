@@ -1,4 +1,4 @@
-uuid: ea0b7f4a-0c06-4237-b9ca-cb05ef6c576f
+uuid: 9001a6b0-9358-4f9c-8b57-5b45ebdf10fb
 langcode: en
 status: true
 dependencies:
@@ -82,8 +82,289 @@ dependencies:
     - node.type.assignment_template
   module:
     - comment
+    - field_group
+    - field_layout
+    - layout_discovery
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  field_group:
+    group_step3:
+      children:
+        - field_percentage3
+        - field_date_complete3
+        - field_step_title3
+        - field_resources3
+        - field_add_step3
+      parent_name: ''
+      weight: 6
+      label: 'Step Three'
+      format_settings:
+        label: 'Step Three'
+        formatter: collapsible
+        required_fields: false
+        id: ''
+        classes: step-3-display-field-group
+        description: ''
+      format_type: fieldset
+      region: content
+    group_step10:
+      children:
+        - field_step_title10
+        - field_percentage10
+        - field_date_complete10
+        - field_resources10
+        - field_add_step10
+      parent_name: ''
+      weight: 13
+      label: 'Step Ten'
+      format_settings:
+        formatter: collapsible
+        description: ''
+        classes: step-10-display-field-group
+        required_fields: true
+        id: ''
+      format_type: fieldset
+      region: content
+    group_step11:
+      children:
+        - field_step_title11
+        - field_percentage11
+        - field_date_complete11
+        - field_resources11
+        - field_add_step11
+      parent_name: ''
+      weight: 14
+      label: 'Step Eleven'
+      format_settings:
+        formatter: collapsible
+        description: ''
+        classes: step-11-display-field-group
+        required_fields: true
+        id: ''
+      format_type: fieldset
+      region: content
+    group_step12:
+      children:
+        - field_step_title12
+        - field_percentage12
+        - field_date_complete12
+        - field_resources12
+        - field_add_step12
+      parent_name: ''
+      weight: 15
+      label: 'Step Twelve'
+      format_settings:
+        formatter: collapsible
+        description: ''
+        classes: step-12-display-field-group
+        required_fields: true
+        id: ''
+      format_type: fieldset
+      region: content
+    group_step13:
+      children:
+        - field_step_title13
+        - field_percentage13
+        - field_date_complete13
+        - field_resources13
+        - field_add_step13
+      parent_name: ''
+      weight: 16
+      label: 'Step Thirteen'
+      format_settings:
+        formatter: collapsible
+        description: ''
+        classes: step-13-display-field-group
+        required_fields: true
+        id: ''
+      format_type: fieldset
+      region: content
+    group_step14:
+      children:
+        - field_step_title14
+        - field_percentage14
+        - field_date_complete14
+        - field_resources14
+        - field_add_step14
+      parent_name: ''
+      weight: 17
+      label: 'Step Fourteen'
+      format_settings:
+        formatter: collapsible
+        description: ''
+        classes: step-14-display-field-group
+        required_fields: true
+        id: ''
+      format_type: fieldset
+      region: content
+    group_step15:
+      children:
+        - field_step_title15
+        - field_percentage15
+        - field_date_complete15
+        - field_resources15
+        - field_add_step15
+      parent_name: ''
+      weight: 19
+      label: 'Step Fifteen'
+      format_settings:
+        formatter: collapsible
+        description: ''
+        classes: step-15-display-field-group
+        required_fields: true
+        id: ''
+      format_type: fieldset
+      region: content
+    group_step1:
+      children:
+        - field_add_step1
+        - field_date_complete1
+        - field_step_title1
+        - field_percentage1
+        - field_resources1
+      parent_name: ''
+      weight: 4
+      label: 'Step One'
+      format_settings:
+        formatter: collapsible
+        description: ''
+        classes: step-1-display-field-group
+        required_fields: true
+        id: ''
+      format_type: fieldset
+      region: content
+    group_step2:
+      children:
+        - field_step_title2
+        - field_percentage2
+        - field_date_complete2
+        - field_resources2
+        - field_add_step2
+      parent_name: ''
+      weight: 5
+      label: 'Step Two'
+      format_settings:
+        label: 'Step Two'
+        formatter: collapsible
+        required_fields: false
+        id: ''
+        classes: step-2-display-field-group
+        description: ''
+      format_type: fieldset
+      region: content
+    group_step4:
+      children:
+        - field_step_title4
+        - field_percentage4
+        - field_date_complete4
+        - field_resources4
+        - field_add_step4
+      parent_name: ''
+      weight: 7
+      label: 'Step Four'
+      format_settings:
+        formatter: collapsible
+        description: ''
+        classes: step-4-display-field-group
+        required_fields: true
+        id: ''
+      format_type: fieldset
+      region: content
+    group_step5:
+      children:
+        - field_step_title5
+        - field_percentage5
+        - field_date_complete5
+        - field_resources5
+        - field_add_step5
+      parent_name: ''
+      weight: 8
+      label: 'Step Five'
+      format_settings:
+        formatter: collapsible
+        description: ''
+        classes: step-5-display-field-group
+        required_fields: true
+        id: ''
+      format_type: fieldset
+      region: content
+    group_step6:
+      children:
+        - field_step_title6
+        - field_percentage6
+        - field_date_complete6
+        - field_resources6
+        - field_add_step6
+      parent_name: ''
+      weight: 9
+      label: 'Step Six'
+      format_settings:
+        formatter: collapsible
+        description: ''
+        classes: step-6-display-field-group
+        required_fields: true
+        id: ''
+      format_type: fieldset
+      region: content
+    group_step7:
+      children:
+        - field_step_title7
+        - field_percentage7
+        - field_date_complete7
+        - field_resources7
+        - field_add_step7
+      parent_name: ''
+      weight: 10
+      label: 'Step Seven'
+      format_settings:
+        formatter: collapsible
+        description: ''
+        classes: step-7-display-field-group
+        required_fields: true
+        id: ''
+      format_type: fieldset
+      region: content
+    group_step8:
+      children:
+        - field_step_title8
+        - field_percentage8
+        - field_date_complete8
+        - field_resources8
+        - field_add_step8
+      parent_name: ''
+      weight: 11
+      label: 'Step Eight'
+      format_settings:
+        formatter: collapsible
+        description: ''
+        classes: step-8-display-field-group
+        required_fields: true
+        id: ''
+      format_type: fieldset
+      region: content
+    group_step9:
+      children:
+        - field_step_title9
+        - field_percentage9
+        - field_date_complete9
+        - field_resources9
+        - field_add_step9
+      parent_name: ''
+      weight: 12
+      label: 'Step Nine'
+      format_settings:
+        formatter: collapsible
+        description: ''
+        classes: step-9-display-field-group
+        required_fields: true
+        id: ''
+      format_type: fieldset
+      region: content
 id: node.assignment_template.default
 targetEntityType: node
 bundle: assignment_template
@@ -719,4 +1000,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

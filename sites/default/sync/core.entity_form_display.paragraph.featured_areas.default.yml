@@ -1,20 +1,37 @@
-uuid: ad4ef7bc-1fc9-40d8-9ca0-cc0c6ed1c537
+uuid: fa6dccaf-bf78-45c3-b2d9-e13fd95d3d56
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.featured_areas.field_description
     - field.field.paragraph.featured_areas.field_image
     - field.field.paragraph.featured_areas.field_link
     - image.style.thumbnail
     - paragraphs.paragraphs_type.featured_areas
   module:
+    - field_layout
     - image
+    - layout_discovery
     - link
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: paragraph.featured_areas.default
 targetEntityType: paragraph
 bundle: featured_areas
 mode: default
 content:
+  field_description:
+    weight: 3
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
   field_image:
     weight: 0
     type: image_image

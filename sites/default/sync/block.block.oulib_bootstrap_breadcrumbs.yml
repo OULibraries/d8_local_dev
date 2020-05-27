@@ -1,0 +1,22 @@
+uuid: 5f491b5a-225c-4730-83ab-255587cb36ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - oulib_bootstrap
+_core:
+  default_config_hash: b6mUaCq5YPapRUABXRHfNTT6fxWIj5lgf0Mg4HaRJ_I
+id: oulib_bootstrap_breadcrumbs
+theme: oulib_bootstrap
+region: header
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

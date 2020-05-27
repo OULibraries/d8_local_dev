@@ -1,4 +1,4 @@
-uuid: e33c429f-24cb-45fa-a704-14bbe74307b4
+uuid: 009d277e-84ea-405d-91c2-efbfe90f62d0
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.banner_images.comment_node_banner_images
     - field.field.node.banner_images.field_image
     - field.field.node.banner_images.field_link
+    - image.style.banner
     - node.type.banner_images
   module:
     - comment
@@ -55,3 +56,4 @@ content:
     region: content
 hidden:
   addtoany: true
+  search_api_excerpt: true

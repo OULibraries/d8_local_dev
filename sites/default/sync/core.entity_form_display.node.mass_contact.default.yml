@@ -1,4 +1,4 @@
-uuid: 1d12e643-cc69-421c-8cb6-bd066bdf99b8
+uuid: 5a88f0b3-2c37-4efc-9131-07df56e3a5bc
 langcode: en
 status: true
 dependencies:
@@ -15,8 +15,15 @@ dependencies:
     - node.type.mass_contact
   module:
     - comment
+    - field_layout
+    - layout_discovery
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.mass_contact.default
 targetEntityType: node
 bundle: mass_contact
@@ -137,5 +144,10 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden:
   field_mass_contact_attachments: true

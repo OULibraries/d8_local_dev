@@ -1,4 +1,4 @@
-uuid: eba36085-1cd1-47e4-b757-1cea9080d656
+uuid: 3b1e76dc-190c-44f1-8fdd-d442f66d3d2a
 langcode: en
 status: true
 dependencies:
@@ -6,22 +6,31 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.special_collections.comment_node_special_collections
     - field.field.node.special_collections.field_content_owner
+    - field.field.node.special_collections.field_description
     - field.field.node.special_collections.field_image
     - field.field.node.special_collections.field_info
     - field.field.node.special_collections.field_last_updated
-    - field.field.node.special_collections.field_location
     - field.field.node.special_collections.field_needs_annual_audit
     - field.field.node.special_collections.field_please_address_the_followi
     - field.field.node.special_collections.field_this_content_needs_review
+    - image.style.medium_small_200_x_200
     - node.type.special_collections
   module:
     - colorbox
+    - text
     - user
 id: node.special_collections.teaser
 targetEntityType: node
 bundle: special_collections
 mode: teaser
 content:
+  field_description:
+    label: hidden
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_image:
     label: hidden
     weight: 0
@@ -47,7 +56,7 @@ hidden:
   field_content_owner: true
   field_info: true
   field_last_updated: true
-  field_location: true
   field_needs_annual_audit: true
   field_please_address_the_followi: true
   field_this_content_needs_review: true
+  search_api_excerpt: true

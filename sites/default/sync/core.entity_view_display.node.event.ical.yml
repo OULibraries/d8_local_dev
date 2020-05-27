@@ -1,4 +1,4 @@
-uuid: aa375b92-edf3-4f2a-a316-9e85345ba878
+uuid: c9e7b377-cb92-4306-8005-6bdfc103b89e
 langcode: en
 status: true
 dependencies:
@@ -6,33 +6,24 @@ dependencies:
     - core.entity_view_mode.node.ical
     - field.field.node.event.comment_node_event
     - field.field.node.event.field_add_this_item_to_another_s
+    - field.field.node.event.field_description
     - field.field.node.event.field_hp_carousel_start
     - field.field.node.event.field_image
-    - field.field.node.event.field_location
     - field.field.node.event.field_publishing_status
-    - field.field.node.event.field_room_requested
     - field.field.node.event.field_teaser
     - node.type.event
   module:
-    - options
+    - text
     - user
 id: node.event.ical
 targetEntityType: node
 bundle: event
 mode: ical
 content:
-  field_location:
+  field_description:
     label: hidden
-    weight: 2
-    type: entity_reference_label
-    settings:
-      link: true
-    third_party_settings: {  }
-    region: content
-  field_room_requested:
-    label: above
-    weight: 3
-    type: list_default
+    weight: 1
+    type: text_default
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -49,3 +40,4 @@ hidden:
   field_image: true
   field_publishing_status: true
   field_teaser: true
+  search_api_excerpt: true

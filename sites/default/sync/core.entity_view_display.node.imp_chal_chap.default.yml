@@ -1,13 +1,17 @@
-uuid: 05453c8c-4572-4c0f-a455-f885c274c30b
+uuid: 0ff796fa-831b-4178-8add-98ebf4053f12
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_display.comment.comment_node_imp_chal_chap.default
     - field.field.node.imp_chal_chap.comment_node_imp_chal_chap
+    - field.field.node.imp_chal_chap.field_benefit_statement
+    - field.field.node.imp_chal_chap.field_build_your_page
+    - field.field.node.imp_chal_chap.field_week_of
     - node.type.imp_chal_chap
   module:
     - comment
+    - entity_reference_revisions
     - user
 id: node.imp_chal_chap.default
 targetEntityType: node
@@ -18,7 +22,18 @@ content:
     label: hidden
     type: comment_default
     weight: 20
-    settings: {  }
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_build_your_page:
+    label: hidden
+    weight: 0
+    type: entity_reference_revisions_entity_view
+    settings:
+      view_mode: full
+      link: ''
     third_party_settings: {  }
     region: content
   links:
@@ -28,3 +43,6 @@ content:
     region: content
 hidden:
   addtoany: true
+  field_benefit_statement: true
+  field_week_of: true
+  search_api_excerpt: true

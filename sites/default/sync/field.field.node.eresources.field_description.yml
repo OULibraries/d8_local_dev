@@ -1,0 +1,21 @@
+uuid: 21a4ab6b-0bc5-4c50-838b-774494fe210f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.eresources
+  module:
+    - text
+id: node.eresources.field_description
+field_name: field_description
+entity_type: node
+bundle: eresources
+label: Description
+description: 'Enter the public description of the e-resource here.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,4 +1,4 @@
-uuid: 89801157-0bcf-4580-9d70-c2c6c1d03706
+uuid: 4ec34f11-cfb1-4700-a3d9-a110a0b47318
 langcode: en
 status: true
 dependencies: {  }
@@ -86,10 +86,6 @@ process:
     -
       plugin: get
       source: field_description
-  field_location:
-    -
-      plugin: get
-      source: field_location
   field_units:
     -
       plugin: get

@@ -1,4 +1,4 @@
-uuid: 012851a1-78be-4a2a-a50a-04f3fe4595b0
+uuid: 7864d486-7cee-477a-bb65-ecd165e03b80
 langcode: en
 status: true
 dependencies:
@@ -12,8 +12,15 @@ dependencies:
   module:
     - comment
     - datetime
+    - field_layout
+    - layout_discovery
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.test.default
 targetEntityType: node
 bundle: test
@@ -104,4 +111,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }

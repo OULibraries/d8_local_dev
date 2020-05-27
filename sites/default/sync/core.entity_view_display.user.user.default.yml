@@ -1,4 +1,4 @@
-uuid: dd12be95-2dae-4502-85a6-8a3c92bd8ae5
+uuid: b07ae7c2-d055-4859-ab60-e5fc1c6d43ae
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,11 @@ dependencies:
     - field.field.user.user.field_bio
     - field.field.user.user.field_departments
     - field.field.user.user.field_employee_status
+    - field.field.user.user.field_fax
     - field.field.user.user.field_firstname
     - field.field.user.user.field_lastname
     - field.field.user.user.field_liaison
+    - field.field.user.user.field_phone
     - field.field.user.user.field_resource_by_subject
     - field.field.user.user.field_searchable
     - field.field.user.user.field_sooner_id
@@ -27,6 +29,7 @@ dependencies:
   module:
     - image
     - link
+    - telephone
     - text
     - user
 id: user.user.default
@@ -69,6 +72,14 @@ content:
       link: true
     third_party_settings: {  }
     region: content
+  field_fax:
+    label: above
+    weight: 6
+    type: telephone_link
+    settings:
+      title: ''
+    third_party_settings: {  }
+    region: content
   field_firstname:
     label: hidden
     weight: 0
@@ -83,6 +94,14 @@ content:
     type: string
     settings:
       link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_phone:
+    label: hidden
+    weight: 5
+    type: telephone_link
+    settings:
+      title: ''
     third_party_settings: {  }
     region: content
   field_resource_by_subject:
@@ -127,3 +146,4 @@ hidden:
   ldap_user_puid_property: true
   ldap_user_puid_sid: true
   mass_contact_opt_out: true
+  search_api_excerpt: true

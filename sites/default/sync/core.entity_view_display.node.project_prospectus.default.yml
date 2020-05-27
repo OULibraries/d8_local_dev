@@ -1,4 +1,4 @@
-uuid: ee84f2e6-5f24-428e-bfb2-86561538a7f3
+uuid: 001881c4-cecb-4f53-95f5-b9b588cd1edb
 langcode: en
 status: true
 dependencies:
@@ -9,9 +9,11 @@ dependencies:
     - field.field.node.project_prospectus.field_contact_name
     - field.field.node.project_prospectus.field_contribution_to_ou_goals
     - field.field.node.project_prospectus.field_deliverables
+    - field.field.node.project_prospectus.field_description
     - field.field.node.project_prospectus.field_goals
     - field.field.node.project_prospectus.field_implications_of_not_doing
     - field.field.node.project_prospectus.field_out_of_scope
+    - field.field.node.project_prospectus.field_phone
     - field.field.node.project_prospectus.field_project_needs
     - field.field.node.project_prospectus.field_scheduling
     - field.field.node.project_prospectus.field_scope
@@ -66,6 +68,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_description:
+    label: above
+    weight: 1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_goals:
     label: above
     weight: 5
@@ -85,6 +94,14 @@ content:
     weight: 4
     type: text_default
     settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_phone:
+    label: above
+    weight: 15
+    type: string
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
     region: content
   field_project_needs:
@@ -136,3 +153,4 @@ content:
     region: content
 hidden:
   addtoany: true
+  search_api_excerpt: true

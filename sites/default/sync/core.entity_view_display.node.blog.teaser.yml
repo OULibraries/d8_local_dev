@@ -1,4 +1,4 @@
-uuid: 2d6fe780-0a24-4bb7-ab5f-86a3b032d3bc
+uuid: 406aadb6-44bf-4db3-aa8e-0015f7e136e8
 langcode: en
 status: true
 dependencies:
@@ -31,3 +31,4 @@ content:
 hidden:
   addtoany: true
   comment_node_blog: true
+  search_api_excerpt: true
